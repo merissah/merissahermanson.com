@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="fixed" id="navbar" class="navbar-default">
+  <b-navbar toggleable="lg" type="fixed" id="navbar" class="navbar-default" fixed="top">
     <div class="container">
       <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
       <b-navbar-brand>
@@ -23,6 +23,7 @@
   #navbar {
     min-height: 70px;
     padding:0 1rem;
+    z-index:1000;
 
     &.navbar-default {
       background-color: rgba(255, 255, 255, 0.7);
