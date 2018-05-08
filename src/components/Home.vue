@@ -104,7 +104,7 @@
           <div id="viewport"></div>
           <div id="mug"><b-img fluid src="/static/images/coffee-cup.png" alt="mug with hot steam" data-rjs="2" /></div>
           <div id="books"><b-img fluid src="/static/images/books-plant.png" alt="books" data-rjs="2" /></div>
-          <div id="palette"><b-img fluid src="/static/images/palette.png" alt="tablet" data-rjs="2" /></div>
+          <div id="palette"><b-img fluid src="/static/images/palette.png" alt="palette" data-rjs="2" /></div>
       </div>
     </section>
     <section id="about">
@@ -156,21 +156,7 @@
             <h3>Web & Mobile Applications</h3>
             <hr />
           </b-col>
-          <template v-for="item in web">
-            <b-col col sm="6" class="portfolio-item">
-              <a v-bind:href="item.link">
-                <b-img fluid v-bind:src="item.img" data-rjs="2" alt="Sensorly iOS App"/>
-                <div class="info">
-                  <div class="info-content-wrap">
-                    <div class="info-content">
-                      <h3>{{item.title}}</h3>
-                      <p>{{item.subtitle}}</p>
-                    </div>
-                  </div>
-                </div>
-              </a> 
-            </b-col>
-          </template>
+            <app-feed/>
           </b-row>
           <b-row class="portfolio-section" id="print">
             <b-col col sm="12">
@@ -248,15 +234,21 @@
         </a>
       </div>
     </section>
-    <bottom-footer />
+    <main-footer />
   </div>
 </template>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  import Footer from '@/components/footer.vue'
-  import Nav from '@/components/nav-bar.vue'
+import NavBar from './NavBar'
+import AppFeed from './AppFeed'
+import MainFooter from './MainFooter'
   export default {
     name: 'home',
+    components: { NavBar, AppFeed, MainFooter},
+    resource: 'Home',
+    props: {
+      post: String
+    },
     data() {
       return {
         tools: [
@@ -272,80 +264,6 @@
           {img: '/static/images/tools_github.svg'},
           {img: '/static/images/tools_js.svg'},
           {img: '/static/images/tools_sass.svg'}
-        ],
-        web: [
-          {
-            img: '/static/images/sensorly.jpg',
-            link: 'sensorly-ios.html',
-            title: 'Sensorly Website',
-            subtitle: 'Website'
-          },
-          {
-            img: '/static/images/sensorly-apps.jpg',
-            link: 'sensorly-ios.html',
-            title: 'Sensorly Apps',
-            subtitle: 'Android & iOS apps'
-          },
-          {
-            img: '/static/images/b2b-sensorly.jpg',
-            link: 'sensorly-ios.html',
-            title: 'Sensorly B2B App',
-            subtitle: 'Android App'
-          },
-          {
-            img: '/static/images/ts.jpg',
-            link: 'ts.html',
-            title: 'TowerSource',
-            subtitle: 'Web Application'
-          },
-          {
-            img: '/static/images/me.jpg',
-            link: 'me.html',
-            title: 'MapElements',
-            subtitle: 'Web Application'
-          },
-          {
-            img: '/static/images/si.jpg',
-            link: 'si.html',
-            title: 'Signal Insights',
-            subtitle: 'Android App'
-          },
-          {
-            img: '/static/images/eat.jpg',
-            link: 'can-i-eat-this.html',
-            title: 'Can I Eat This',
-            subtitle: 'Android & iOS Apps'
-          },
-          {
-            img: '/static/images/demo.jpg',
-            link: 'demo.html',
-            title: 'Demo Maps',
-            subtitle: 'Web Application'
-          },
-          {
-            img: '/static/images/nhspi.jpg',
-            link: 'nhspi.html',
-            title: 'NHSPI',
-            subtitle: 'National Health Security Preparedness Index Website'
-          },
-          {
-            img: '/static/images/travwell.jpg',
-            link: 'travwell.html',
-            title: 'TravWell',
-            subtitle: 'Android & iOS apps'
-          },
-          {
-            img: '/static/images/hcw.jpg',
-            link: 'hcw.html',
-            title: 'HealthCommWorks',
-            subtitle: 'Web Application'
-          },
-          {
-            img: '/static/images/nrc.jpg',
-            link: 'nrc.html',
-            title: 'NRC Training Course',
-            subtitle: 'Web Application'
-          },
         ],
         print: [
           {
@@ -372,12 +290,13 @@
             title: 'CDC Travelers Health',
             subtitle: 'Infographics'
           },
-        ]
-       };
-     },
-    components: { 
-      'nav-bar': Nav,
-      'bottom-footer': Footer
+        ],
+        navs: 0,
+        title: '',
+        labels: {
+          post: ''
+        }
+      };
     },
     methods: {
       animateStudio(){
@@ -591,6 +510,21 @@
           }
         }());
       },
+    },
+     computed: {
+      content() {
+        return { title: this.title, labels: this.labels }
+      },
+    },
+
+    watch: {
+      '$route.name' (to, from) {
+        if (to !== from) this.navs++
+      }
+    },
+
+    beforeMount() {
+      this.$getResource('blog')
     },
     mounted: function () {
       this.animateStudio();

@@ -3,7 +3,9 @@
     <div class="container">
       <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
       <b-navbar-brand>
+        <a href="/">
           <b-img fluid src="/static/images/logo.png" alt="Merissa Hermanson Design" data-rjs="2"/>
+        </a>
       </b-navbar-brand>
      <b-collapse is-nav id="navbar-collapse">
        <b-navbar-nav class="ml-auto">
