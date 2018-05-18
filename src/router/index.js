@@ -13,10 +13,10 @@ export default new Router({
   ]
 })*/
 
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from '@/components/Home';
-import Project from '@/components/Project';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from '@/components/Home'
+import Project from '@/components/Project'
 
 Vue.use(Router)
 
@@ -26,6 +26,6 @@ export default new Router({
   routes: [
     { path: '/', name: 'home', component: Home },
     { path: '/index', name: 'index', component: Home },
-    { path: '/:post', name: 'project', component: Project }
+    { path: '/:post', name: 'project', component: Project, props: true }
   ]
 })

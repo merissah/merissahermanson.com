@@ -2,74 +2,50 @@
   "results": [{
     "title": "Sensorly",
     "image": "/static/images/sensorly.jpg",
-    "published": "2017-09-14T18:17:00Z",
-    "author": "Michelle Blackford",
     "id": "sensorly"
   }, {
     "title": "Sensorly Apps",
     "image": "/static/images/sensorly-apps.jpg",
-    "published": "2017-09-09T22:11:56Z",
-    "author": "Nathan Greave",
     "id": "sensorly-apps"
   }, {
     "title": "B2B Sensorly",
     "image": "/static/images/b2b-sensorly.jpg",
-    "published": "2017-09-05T00:55:44Z",
-    "author": "Hugo Curness",
     "id": "b2b-sensorly"
   }, {
     "title": "TowerSource",
     "image": "/static/images/ts.jpg",
-    "published": "2017-07-28T18:31:01Z",
-    "author": "Derrik Yerrington",
-    "id": "towersource"
+    "id": "ts"
   }, {
     "title": "Map Elements",
     "image": "/static/images/me.jpg",
-    "published": "2017-06-12T10:01:51Z",
-    "author": "Michelle Blackford",
-    "id": "mapelements"
+    "id": "me"
   }, {
     "title": "Signal Insights",
     "image": "/static/images/si.jpg",
-    "published": "2017-06-02T03:22:11Z",
-    "author": "Nathan Greave",
     "id": "signalinsights"
   }, {
     "title": "Can I Eat This?",
     "image": "/static/images/eat.jpg",
-    "published": "2017-05-27T00:05:26Z",
-    "author": "Tommi Filipson",
     "id": "can-i-eat-this"
   }, {
     "title": "Demo Maps",
     "image": "/static/images/demo.jpg",
-    "published": "2017-05-25T13:12:39Z",
-    "author": "Nathan Greave",
     "id": "demo-maps"
   }, {
     "title": "NHSPI",
     "image": "/static/images/nhspi.jpg",
-    "published": "2017-05-10T13:57:35Z",
-    "author": "Nathan Greave",
     "id": "nhspi"
   }, {
     "title": "TravWell",
     "image": "/static/images/travwell.jpg",
-    "published": "2017-04-12T09:43:53Z",
-    "author": "Nathan Greave",
     "id": "travwell"
   }, {
     "title": "HealthCommWorks",
     "image": "/static/images/hcw.jpg",
-    "published": "2017-04-03T22:21:22Z",
-    "author": "Derrik Yerrington",
     "id": "healthcommworks"
   }, {
     "title": "NRC",
     "image": "/static/images/nrc.jpg",
-    "published": "2017-03-10T21:11:06Z",
-    "author": "Derrik Yerrington",
     "id": "nrc"
   }]
 }

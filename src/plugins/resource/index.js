@@ -3,10 +3,10 @@ import _merge from 'lodash.merge'
 
 // install $resource as a Vue plugin
 export default {
-  install(Vue, { endpoint = '', resources = {} }) {
+  install (Vue, { endpoint = '', resources = {} }) {
     Vue.prototype.$getResource = function(method, options) {
       let name = this.$options.resource
-      if (!name || !resources[name] || !resources[name][method]) return;
+      if (!name || !resources[name] || !resources[name][method]) return
 
       // get fetch path and response resolver/mapper
       let { path, resolve } = resources[name][method](options)
@@ -19,14 +19,14 @@ export default {
 
         // deep merge object with instance $data
         merge: dataSet => {
-          _merge(this.$data, dataSet)
+          _merge (this.$data, dataSet)
           return Promise.resolve(dataSet)
         },
 
         // set individual props on instance $data
         set: dataSet => {
           Object.keys(dataSet).forEach(prop => {
-            this.$set(this.$data, prop, dataSet[prop])
+            this.$set (this.$data, prop, dataSet[prop])
           })
 
           return Promise.resolve(dataSet)

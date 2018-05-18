@@ -3,7 +3,7 @@
     <div class="container">
       <ul class="social-media">
         <li>
-          <a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com"target="_blank">
+          <a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
             <b-img fluid src="/static/images/sm_g+.png" alt="Google Plus"/>
           </a>
         </li>

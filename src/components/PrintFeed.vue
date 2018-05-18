@@ -1,7 +1,7 @@
 <template>
-  <div id="apps">
-    <b-col col sm="6" v-for="(post, index) in posts" class="portfolio-item preview">
-      <router-link class="preview__title" :to="`/${post.id}`" :before="post.id">
+  <div id="print">
+    <b-col col sm="6" v-for="post in posts" :key="post.id" class="portfolio-item preview">
+      <router-link :to="`/${post.id}`">
       <b-img fluid v-bind:src="post.image" v-bind:alt="post.title"/>
         <div class="info">
           <div class="info-content-wrap">
@@ -18,8 +18,8 @@
 <script>
 
 export default {
-  name: 'app-feed',
-  resource: 'AppFeed',
+  name: 'print-feed',
+  resource: 'PrintFeed',
 
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
   },
 
   beforeMount() {
-    this.$getResource('apps')
+    this.$getResource('print')
       .then(posts => {
         this.posts = posts
       })

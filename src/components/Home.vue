@@ -163,21 +163,7 @@
               <h3>Print</h3>
               <hr />
             </b-col>
-            <template v-for="item in print">
-              <b-col col sm="6" class="portfolio-item">
-                <a v-bind:href="item.link">
-                  <b-img fluid v-bind:src="item.img" data-rjs="2" alt="Sensorly iOS App"/>
-                  <div class="info">
-                    <div class="info-content-wrap">
-                      <div class="info-content">
-                        <h3>{{item.title}}</h3>
-                        <p>{{item.subtitle}}</p>
-                      </div>
-                    </div>
-                  </div>
-                </a> 
-              </b-col>
-            </template>
+            <print-feed/>
           </b-row>
         <div class="portfolio-section" id="other-works">
           <h3>Other Works</h3>
@@ -241,10 +227,11 @@
 <script>
 import NavBar from './NavBar'
 import AppFeed from './AppFeed'
+import PrintFeed from './PrintFeed'
 import MainFooter from './MainFooter'
   export default {
     name: 'home',
-    components: { NavBar, AppFeed, MainFooter},
+    components: { NavBar, AppFeed, PrintFeed, MainFooter},
     resource: 'Home',
     props: {
       post: String
@@ -264,39 +251,8 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_github.svg'},
           {img: '/static/images/tools_js.svg'},
           {img: '/static/images/tools_sass.svg'}
-        ],
-        print: [
-          {
-            img: '/static/images/info-rad.jpg',
-            link: 'rsb.html',
-            title: 'CDC Radiation Studies Branch',
-            subtitle: 'Infographics'
-          },
-          {
-            img: '/static/images/postcard.jpg',
-            link: 'orau.html',
-            title: 'ORAU',
-            subtitle: 'Promotional Materials'
-          },
-          {
-            img: '/static/images/covers.jpg',
-            link: 'covers.html',
-            title: 'CDC',
-            subtitle: 'Report Covers'
-          },
-          {
-            img: '/static/images/info-food.jpg',
-            link: 'trav-info.html',
-            title: 'CDC Travelers Health',
-            subtitle: 'Infographics'
-          },
-        ],
-        navs: 0,
-        title: '',
-        labels: {
-          post: ''
-        }
-      };
+        ]
+      }
     },
     methods: {
       animateStudio(){
@@ -511,21 +467,7 @@ import MainFooter from './MainFooter'
         }());
       },
     },
-     computed: {
-      content() {
-        return { title: this.title, labels: this.labels }
-      },
-    },
 
-    watch: {
-      '$route.name' (to, from) {
-        if (to !== from) this.navs++
-      }
-    },
-
-    beforeMount() {
-      this.$getResource('blog')
-    },
     mounted: function () {
       this.animateStudio();
       this.clock();

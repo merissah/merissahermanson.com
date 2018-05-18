@@ -1,7 +1,7 @@
 export default {
-  apps () {
+  print () {
     return {
-      path: '/apps.json',
+      path: '/print.json',
       resolve: (response, mappers) => mappers.pipe(response.results)
     }
   }
