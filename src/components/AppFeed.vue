@@ -1,7 +1,7 @@
 <template>
   <div id="apps">
-    <b-col col sm="6" v-for="(post, index) in posts" class="portfolio-item preview">
-      <router-link class="preview__title" :to="`/${post.id}`" :before="post.id">
+    <b-col col sm="6" v-for="post in posts" :key="post.id" class="portfolio-item preview">
+      <router-link class="preview__title" :to="`/${post.id}`">
       <b-img fluid v-bind:src="post.image" v-bind:alt="post.title"/>
         <div class="info">
           <div class="info-content-wrap">

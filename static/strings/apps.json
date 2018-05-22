@@ -1,51 +1,51 @@
 {
   "results": [{
-    "title": "Sensorly",
-    "image": "/static/images/sensorly.jpg",
+    "title": "Sensorly Website",
+    "image": "/static/images/sensorly.png",
     "id": "sensorly"
   }, {
     "title": "Sensorly Apps",
-    "image": "/static/images/sensorly-apps.jpg",
+    "image": "/static/images/sensorly-apps.png",
     "id": "sensorly-apps"
   }, {
+    "title": "Sensorly White Labels",
+    "image": "/static/images/sensorly-whitelabel.png",
+    "id": "sensorly-whitelabel"
+  }, {
+    "title": "Sensorly Portal",
+    "image": "/static/images/sensorly-portal.png",
+    "id": "sensorly-portal"
+  }, {
     "title": "B2B Sensorly",
-    "image": "/static/images/b2b-sensorly.jpg",
+    "image": "/static/images/b2b-sensorly.png",
     "id": "b2b-sensorly"
   }, {
     "title": "TowerSource",
-    "image": "/static/images/ts.jpg",
+    "image": "/static/images/ts.png",
     "id": "ts"
   }, {
     "title": "Map Elements",
-    "image": "/static/images/me.jpg",
+    "image": "/static/images/me.png",
     "id": "me"
   }, {
     "title": "Signal Insights",
-    "image": "/static/images/si.jpg",
+    "image": "/static/images/si.png",
     "id": "signalinsights"
   }, {
-    "title": "Can I Eat This?",
-    "image": "/static/images/eat.jpg",
-    "id": "can-i-eat-this"
-  }, {
-    "title": "Demo Maps",
-    "image": "/static/images/demo.jpg",
-    "id": "demo-maps"
-  }, {
     "title": "NHSPI",
-    "image": "/static/images/nhspi.jpg",
+    "image": "/static/images/nhspi.png",
     "id": "nhspi"
   }, {
+    "title": "Can I Eat This?",
+    "image": "/static/images/eat.png",
+    "id": "can-i-eat-this"
+  }, {
     "title": "TravWell",
-    "image": "/static/images/travwell.jpg",
+    "image": "/static/images/travwell.png",
     "id": "travwell"
   }, {
-    "title": "HealthCommWorks",
-    "image": "/static/images/hcw.jpg",
-    "id": "healthcommworks"
-  }, {
     "title": "NRC",
-    "image": "/static/images/nrc.jpg",
+    "image": "/static/images/nrc.png",
     "id": "nrc"
   }]
 }

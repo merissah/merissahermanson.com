@@ -9,11 +9,11 @@
       </b-navbar-brand>
      <b-collapse is-nav id="navbar-collapse">
        <b-navbar-nav class="ml-auto">
-          <b-nav-item id="startLink" href="#start">START</b-nav-item>
-          <b-nav-item id="aboutLink" href="#about">ABOUT</b-nav-item>
-          <b-nav-item id="toolsLink" href="#tools">TOOLS</b-nav-item>
-          <b-nav-item id="portfolioLink" href="#portfolio">PORTFOLIO</b-nav-item>
-          <b-nav-item id="contactLink" href="#contact">CONTACT</b-nav-item>
+          <b-nav-item id="startLink" href="/#start">START</b-nav-item>
+          <b-nav-item id="aboutLink" href="/#about">ABOUT</b-nav-item>
+          <b-nav-item id="toolsLink" href="/#tools">TOOLS</b-nav-item>
+          <b-nav-item id="portfolioLink" href="/#portfolio">PORTFOLIO</b-nav-item>
+          <b-nav-item id="contactLink" href="/#contact">CONTACT</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </div>
