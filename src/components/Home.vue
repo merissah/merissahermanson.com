@@ -110,7 +110,7 @@
     <section id="about">
       <b-container class="container blue">
         <h2>A little <strong>ABOUT</strong> me</h2>
-        <p>I am a UI Designer & Front End Developer with 5+ years of experience. I craft elegant web user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. UI design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
+        <p>I am a UI Designer & Front End Developer with 7+ years of experience. I craft elegant web user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. UI design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
         <b-row>
           <b-col>
               <b-img fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
@@ -170,7 +170,7 @@
           <hr />
           <div class="row icons">
             <div class="col-md-4 col-sm-4">
-              <a href="painting.html">
+              <a href="/paintings">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 269" enable-background="new 0 0 310 269" xml:space="preserve">
                     <path fill="#5E5E5E" d="M53.8,47.9l202.3,0l0,152.6l-202.3,0L53.8,47.9 M52.2,44.9c-0.7,0-1.3,0.6-1.3,1.3l0,155.9c0,0.7,0.6,1.3,1.3,1.3l205.6,0c0.7,0,1.3-0.6,1.3-1.3l0-155.9c0-0.7-0.6-1.3-1.3-1.3L52.2,44.9L52.2,44.9z"/>
                   <line fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" x1="87.7" y1="267.1" x2="110.8" y2="201.1"/>
@@ -196,7 +196,7 @@
               </a> 
             </div>
             <div class="col-md-4 col-sm-4">
-              <a href="photography" target="_blank">
+              <a href="http://www.merissahermanson.com/photography" target="_blank">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 304.7 269" enable-background="new 0 0 304.7 269" xml:space="preserve">
                 <circle fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="147.7" cy="158.6" r="57.2"/>
                 <circle fill="#5E5E5E" cx="237.7" cy="90.2" r="10"/>

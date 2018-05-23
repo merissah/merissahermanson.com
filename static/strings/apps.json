@@ -20,13 +20,13 @@
     "image": "/static/images/b2b-sensorly.png",
     "id": "b2b-sensorly"
   }, {
-    "title": "TowerSource",
-    "image": "/static/images/ts.png",
-    "id": "ts"
-  }, {
     "title": "Map Elements",
     "image": "/static/images/me.png",
     "id": "me"
+  }, {
+    "title": "TowerSource",
+    "image": "/static/images/ts.png",
+    "id": "ts"
   }, {
     "title": "Signal Insights",
     "image": "/static/images/si.png",
@@ -36,9 +36,9 @@
     "image": "/static/images/nhspi.png",
     "id": "nhspi"
   }, {
-    "title": "Can I Eat This?",
-    "image": "/static/images/eat.png",
-    "id": "can-i-eat-this"
+    "title": "California Alerts",
+    "image": "/static/images/cal.png",
+    "id": "calalerts"
   }, {
     "title": "TravWell",
     "image": "/static/images/travwell.png",

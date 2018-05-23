@@ -3,23 +3,18 @@
     <div class="container">
       <ul class="social-media">
         <li>
-          <a href="https://plus.google.com/share?url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
-            <b-img fluid src="/static/images/sm_g+.png" alt="Google Plus"/>
+          <a href="https://www.linkedin.com/in/merissa-hermanson-8758588b/" target="_blank">
+            <b-img fluid src="/static/images/sm_linkedin.svg" alt="Linkedin"/>
           </a>
         </li>
         <li>
-          <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
-            <b-img fluid src="/static/images/sm_pintrist.svg" alt="Pintrist"/>
+          <a href="https://github.com/MerissaHermanson" target="_blank">
+            <b-img fluid src="/static/images/sm_github.svg" alt="Twitter"/>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=Merissahermanson.com" target="_blank">
+          <a href="https://www.facebook.com/merissa.wisehermanson" target="_blank">
             <b-img fluid src="/static/images/sm_fb.svg" alt="Facebook"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmerissahermanson.com" target="_blank">
-            <b-img fluid src="/static/images/sm_twitter.svg" alt="Twitter"/>
           </a>
         </li>
       </ul>
@@ -28,7 +23,6 @@
 </template>
 
 <style lang="scss" scoped>
-
   footer {
   text-align: center;
   padding-bottom: 20px;

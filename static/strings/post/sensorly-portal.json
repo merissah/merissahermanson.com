@@ -4,6 +4,10 @@
     "index": 3,
     "title": "Sensorly Portal",
     "content": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-    "image": "/static/images/b2b-sensorly.jpg"
+    "image": "/static/images/sensorly-portal.png",
+    "prototype": "https://invis.io/7U9AX87K4",
+    "product": "Web Application",
+    "date": "In Development",
+    "role": "Sole UI/UX designer"
   }]
 }

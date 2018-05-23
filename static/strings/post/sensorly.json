@@ -4,8 +4,11 @@
     "index": 0,
     "title": "Sensorly Website",
     "content": "Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network.\n\nThis project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.",
-    "image": "/static/images/sensorly.jpg",
+    "image": "/static/images/sensorly.png",
     "link": "https://www.sensorly.com/",
-    "prototype": "https://invis.io/5EA6GJ6H3"
+    "prototype": "https://invis.io/5EA6GJ6H3",
+    "product": "App Website with a Mapping Application",
+    "date": "April 21st 2018",
+    "role": "Sole UI/UX designer and helped build the front-end."
   }]
 }
