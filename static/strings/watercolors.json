@@ -1,0 +1,33 @@
+{
+  "results": [{
+    "title": "Baboon",
+    "src": "/static/images/painting/baboon-sm.jpg",
+    "size": "18in by 18in",
+    "id": "baboon"
+  }, {
+    "title": "Chameleon",
+    "src": "/static/images/painting/iguana-sm.jpg",
+    "size": "12in by 24in",
+    "id": "iguana"
+  }, {
+    "title": "Tiger",
+    "src": "/static/images/painting/tiger-sm.jpg",
+    "size": "16in by 25in",
+    "id": "tiger"
+  }, {
+    "title": "Monkey",
+    "src": "/static/images/painting/monkey-sm.jpg",
+    "size": "16in by 20in",
+    "id": "monkey"
+  }, {
+    "title": "Lions",
+    "src": "/static/images/painting/lions2-sm.jpg",
+    "size": "16in by 25in",
+    "id": "lions"
+  }, {
+    "title": "Wolf",
+    "src": "/static/images/painting/wolf-sm.jpg",
+    "size": "16in by 22in",
+    "id": "wolf"
+  }]
+}

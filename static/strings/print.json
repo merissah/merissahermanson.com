@@ -2,22 +2,22 @@
   "results": [
       {
         "title": "CDC Radiation Studies Branch",
-        "image": "/static/images/info-rad.jpg",
+        "src": "/static/images/info-rad.jpg",
         "subtitle": "Infographics",
         "id": "rsb"
       }, {
         "title": "ORAU",
-        "image": "/static/images/postcard.jpg",
+        "src": "/static/images/postcard.jpg",
         "subtitle": "Promotional Materials",
         "id": "orau"
       }, {
         "title": "CDC",
-        "image": "/static/images/covers.jpg",
+        "src": "/static/images/covers.jpg",
         "subtitle": "Report Covers",
         "id": "covers"
       }, {
         "title": "CDC Travelers Health",
-        "image": "/static/images/info-food.jpg",
+        "src": "/static/images/info-food.jpg",
         "subtitle": "Infographics",
         "id": "infographics"
       }

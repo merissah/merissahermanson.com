@@ -1,51 +1,51 @@
 {
   "results": [{
     "title": "Sensorly Website",
-    "image": "/static/images/sensorly.png",
+    "src": "/static/images/sensorly.png",
     "id": "sensorly"
   }, {
     "title": "Sensorly Apps",
-    "image": "/static/images/sensorly-apps.png",
+    "src": "/static/images/sensorly-apps.png",
     "id": "sensorly-apps"
   }, {
     "title": "Sensorly White Labels",
-    "image": "/static/images/sensorly-whitelabel.png",
+    "src": "/static/images/sensorly-whitelabel.png",
     "id": "sensorly-whitelabel"
   }, {
     "title": "Sensorly Portal",
-    "image": "/static/images/sensorly-portal.png",
+    "src": "/static/images/sensorly-portal.png",
     "id": "sensorly-portal"
   }, {
     "title": "B2B Sensorly",
-    "image": "/static/images/b2b-sensorly.png",
+    "src": "/static/images/b2b-sensorly.png",
     "id": "b2b-sensorly"
   }, {
     "title": "Map Elements",
-    "image": "/static/images/me.png",
+    "src": "/static/images/me.png",
     "id": "me"
   }, {
     "title": "TowerSource",
-    "image": "/static/images/ts.png",
+    "src": "/static/images/ts.png",
     "id": "ts"
   }, {
     "title": "Signal Insights",
-    "image": "/static/images/si.png",
+    "src": "/static/images/si.png",
     "id": "signalinsights"
   }, {
     "title": "NHSPI",
-    "image": "/static/images/nhspi.png",
+    "src": "/static/images/nhspi.png",
     "id": "nhspi"
   }, {
     "title": "California Alerts",
-    "image": "/static/images/cal.png",
+    "src": "/static/images/cal.png",
     "id": "calalerts"
   }, {
     "title": "TravWell",
-    "image": "/static/images/travwell.png",
+    "src": "/static/images/travwell.png",
     "id": "travwell"
   }, {
     "title": "NRC",
-    "image": "/static/images/nrc.png",
+    "src": "/static/images/nrc.png",
     "id": "nrc"
   }]
 }

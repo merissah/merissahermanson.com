@@ -156,14 +156,14 @@
             <h3>Web & Mobile Applications</h3>
             <hr />
           </b-col>
-            <app-feed/>
+            <img-feed img-category="apps"></img-feed>
           </b-row>
           <b-row class="portfolio-section" id="print">
             <b-col col sm="12">
               <h3>Print</h3>
               <hr />
             </b-col>
-            <print-feed/>
+            <img-feed img-category="print"></img-feed>
           </b-row>
         <div class="portfolio-section" id="other-works">
           <h3>Other Works</h3>
@@ -226,12 +226,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 import NavBar from './NavBar'
-import AppFeed from './AppFeed'
-import PrintFeed from './PrintFeed'
+import ImgFeed from './ImgFeed'
 import MainFooter from './MainFooter'
   export default {
     name: 'home',
-    components: { NavBar, AppFeed, PrintFeed, MainFooter},
+    components: { NavBar, ImgFeed, MainFooter},
     resource: 'Home',
     props: {
       post: String
