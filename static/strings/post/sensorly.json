@@ -1,10 +1,13 @@
 {
   "results": [{
     "id": "sensorly",
+    "type": "web",
     "index": 0,
     "title": "Sensorly Website",
-    "content": "Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network.\n\nThis project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.",
+    "content": "We acquired Sensorly in late 2016. Though the app had some pretty cool technology it was fraught with inconsistencies and usability problems. \n\nThe logo, website, and apps all had different color schemes. The website map was very slow and confusing to use. To see all of the legends and information the user would have to continually scroll up and down, which was difficult to do around the map. Instead of just scrolling or searching to the country of your choice, the user would have to select the country before being able to see coverage. The entire site had a mobile version, but it was pretty miserable to use. Instead of having an easy way to switch between 2G, 3G, and 4G the user would have to scroll through a very large dropdown, listing each provider with each technology. \n\nThese were some of the biggest issues I found during usability testing, as well as a number of smaller issues. The re-design not only solved all of the above issues, but also created a much more cohesive and updated look for not only the website, but both versions of the app.",
     "image": "/static/images/sensorly.png",
+    "portImage": "/static/images/port-sensorly.jpg",
+    "video":"/static/video/sensorly-map",
     "link": "https://www.sensorly.com/",
     "prototype": "https://invis.io/5EA6GJ6H3",
     "product": "App Website with a Mapping Application",

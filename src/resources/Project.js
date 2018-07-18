@@ -3,9 +3,9 @@ export default {
     return {
       path: `/post/${id}.json`,
       resolve: (response, mappers) => {
-        let { title, index, content, image, link, prototype, product, date, role } = response.results[0]
+        let { title, type, index, content, image, portImgs, videos, link, iosLink, androidLink, prototype, product, date, role } = response.results[0]
         content = '<p>' + content.split('\n\n').join('</p><p>') + '</p>'
-        return mappers.merge({ title, index, content, image, link, prototype, product, date, role})
+        return mappers.merge({ title, type, index, content, image, portImgs, videos, link, iosLink, androidLink, prototype, product, date, role})
       }
     }
   },

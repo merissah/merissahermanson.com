@@ -1,9 +1,10 @@
 {
   "results": [{
     "id": "me",
+    "type": "web",
     "index": 5,
     "title": "MapElements",
-    "content": "Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network.\n\nThis project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.",
+    "content": "MapElements is an award-winning, cloud-based service, created for analyzing wireless, cable, broadcast and landline network intelligence. \n\nMapElements was three years old when I completely re-designed the interface. Originally it was confusing to use, with most of the features hidden under an enormous settings dropdown. I gave it a completely new look. I simplified the interface and organized the incredibly feature rich application, into a more intuitive and streamline experience.",
     "image": "/static/images/me.png",
     "link": "https://www.mapelements.com/",
     "prototype": "https://invis.io/2E4HFUJ9N",

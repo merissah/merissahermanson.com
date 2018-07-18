@@ -21,6 +21,12 @@
               <b-button v-if="link" target="_blank" v-bind:href="link" variant="primary">
                 View Site
               </b-button>
+              <b-button v-if="iosLink" target="_blank" v-bind:href="iosLink" variant="primary">
+                View on the App Store
+              </b-button>
+              <b-button v-if="androidLink" target="_blank" v-bind:href="androidLink" variant="primary">
+                View on Google Play
+              </b-button>
             </b-col>
           </b-row>
           <b-row>
@@ -28,7 +34,6 @@
               <h2>{{ title }}</h2>
               <h4>Background</h4>
               <div v-html="content"></div>
-              <h4>UX Process</h4>
             </b-col>
             <b-col>
               <h4>Product</h4>
@@ -37,6 +42,29 @@
               <p v-html="date"></p>
               <h4>My Role</h4>
               <p>{{ role }}</p>
+            </b-col>
+          </b-row>
+          <b-row v-if="videos" class="portpage-pic" v-bind:class="type">
+            <div v-if="type === 'web'" class="video-container pic">
+              <div class="video-wrapper">
+                <video autoplay>
+                  <source v-bind:src="video + '.mp4'" type='video/mp4' />
+                  <source v-bind:src="video + '.webm'" type='video/webm' />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <b-col v-if="type === 'app'" v-for="video in videos" class="pic">
+                <video autoplay>
+                  <source v-bind:src="video + '.mp4'" type='video/mp4' />
+                  <source v-bind:src="video + '.webm'" type='video/webm' />
+                  Your browser does not support the video tag.
+                </video>
+            </b-col>
+          </b-row>
+          <b-row class="portpage-pic" v-bind:class="type">
+            <b-col class="pic" v-for="portImg in portImgs">
+              <b-img fluid v-bind:src="portImg"/>
             </b-col>
           </b-row>
         </article>
@@ -52,15 +80,22 @@ import MainFooter from './MainFooter'
     resource: 'Project',
     components: { NavBar, MainFooter},
     props: { 
-      post: String
+      post: String,
+      video: String,
+      portImg: String
     },
     data() {
       return {
         title: '',
         id: '',
+        type: '',
         content: '',
         image: '',
+        portImgs: [],
+        videos: [],
         link: '',
+        androidLink: '',
+        iosLink: '',
         prototype: '',
         product: '',
         date: '',
@@ -96,7 +131,7 @@ import MainFooter from './MainFooter'
         } else {
           this.back = this.posts[this.index - 1].id
           this.forward = this.posts[this.index + 1].id
-        } 
+        }
       })
     }
   }
@@ -115,38 +150,36 @@ import MainFooter from './MainFooter'
 
   .nav-buttons li {
     list-style: none;
-  }
-
-  .nav-buttons li a {
-    height: 50px;
-    width:50px;
-    display: block;
-    position: absolute;
-    top:150px;
-    border-radius: 50%;
+      a {
+      height: 50px;
+      width:50px;
+      display: block;
+      position: absolute;
+      top:150px;
+      border-radius: 50%;
+      &.disabled {
+        opacity: 0.5;
+        cursor:default;
+      }
+    }
+    #right-arrow{
+      background: rgba(255,255,255,0.5) url(/static/images/right-arrow.svg) center/15px no-repeat;
+      right:1%;
+    }
+    #left-arrow{
+      background: rgba(255,255,255,0.5) url(/static/images/left-arrow.svg) center/15px no-repeat;
+      left:1%;
+    }
   }
 
   .nav-buttons li a:hover, .nav-buttons li a:focus {
     background-color: rgba(255,255,255,1);
   }
 
-  .nav-buttons li a.disabled {
-    opacity: 0.5;
-    cursor:default;
-  }
-
   .nav-buttons li a.disabled:hover, .nav-buttons li a.disabled:focus {
     background-color: rgba(255,255,255,0.5);
   } 
 
-  .nav-buttons #right-arrow{
-    background: rgba(255,255,255,0.5) url(/static/images/right-arrow.svg) center/15px no-repeat;
-    right:1%;
-  }
-  .nav-buttons #left-arrow{
-    background: rgba(255,255,255,0.5) url(/static/images/left-arrow.svg) center/15px no-repeat;
-    left:1%;
-  }
   .painting-bkg {
     width: 100%;
     height: 300px;
@@ -167,19 +200,27 @@ import MainFooter from './MainFooter'
     padding-bottom: 0px;
   }
   .portpage-pic {
-    margin-top: 50px;
+    margin: 50px auto 0;
     text-align: center;
-  }
-  .portpage-pic .pic {
-    display: inline-block;
-    margin: .7em auto;
-    height: auto;
-    position: relative;
-  }
+    .pic {
+      display: inline-block;
+      margin: .7em auto;
+      height: auto;
+      position: relative;
+    }
+    .video-container {
+      padding-top:50px;
+      margin-bottom:2em;
+      width:821px;
+      .video-wrapper {
+        overflow: hidden;
+        margin-bottom: -6px;
 
-  .portpage-pic .pic.web, .portpage-pic .pic.phone, 
-  .portpage-pic .pic.video-container, .portpage-pic .pic.other {
-    width:70%;
+        video {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .pic img, .video-container {
@@ -194,29 +235,12 @@ import MainFooter from './MainFooter'
     border:none;
   }
 
-  .portpage-pic .video-container {
-    padding-top:4.9%;
-    margin-bottom:2em;
-  }
-
   .pic.web img, .video-container {
     background: url(/static/images/browser.svg) no-repeat top center;
-    background-size: 102.55%;
+    background-size: 101.5%;
     padding-top:6%;
   }
 
-  .portpage-pic .video-wrapper {
-    overflow: hidden;
-  }
-
-  .video-wrapper video {
-      width: 100.5%;
-      top: -53px;
-      left:-2px;
-      position: relative;
-      margin-bottom:-63px;
-
-  }
   .port-button {
     text-align: center;
   }

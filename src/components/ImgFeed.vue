@@ -1,7 +1,7 @@
 <template>
   <b-row class="portfolio-section">
-    <b-col cols="3" v-for="image in images" :key="image.id" class="portfolio-item" :class="other">
-      <router-link v-if="!other" :to="`/${image.id}`">
+    <b-col cols="3" v-for="image in images" :key="image.id" class="portfolio-item" :class="art">
+      <router-link v-if="!art" :to="`/${image.id}`">
         <b-img fluid :src="image.src" :alt="image.title"/>
         <div class="info">
           <div class="info-content-wrap">
@@ -11,8 +11,8 @@
           </div>
         </div>
       </router-link>
-      <a v-if="other" :href="image.src.replace('-sm','')">
-        <b-img fluid :src="image.src" :alt="image.title"/>
+      <a v-if="art" :href="image.src.replace('-sm','')">
+        <b-img-lazy fluid :src="image.src" :alt="image.title"/>
         <div class="info">
           <div class="info-content-wrap">
             <div class="info-content">
@@ -30,7 +30,7 @@
 export default {
   name: 'img-feed',
   resource: 'ImgFeed',
-  props: ['imgCategory', 'other'],
+  props: ['imgCategory', 'art'],
 
   data() {
     return {
@@ -49,7 +49,7 @@ export default {
 
 @import '../assets/sass/simplelightbox.scss';
 
-  .portfolio-item.other {
+  .portfolio-item.art {
     text-align: center;
     -ms-flex: 0 0 23%;
     flex: 0 0 23%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="other-page">
+  <div class="art-page">
     <nav-bar />
       <div class="jumbotron painting-bkg">
       </div>
@@ -10,21 +10,21 @@
             <hr />
           </b-col>
         </b-row>
-        <img-feed other="other" img-category="paintings"></img-feed>
+        <img-feed art="art" img-category="paintings"></img-feed>
         <b-row class="portfolio-section">
           <b-col col sm="12">
             <h3>Watercolor</h3>
             <hr />
           </b-col>
         </b-row>
-        <img-feed other="other" img-category="watercolors"></img-feed>
+        <img-feed art="art" img-category="watercolors"></img-feed>
         <b-row class="portfolio-section">
           <b-col col sm="12">
             <h3>Charcoal</h3>
             <hr />
           </b-col>
         </b-row>
-       <img-feed other="other" img-category="charcoal"></img-feed>
+       <img-feed art="art" img-category="charcoal"></img-feed>
       </b-container>
     <main-footer />
   </div>
@@ -37,8 +37,8 @@ import MainFooter from './MainFooter'
 import ImgFeed from './ImgFeed'
 
   export default {
-    name: 'other',
-    resource: 'Other',
+    name: 'art',
+    resource: 'art',
     components: { NavBar, ImgFeed, MainFooter},
     props: { 
       post: String
@@ -46,7 +46,7 @@ import ImgFeed from './ImgFeed'
     mounted(){
 
     $(function(){
-        var $gallery = $('.other a').simpleLightbox();  
+        var $gallery = $('.art a').simpleLightbox();  
       });
     }
   }
@@ -63,7 +63,7 @@ import ImgFeed from './ImgFeed'
     text-align: center;
     background-repeat: no-repeat;
   }
-  .other-page {
+  .art-page {
     text-align:center;
   }
 </style>

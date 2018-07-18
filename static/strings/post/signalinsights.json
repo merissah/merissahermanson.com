@@ -1,9 +1,10 @@
 {
   "results": [{
     "id": "si",
+    "type": "app",
     "index": 7,
     "title": "Signal Insights",
-    "content": "Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network.\n\nThis project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.",
+    "content": "Signal Insights is a Software-as-a-Service (SaaS) solution for measuring and analyzing the customer's experience on cellular or Wi-Fi networks. \n\nThe Signal Insights android app was originally built by a developer without much thought to design. I re-designed and organized the entire app for a more optimal user experience.",
     "image": "/static/images/si.png",
     "prototype": "https://invis.io/A93HPU8TD",
     "product": "Android App",

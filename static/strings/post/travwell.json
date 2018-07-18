@@ -1,11 +1,13 @@
 {
   "results": [{
-    "id": "ts",
+    "id": "travwell",
+    "type": "app",
     "index": 10,
-    "title": "Tower Source",
-    "content": "Sensorly is a crowdsourced service, it gathers anonymous data from all users willing to share their experience and wanting to help others better understand what to expect from their carrier's wirelesss network.\n\nThis project was a re-design of their original out dated app. The overall challenge was to keep some of the look and feel of the original app, so as not to alienate it's current users, while providing a more streamlined user experience and an updated user interface.",
+    "title": "Travwell",
+    "content": "This app has everything for the international traveler. It's main goal is to give vaccine recommendations for each country under the 'CDC advice' section. It will also store your vaccine information for each destination, as well as give reminders for your next dose. It also has a packing list, to do list, a place to store your travel documents, and a profile section where you can see all of your information for every trip. \n\nNeedless to say this was a very large and complicated app. I handled all of the wire-framing for this app and had some input as far as the organization and how it should function. The client had a particular vision for the app and I accommodated accordingly. I handled all of the graphics for the app and worked with the developer to implement them. I went for a fun and colorful look and also made sure it corresponded with CDC's sister app 'Can I Eat This?'.",
     "image": "/static/images/travwell.png",
-    "link": "https://www.towersource.com/",
+    "iosLink": "https://itunes.apple.com/us/app/cdc-travwell/id969599694?mt=8",
+    "androidLink": "https://play.google.com/store/apps/details?id=gov.cdc.oid.ncezid.travwell&hl=en_US",
     "product": "Android and iOS Apps",
     "date": "March 3rd, 2015",
     "role": "Sole UI/UX designer"
