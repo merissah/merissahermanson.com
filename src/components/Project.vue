@@ -44,26 +44,16 @@
               <p>{{ role }}</p>
             </b-col>
           </b-row>
-          <b-row v-if="videos" class="portpage-pic" v-bind:class="type">
-            <div v-if="type === 'web'" class="video-container pic">
-              <div class="video-wrapper">
-                <video autoplay>
-                  <source v-bind:src="video + '.mp4'" type='video/mp4' />
-                  <source v-bind:src="video + '.webm'" type='video/webm' />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+          <b-row v-if="videosrcs" class="portpage-pic">
+            <div v-if="type === 'web'" class="video-wrapper" v-bind:class="type">
+              <video-temp v-for="videosrc in videosrcs" v-bind:videosrc="videosrc"></video-temp>
             </div>
-            <b-col v-if="type === 'app'" v-for="video in videos" class="pic">
-                <video autoplay>
-                  <source v-bind:src="video + '.mp4'" type='video/mp4' />
-                  <source v-bind:src="video + '.webm'" type='video/webm' />
-                  Your browser does not support the video tag.
-                </video>
+            <b-col v-if="type === 'app'" v-for="videosrc in videosrcs">
+                <video-temp v-bind:videosrc="videosrc"></video-temp>
             </b-col>
           </b-row>
-          <b-row class="portpage-pic" v-bind:class="type">
-            <b-col class="pic" v-for="portImg in portImgs">
+          <b-row class="portpage-pic">
+            <b-col v-for="portImg in portImgs" v-bind:class="type">
               <b-img fluid v-bind:src="portImg"/>
             </b-col>
           </b-row>
@@ -75,13 +65,14 @@
 <script>
 import NavBar from './NavBar'
 import MainFooter from './MainFooter'
+import VideoTemp from './VideoTemp'
   export default {
     name: 'project',
     resource: 'Project',
-    components: { NavBar, MainFooter},
+    components: { NavBar, MainFooter, VideoTemp},
     props: { 
       post: String,
-      video: String,
+      videosrc: String,
       portImg: String
     },
     data() {
@@ -92,7 +83,7 @@ import MainFooter from './MainFooter'
         content: '',
         image: '',
         portImgs: [],
-        videos: [],
+        videosrcs: [],
         link: '',
         androidLink: '',
         iosLink: '',
@@ -112,6 +103,13 @@ import MainFooter from './MainFooter'
     methods: {
       getBgImg(src) {
         return { backgroundImage: `url(${src})` }
+      },
+      mouseOver: function() {
+        console.log(event.target);
+        $(event.target).get(0).play();
+      },
+      mouseLeave: function(){
+        $(event.target).get(0).pause();
       }
     },
     beforeMount() {
@@ -202,43 +200,21 @@ import MainFooter from './MainFooter'
   .portpage-pic {
     margin: 50px auto 0;
     text-align: center;
-    .pic {
-      display: inline-block;
-      margin: .7em auto;
-      height: auto;
-      position: relative;
-    }
-    .video-container {
-      padding-top:50px;
-      margin-bottom:2em;
-      width:821px;
-      .video-wrapper {
-        overflow: hidden;
-        margin-bottom: -6px;
-
-        video {
-          width: 100%;
+      .web {
+        margin:auto;
+         img, video {
+          width:819px;
+          margin:auto;
+          background: url(/static/images/browser.svg) no-repeat top center;
+          background-size: 101.5%;
+          padding-top:48px;
+          border: 1px solid #f1f2f3;
         }
       }
-    }
-  }
-
-  .pic img, .video-container {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    border: 1px solid #f1f2f3;
   }
 
   .pic.phone img {
     border:none;
-  }
-
-  .pic.web img, .video-container {
-    background: url(/static/images/browser.svg) no-repeat top center;
-    background-size: 101.5%;
-    padding-top:6%;
   }
 
   .port-button {
