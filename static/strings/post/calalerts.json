@@ -6,6 +6,7 @@
     "title": "California WEA Alerts",
     "content": "I had a lot of fun doing all of the illustrations for this site. I was given about a page's worth of content and not much direction for this project. I was able to design and build this responsive site.",
     "image": "/static/images/cal.png",
+    "portImgs": ["/static/images/port-cal1.jpg"],
     "link": "http://calalerts.org/",
     "product": "Website",
     "date": "2014",

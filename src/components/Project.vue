@@ -11,8 +11,8 @@
           </li>
         </ul>
       </div>
-      <b-container class="portfolio-content">
-        <article v-if="post" >
+      <article v-if="post" >
+        <b-container>
           <b-row class="port-button">
             <b-col>
               <b-button v-if="prototype" target="_blank" v-bind:href="prototype" variant="default">
@@ -30,7 +30,7 @@
             </b-col>
           </b-row>
           <b-row>
-             <b-col cols="9">
+            <b-col cols="9">
               <h2>{{ title }}</h2>
               <h4>Background</h4>
               <div v-html="content"></div>
@@ -44,21 +44,25 @@
               <p>{{ role }}</p>
             </b-col>
           </b-row>
-          <b-row v-if="videosrcs" class="portpage-pic">
-            <div v-if="type === 'web'" class="video-wrapper" v-bind:class="type">
+          <b-row v-if="videosrcs" class="video-container">
+            <div v-if="type === 'web'" class="video-web web">
               <video-temp v-for="videosrc in videosrcs" v-bind:videosrc="videosrc"></video-temp>
             </div>
-            <b-col v-if="type === 'app'" v-for="videosrc in videosrcs">
-                <video-temp v-bind:videosrc="videosrc"></video-temp>
+            <b-col v-else v-for="videosrc in videosrcs" class="video-app">
+              <video-temp v-bind:videosrc="videosrc"></video-temp>
             </b-col>
           </b-row>
-          <b-row class="portpage-pic">
-            <b-col v-for="portImg in portImgs" v-bind:class="type">
-              <b-img fluid v-bind:src="portImg"/>
-            </b-col>
-          </b-row>
-        </article>
-      </b-container>
+        </b-container>
+        <div class="port-section" v-bind:class="type">
+          <b-container>
+            <b-row>
+              <div v-bind:class="type" v-for="portImg in portImgs" class="pic">
+                <b-img fluid v-bind:src="portImg"/>
+              </div>
+            </b-row>
+          </b-container>
+        </div>
+      </article>
     <main-footer />
   </div>
 </template>
@@ -103,13 +107,6 @@ import VideoTemp from './VideoTemp'
     methods: {
       getBgImg(src) {
         return { backgroundImage: `url(${src})` }
-      },
-      mouseOver: function() {
-        console.log(event.target);
-        $(event.target).get(0).play();
-      },
-      mouseLeave: function(){
-        $(event.target).get(0).pause();
       }
     },
     beforeMount() {
@@ -144,6 +141,19 @@ import VideoTemp from './VideoTemp'
     text-align: center;
     background-color: #d7e4f3;
     background-repeat: no-repeat;
+  }
+
+  h2, p {
+    text-align: left;
+  }
+  h3 {
+    padding-bottom: 0px;
+  }
+
+  .video-container {
+    .col {
+      font-size:0;
+    }
   }
 
   .nav-buttons li {
@@ -191,30 +201,47 @@ import VideoTemp from './VideoTemp'
     background-image: url(/static/images/bnr-animations.jpg);
     background-size: 900px;
   }
-  .portfolio-content h2, .portfolio-content p {
-    text-align: left;
-  }
-  .portfolio-content h3 {
-    padding-bottom: 0px;
-  }
-  .portpage-pic {
-    margin: 50px auto 0;
-    text-align: center;
-      .web {
-        margin:auto;
-         img, video {
-          width:819px;
-          margin:auto;
-          background: url(/static/images/browser.svg) no-repeat top center;
-          background-size: 101.5%;
-          padding-top:48px;
-          border: 1px solid #f1f2f3;
-        }
-      }
+  .video-container {
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
-  .pic.phone img {
-    border:none;
+  .port-section {
+    background-color:#edf2f7;
+    padding-bottom:50px;
+    &.web {
+      background-color:transparent;
+    }
+  }
+
+  .web {
+    margin:auto;
+    .pic, .video-container {
+      margin:auto;
+      text-align: center;
+    }
+    img, video {
+      background: url(/static/images/browser.svg) no-repeat top center;
+      background-size: 101.5%;
+      width:819px;
+      padding-top:50px;
+    }
+    video {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+  }
+
+  .pic, .video-container {
+    img {
+      margin-top:50px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    &.col-4 {
+      max-height:670px;
+    }
+    &.col-6 {
+      max-height:initial;
+    }
   }
 
   .port-button {

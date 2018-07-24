@@ -7,12 +7,11 @@
 </template>
 <script>
   export default {
-    name: 'video',
-    resource: 'Video',
+    name: 'VideoTemp',
+    resource: 'VideoTemp',
     props: ['videosrc'],
     methods: {
       mouseOver: function() {
-        console.log(event.target);
         $(event.target).get(0).play();
       },
       mouseLeave: function(){

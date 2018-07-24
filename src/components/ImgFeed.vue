@@ -12,7 +12,7 @@
         </div>
       </router-link>
       <a v-if="art" :href="image.src.replace('-sm','')">
-        <b-img-lazy fluid :src="image.src" :alt="image.title"/>
+        <b-img fluid :src="image.src" :alt="image.title"/>
         <div class="info">
           <div class="info-content-wrap">
             <div class="info-content">

@@ -1,13 +1,16 @@
 {
   "results": [{
     "id": "sensorly-apps",
-    "type": "app",
+    "type": "apps",
     "index": 1,
     "title": "Sensorly Apps",
     "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
     "image": "/static/images/sensorly-apps.png",
-    "portImgs": ["/static/images/port-sen-map.jpg", "/static/images/port-sen-activity.jpg"],
-    "videosrcs": ["/static/video/android-map", "/static/video/map-trip"],
+    "portImgs": ["/static/images/port-sen-map.jpg", "/static/images/port-sen-activity.jpg", "/static/images/port-sen-map.jpg", "/static/images/port-sen-activity.jpg"],
+    "videosrcs": ["/static/video/android-map", "/static/video/map-trip", "/static/video/speedtest"],
+    "androidLink": "https://play.google.com/store/apps/details?id=com.sensorly.viewer&referrer=utm_source=website&utm_medium=downloadbutton&utm_campaign=WebsiteHeader",
+    "iosLink": "https://itunes.apple.com/us/app/sensorly-coverage-speed-tests/id544269103?mt=8",
+    "prototype": "https://invis.io/VYN56H996ME",
     "product": "iOS and Android Apps",
     "date": "iPhone: August 3rd 2016 </br> Android: April 21st 2018",
     "role": "Sole UI/UX designer and helped with some minor app development for both apps."
