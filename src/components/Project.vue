@@ -56,7 +56,10 @@
         <div class="port-section" v-bind:class="type">
           <b-container>
             <b-row>
-              <div v-bind:class="type" v-for="portImg in portImgs" class="pic">
+              <div v-if="size" v-bind:class="size" v-for="portImg in portImgs">
+                <b-img fluid v-bind:src="portImg"/>
+              </div>
+              <div v-if="!size" class="pic" v-for="portImg in portImgs">
                 <b-img fluid v-bind:src="portImg"/>
               </div>
             </b-row>
@@ -83,7 +86,8 @@ import VideoTemp from './VideoTemp'
       return {
         title: '',
         id: '',
-        type: '',
+        type: 'apps',
+        size: '',
         content: '',
         image: '',
         portImgs: [],
@@ -112,10 +116,9 @@ import VideoTemp from './VideoTemp'
     beforeMount() {
       if (!this.post) return;
       this.$getResource('post', this.post)
-      this.$getResource('apps')
+      this.$getResource("apps")
       .then(posts => {
         this.posts = posts
-
         if (this.index == 0) {
           this.back = this.posts[this.posts.length - 1].id
           this.forward = this.posts[this.index + 1].id
@@ -201,25 +204,21 @@ import VideoTemp from './VideoTemp'
     background-image: url(/static/images/bnr-animations.jpg);
     background-size: 900px;
   }
-  .video-container {
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
 
   .port-section {
     background-color:#edf2f7;
     padding-bottom:50px;
-    &.web {
-      background-color:transparent;
+    img {
+      margin-top:50px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .col-4 {
+      max-height:670px;
     }
   }
-
   .web {
     margin:auto;
-    .pic, .video-container {
-      margin:auto;
-      text-align: center;
-    }
+    background-color:transparent;
     img, video {
       background: url(/static/images/browser.svg) no-repeat top center;
       background-size: 101.5%;
@@ -229,19 +228,21 @@ import VideoTemp from './VideoTemp'
     video {
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
+    .pic, .video-container {
+      margin:auto;
+      text-align: center;
+    }
   }
-
-  .pic, .video-container {
-    img {
-      margin-top:50px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
-    &.col-4 {
-      max-height:670px;
-    }
-    &.col-6 {
-      max-height:initial;
-    }
+ .video-container {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .video-app video {
+    width: 100%;
+    max-width: 300px;
+  }
+  .video-web {
+    margin-top:50px;
   }
 
   .port-button {

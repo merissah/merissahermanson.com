@@ -2,6 +2,7 @@
   "results": [{
     "id": "si",
     "type": "apps",
+    "size": "col-4",
     "index": 7,
     "title": "Signal Insights",
     "content": "Signal Insights is a Software-as-a-Service (SaaS) solution for measuring and analyzing the customer's experience on cellular or Wi-Fi networks. \n\nThe Signal Insights android app was originally built by a developer without much thought to design. I re-designed and organized the entire app for a more optimal user experience.",

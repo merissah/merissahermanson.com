@@ -2,10 +2,15 @@
   "results": [{
     "id": "sensorly-whitelabel",
     "type": "apps",
+    "size": "col-4",
     "index": 2,
     "title": "Sensorly White Label Apps",
     "content": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
     "image": "/static/images/sensorly-whitelabel.png",
+    "portImgs": ["/static/images/port-cspire1.jpg", "/static/images/port-cspire2.jpg", "/static/images/port-cspire3.jpg", "/static/images/port-cspire4.jpg", "/static/images/port-cspire5.jpg", "/static/images/port-cspire6.jpg", "/static/images/port-cspire7.jpg", "/static/images/port-cspire8.jpg", "/static/images/port-cspire9.jpg", "/static/images/port-us1.jpg", "/static/images/port-us2.jpg", "/static/images/port-us3.jpg", "/static/images/port-us4.jpg", "/static/images/port-us5.jpg", "/static/images/port-us6.jpg"],
+    "androidLink": "https://play.google.com/store/apps/details?id=com.sensorly.viewer&referrer=utm_source=website&utm_medium=downloadbutton&utm_campaign=WebsiteHeader",
+    "iosLink": "https://itunes.apple.com/us/app/c-spire-my-network/id1283157492?mt=8",
+    "prototype": "https://invis.io/FCN6AOXHK3R",
     "product": "Whitelabel apps based on Sensorly apps",
     "date": "C-Spire: In Development </br> US Cellular: In Development",
     "role": "Sole UI/UX designer"
