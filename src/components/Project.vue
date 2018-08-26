@@ -101,8 +101,8 @@ import VideoTemp from './VideoTemp'
         role: '',
         posts: [],
         index: 0,
-        back: "",
-        forward: ""
+        back: '',
+        forward: ''
       }
     },
     beforeRouteUpdate (to, from, next) {
@@ -116,7 +116,7 @@ import VideoTemp from './VideoTemp'
     beforeMount() {
       if (!this.post) return;
       this.$getResource('post', this.post)
-      this.$getResource("apps")
+      this.$getResource(this.type)
       .then(posts => {
         this.posts = posts
         if (this.index == 0) {

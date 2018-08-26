@@ -221,7 +221,6 @@ section p {
 
 #about {
   text-align: center;
-  padding-bottom: 80px;
   padding-top: 30px;
   img {
     max-height: 150px;
@@ -236,6 +235,7 @@ section p {
 /*tools*/
 #tools {
   padding: 30px 0;
+  margin-bottom:20px;
   background-color: #edf2f7;
 
   ul {
@@ -257,12 +257,8 @@ section p {
   }
 }
 
-#portfolio {
-  margin-top: -20px;
-}
-
 .portfolio-section {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-align:center;
 
   .portfolio-item {

@@ -110,27 +110,27 @@
     <section id="about">
       <b-container class="container blue">
         <h2>A little <strong>ABOUT</strong> me</h2>
-        <p>I am a UI Designer & Front End Developer with 7+ years of experience. I craft elegant web user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. UI design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
+        <p>I am a Product Designer & Front End Developer with 7+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. Product design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
         <b-row>
-          <b-col>
-              <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
+        <b-col>
+              <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
             <div class="title">
-              <h3>GRAPHIC DESIGNER</h3>
-              <p>I design beautiful things that communicate effectively in order to achieve optimal results. I am able to do branding, print design, illustrations, inforgraphics, typograhpy and photography. I'm proficient with Illustrator, Photoshop, InDesign, and After Effects.</p>
+              <h3>PRODUCT DESIGNER</h3>
+              <p>I love user research and user testing. I’m people driven as well as data influenced. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
             </div>
           </b-col>
           <b-col>
-              <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
+              <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
-              <h3>UI/UX DESIGNER</h3>
-              <p>I am a passionate responsive web + UX/UI designer that focuses on usability, functionality, interactivity, and visual appeal. Using goal oriented design, I strive to create engaging web and mobile interfaces with logical, thought out behaviors and actions.</p>
+              <h3>VISUAL DESIGNER</h3>
+              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
             </div>
           </b-col>
           <b-col> 
               <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
             <div class="title">
               <h3>FRONT END DEVELOPER</h3>
-              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction is exactly how it should be. I am proficient at HTML5, CSS3, Sass, jQuery, Bootstrap, Basic Javascript, and am familiar with Ruby on Rails, and Vue.</p>
+              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction, animation, and transition is exactly how it should be.</p>
             </div>
           </b-col>
         </b-row>
@@ -151,19 +151,12 @@
     <section id="portfolio">
       <b-container>
         <h2>My <strong>PORTFOLIO</strong></h2>
-        <b-row class="portfolio-section" id="web">
-          <b-col col sm="12">
-            <h3>Web & Mobile Applications</h3>
-            <hr />
-          </b-col>
-            <img-feed img-category="apps"></img-feed>
-          </b-row>
-          <b-row class="portfolio-section" id="print">
+          <b-row class="portfolio-section" id="web">
             <b-col col sm="12">
-              <h3>Print</h3>
+              <h3>Web & Mobile Applications</h3>
               <hr />
             </b-col>
-            <img-feed img-category="print"></img-feed>
+            <img-feed img-category="apps"></img-feed>
           </b-row>
         <div class="portfolio-section" id="other-works">
           <h3>Other Works</h3>
@@ -232,9 +225,6 @@ import MainFooter from './MainFooter'
     name: 'home',
     components: { NavBar, ImgFeed, MainFooter},
     resource: 'Home',
-    props: {
-      post: String
-    },
     data() {
       return {
         tools: [
