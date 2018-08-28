@@ -4,9 +4,9 @@ export default {
     return {
       path: `/apps/${id}.json`,
       resolve: (response, mappers) => {
-        let { title, type, index, size, content, image, portImgs, videosrcs, link, iosLink, androidLink, prototype, product, date, role } = response.results[0]
+        let { title, type, index, size, content, contents2, image, portImgs, videosrcs, link, iosLink, androidLink, prototype, product, date, role } = response.results[0]
         content = '<p>' + content.split('\n\n').join('</p><p>') + '</p>'
-        return mappers.merge({ title, type, index, size, content, image, portImgs, videosrcs, link, iosLink, androidLink, prototype, product, date, role})
+        return mappers.merge({ title, type, index, size, content, contents2, image, portImgs, videosrcs, link, iosLink, androidLink, prototype, product, date, role})
       },
     }
   },

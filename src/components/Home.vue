@@ -239,7 +239,11 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_illustrator.svg'},
           {img: '/static/images/tools_github.svg'},
           {img: '/static/images/tools_js.svg'},
-          {img: '/static/images/tools_sass.svg'}
+          {img: '/static/images/tools_sass.svg'},
+          {img: '/static/images/tools_vue.svg'},
+          {img: '/static/images/tools_xd.svg'},
+          {img: '/static/images/tools_studio.svg'},
+          {img: '/static/images/tools_xcode.svg'}
         ]
       }
     },

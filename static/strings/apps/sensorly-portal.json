@@ -4,7 +4,7 @@
     "type": "web",
     "index": 3,
     "title": "Sensorly Portal",
-    "content": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
+    "content": "The Sensorly portal is a one stop shop for Network Planners, Engineers, and Mobile Network Operators to manage their testing devices, schedule testing events, and analyze the results. This B2B solution is a re-design of the original Sensorly portal that was really slow, difficult to navigate, inconsistent, and really confusing to use.",
     "image": "/static/images/sensorly-portal.png",
     "portImgs": ["/static/images/port-portal1.jpg", "/static/images/port-portal2.jpg", "/static/images/port-portal3.jpg", "/static/images/port-portal4.jpg", "/static/images/port-portal5.jpg", "/static/images/port-portal6.jpg", "/static/images/port-portal7.jpg", "/static/images/port-portal8.jpg", "/static/images/port-portal9.jpg"],
     "prototype": ["https://invis.io/7U9AX87K4"],

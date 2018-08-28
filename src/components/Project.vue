@@ -30,7 +30,7 @@
             </b-col>
           </b-row>
           <b-row>
-            <b-col cols="9">
+            <b-col cols="12" md="9">
               <h2>{{ title }}</h2>
               <h4>Background</h4>
               <div v-html="content"></div>
@@ -56,7 +56,16 @@
         <div class="port-section" v-bind:class="type">
           <b-container>
             <b-row>
-              <div v-if="size" v-bind:class="size" v-for="portImg in portImgs">
+              <div v-if="type === 'apps before'" v-bind:class="size" v-for="(portImg, index) in portImgs">
+                <h4 class="compare" v-if="index % 3 === 1">Before</h4>
+                <h4 class="compare" v-if="index % 3 === 2">After</h4>
+                <div v-if="index % 3 === 0">
+                  <h4>Problems & Solutions</h4>
+                  <p>{{ portImg }}</p>
+                </div>
+                <b-img v-if="index % 3 !== 0" fluid v-bind:src="portImg"/>
+              </div>
+              <div v-if="type === 'apps'" v-bind:class="size" v-for="portImg in portImgs">
                 <b-img fluid v-bind:src="portImg"/>
               </div>
               <div v-if="!size" class="pic" v-for="portImg in portImgs">
@@ -116,20 +125,23 @@ import VideoTemp from './VideoTemp'
     beforeMount() {
       if (!this.post) return;
       this.$getResource('post', this.post)
-      this.$getResource(this.type)
+      this.$getResource('apps')
       .then(posts => {
         this.posts = posts
+        console.log(this.index)
         if (this.index == 0) {
-          this.back = this.posts[this.posts.length - 1].id
-          this.forward = this.posts[this.index + 1].id
+          this.back = posts[posts.length - 1].id
+          this.forward = posts[this.index + 1].id
         }
-        if (this.index == this.posts.length - 1){
-          this.back = this.posts[this.index - 1].id
-          this.forward = this.posts[0].id
+        else if (this.index == posts.length - 1){
+          this.back = posts[this.index - 1].id
+          this.forward = posts[0].id
         } else {
-          this.back = this.posts[this.index - 1].id
-          this.forward = this.posts[this.index + 1].id
+          this.back = posts[this.index - 1].id
+          this.forward = posts[this.index + 1].id
         }
+        console.log(this.index)
+        console.log(this.back, this.forward)
       })
     }
   }
@@ -215,6 +227,21 @@ import VideoTemp from './VideoTemp'
     .col-4 {
       max-height:670px;
     }
+    h4 {
+      display:none;
+    }
+    &.apps.before {
+      h4 {
+        display:block;
+        margin: 60px 0 0;
+      }
+      img {
+        margin-top:20px;
+      }
+      p {
+        margin-top:15px;
+      }
+    }
   }
   .web {
     margin:auto;
@@ -222,7 +249,8 @@ import VideoTemp from './VideoTemp'
     img, video {
       background: url(/static/images/browser.svg) no-repeat top center;
       background-size: 101.5%;
-      width:819px;
+      max-width:819px;
+      width:100%;
       padding-top:50px;
     }
     video {
@@ -247,5 +275,35 @@ import VideoTemp from './VideoTemp'
 
   .port-button {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .port-section {
+      &.apps.before {
+        .col-md-6:nth-child(3n - 2) {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        h4 {
+          margin-top:80px;
+        }
+        .compare {
+          margin-top:10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .port-section {
+      &.apps.before {
+        h4 {
+          margin-top:70px;
+        }
+        .compare {
+          margin-top:20px;
+        }
+      }
+    }
+
   }
 </style>

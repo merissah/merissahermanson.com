@@ -2,7 +2,7 @@
   "results": [{
     "id": "travwell",
     "type": "apps",
-    "size": "col-4",
+    "size": "col-lg-4 col-md-6",
     "index": 10,
     "title": "Travwell",
     "content": "This app has everything for the international traveler. It's main goal is to give vaccine recommendations for each country under the 'CDC advice' section. It will also store your vaccine information for each destination, as well as give reminders for your next dose. It also has a packing list, to do list, a place to store your travel documents, and a profile section where you can see all of your information for every trip. \n\nNeedless to say this was a very large and complicated app. I handled all of the wire-framing for this app and had some input as far as the organization and how it should function. The client had a particular vision for the app and I accommodated accordingly. I handled all of the graphics for the app and worked with the developer to implement them. I went for a fun and colorful look and also made sure it corresponded with CDC's sister app 'Can I Eat This?'.",
