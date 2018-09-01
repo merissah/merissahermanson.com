@@ -112,21 +112,21 @@
         <h2>A little <strong>ABOUT</strong> me</h2>
         <p>I am a Product Designer & Front End Developer with 7+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. Product design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
         <b-row>
-        <b-col>
+          <b-col cols="12" md="4">
               <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
             <div class="title">
               <h3>PRODUCT DESIGNER</h3>
               <p>I love user research and user testing. I’m people driven as well as data influenced. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
             </div>
           </b-col>
-          <b-col>
+          <b-col cols="12" md="4">
               <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
               <h3>VISUAL DESIGNER</h3>
               <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
             </div>
           </b-col>
-          <b-col> 
+          <b-col cols="12" md="4"> 
               <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
             <div class="title">
               <h3>FRONT END DEVELOPER</h3>
@@ -141,7 +141,7 @@
         <h2>Some <strong>TOOLS</strong> I use</h2>
         <ul class="row">
           <template v-for="tool in tools">
-            <li class="col-sm-3 col-xs-6 tool-container">
+            <li class="col-md-3 col-sm-6 col tool-container">
               <b-img-lazy fluid v-bind:src="tool.img"/>
             </li>
           </template>

@@ -26,26 +26,26 @@ h3 {
 h4 {
   margin: 2rem 0 0
 }
-.start {
+#start {
   background: url(/static/images/bricks.jpg);
   background-size: 370px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 550px;
   margin-bottom: 40px;
-}
 
-#start h2 {
-  margin-bottom: 120px;
-  padding-top: 0px;
-}
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8em;
+    margin-top: 60px;
+    font-family: 'Lato', sans-serif;
+  }
 
-.start h1, #in-progress h1 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.8em;
-  margin-top: 60px;
-  font-family: 'Lato', sans-serif;
+  h2 {
+    margin-bottom: 120px;
+    padding-top: 0px;
+  }
 }
 
 #table {
@@ -240,6 +240,7 @@ section p {
 
   ul {
     padding:0;
+    margin-top:25px;
 
     li {
       list-style: none;
@@ -870,11 +871,19 @@ opacity: 1;
   font-size: 4em;
 }
 
-#tools ul li {
-  padding:0px;
+#tools {
+  ul li {
+    padding:0px;
+    img {
+      height:70%;
+    }
+  }
 }
-#tools ul li.long {
-  padding:0px 35px;
+
+#about {
+  img {
+    height:120px;
+  }
 }
 .portfolio-item .info .info-content-wrap h3 {
   font-size: 1em;
@@ -895,37 +904,22 @@ opacity: 1;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .start h1 {
-    font-size: 28px;
-  }
-  .start h2 {
-    font-size: 18px;
-  }
-  .start h2, .start h1 {
-    margin-top:70px;
-  }
-
-  .start {
+  #start {
     background-size: 130px;
     padding-bottom: 240px;
-  }
-
-  .navbar-brand {
-    width:180px;
-  }
-
-  .navbar-default .navbar-collapse, 
-  .navbar-default .navbar-form {
-    background-color: #fff;
-  }
-
-  #start .screen {
-    top:0;
-    padding:15px;
-  }
-
-  .start .screen h3 {
-    font-size: 14px;
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    .screen {
+      top:0;
+      padding:15px;
+      h3 {
+        font-size: 14px;
+      }
+    }
   }
 
   #clock {
@@ -933,7 +927,7 @@ opacity: 1;
     height: 135px;
     background-size: 135px;
     right:-2.5%;
-    top:210px;
+    top:170px;
   }
   #sec, #min, #hour {
     width:5px;
@@ -1004,9 +998,10 @@ opacity: 1;
 
   #tools ul li {
     padding:10px;
-  }
-  #tools ul li.long {
-    padding:10px 35px;
+    min-width:50%;
+    img {
+    padding:10px;
+    }
   }
   .portfolio-section .portfolio-item, .portpage-pic .pic {
     width: 80%;
@@ -1049,7 +1044,7 @@ opacity: 1;
 /* Extra Extra Small */
 /* =============================================================================================== */
 @media screen and (max-width: 580px) {
-  #books{
+  #books, #clock{
     display:none;
   }
   #start.jumbotron {
@@ -1062,6 +1057,13 @@ opacity: 1;
   }
   #contact h3 {
     font-size: 16px;
+  }
+  .portfolio-section {
+    .portfolio-item {
+      flex: 0 0 85%;
+      max-width: 85%;
+      margin:20px auto;
+    }
   }
 }
 

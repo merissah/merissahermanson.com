@@ -299,9 +299,15 @@ import VideoTemp from './VideoTemp'
         h4 {
           margin-top:70px;
         }
+        p{
+          margin-bottom:0;
+        }
         .compare {
           margin-top:20px;
         }
+      }
+      .col-md-6 {
+        text-align:center;
       }
     }
 

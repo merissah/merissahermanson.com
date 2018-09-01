@@ -1,10 +1,10 @@
 <template>
-  <b-navbar toggleable="lg" type="fixed" id="navbar" class="navbar-default" fixed="top">
+  <b-navbar toggleable="lg" type="light" id="navbar" fixed="top" class="navbar-default">
     <div class="container">
       <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
       <b-navbar-brand>
         <a href="/">
-          <b-img fluid src="/static/images/logo.png" alt="Merissa Hermanson Design"/>
+          <b-img fluid src="/static/images/logo.svg" alt="Merissa Hermanson Design"/>
         </a>
       </b-navbar-brand>
      <b-collapse is-nav id="navbar-collapse">
@@ -57,6 +57,23 @@
   .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
     background-color: #5691B6;
     color: white;
+  }
+
+  @media screen and (max-width: 767px) {
+    #navbar .navbar-brand {
+      padding-right:0;
+      margin-right:0;
+      width:200px;
+    }
+    #navbar.navbar-default li a {
+        padding:20px 15px;
+    }
+
+    .navbar-default .navbar-collapse, 
+    .navbar-default .navbar-form {
+      background-color: #fff;
+      margin:0 -15px;
+    }
   }
 
 </style>
