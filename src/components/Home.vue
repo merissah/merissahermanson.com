@@ -4,8 +4,10 @@
     <section class="jumbotron start" id="start">
       <div id="table"></div>
       <div class="container">
-        <h1>Welcome to my Studio</h1>
-        <h2>Where beautiful user interfaces are created.</h2>
+        <div class="text-container">
+          <h1>Welcome to my Studio</h1>
+          <h2>Where beautiful user interfaces are created.</h2>
+        </div>
         <ul id="clock" class="hidden-xs">
           <li id="sec"></li>
           <li id="hour"></li>
@@ -257,7 +259,7 @@ import MainFooter from './MainFooter'
           }
         });
 
-        TweenMax.set("#tabletop-easel", {top: "-=950"});
+        TweenMax.set("#tabletop-easel", {bottom: "+=950"});
         TweenMax.set("#palette", {left: "-=2200"});
         TweenMax.set("#brushes", {right: "-=950"});
         var $computer = $("#computer");
@@ -273,7 +275,7 @@ import MainFooter from './MainFooter'
               onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
           )
 
-          .to("#tabletop-easel", 1, {top: "+=950",
+          .to("#tabletop-easel", 1, {bottom: "-=950",
               onStart: function () {$easel.addClass("animated bounceInDown").removeClass("bounceOutUp");},
               onReverseComplete: function () {$easel.removeClass("bounceInDown").addClass("bounceOutUp");}
               }

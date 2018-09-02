@@ -33,30 +33,47 @@ h4 {
   padding-top: 30px;
   padding-bottom: 550px;
   margin-bottom: 40px;
+  height:100vh;
+  min-height:700px;
 
   h1 {
     text-align: center;
     font-weight: bold;
-    font-size: 2.8em;
-    margin-top: 60px;
     font-family: 'Lato', sans-serif;
   }
 
   h2 {
-    margin-bottom: 120px;
     padding-top: 0px;
+  }
+  .screen {
+    position:absolute;
+    z-index: 3;
+    left: 0px;
+    right:0.5%;
+    top:50px;
+    margin: auto;
+    max-width: 53%;
+    padding:30px;
+    h3 {
+      padding:10px 0 5% 0; 
+      color: #fff;
+    }
+  }
+  .text-container {
+    position:relative;
+    z-index:50;
+    margin-top:60px;
   }
 }
 
 #table {
   background: url(/static/images/table.jpg) bottom left;
-    padding-bottom: 50px;
-    position: absolute;
-    top: 630px;
-    height: 250px;
+  position: absolute;
+  bottom:-10%;
+  height: 250px;
   background-size: 1000px;
-    width: 100%;
-    right: 0;
+  width: 100%;
+  right: 0;
 }
 
 #computer, #books, #pencils, #palette, #mug, #tabletop-easel, #brushes {
@@ -64,30 +81,24 @@ h4 {
 }
 #computer, #desk-bkg, #tabletop-easel {
   margin:auto;
-  left: -400px;
-  right: -400px;
+  left: 0;
+  right: 0;
 }
 
 #computer {
   width:1px;
   margin:auto;
   overflow:visible;
-  width: 1150px;
-  top: 225px;
+  width:100%;
+  max-width:850px;
+  bottom:3%;
   z-index: 1;
 }
 
-.computer-inner {
-  margin-left: 26%;
-}
-
-.easel-inner {
-  margin-left: 24%;
-}
-
 #tabletop-easel {
-  width: 880px;
-  top: 195px;
+  width: 100%;
+  max-width:750px;
+  bottom:-0.5%;
   z-index: 1;
 }
 
@@ -100,58 +111,41 @@ h4 {
     width:40%;
 }
 
-#start .screen {
-  position:absolute;
-  z-index: 3;
-    left: 0px;
-    right:1.5%;
-    top:50px;
-    margin: auto;
-    max-width: 44%;
-    padding:30px;
-}
-
-#start .screen h3 {
-  padding:10px 0 5% 0; 
-  color: #fff;
-}
-
-
 #books {
   left: 15px;
-  top: 360px;
-    width: 500px;
+  bottom:8%;
+  max-width: 500px;
+  width:100%;
 }
 
 #desk-bkg .img-responsive {
   display: inline-block;
 }
 #brushes {
-  top: 420px;
+  bottom:9%;
   right: 1%;
   width: 220px;
 }
 
 #pencils {
-  top:500px;
+  bottom:11%;
   width: 180px;
   right: 2%;
 }
 
 #mug {
-  top: 640px;
-  right: 20%;
+  bottom:2%;
+  right: 17%;
   z-index: 4;
   width:110px;
 }
 #palette{
-  top: 630px;
-  left: 21%;
+  bottom:3%;
+  left: 14%;
   z-index: 2;
   width: 250px;
 }
-#phone, #easel-top {
-  top: 580px;
+#easel-top {
   right: 20%;
   z-index: 2;
 }
@@ -163,13 +157,13 @@ h4 {
 
 #clock {
   position: absolute;
-  right: 8.5%;
+  right: 7%;
   width: 165px;
   height: 165px;
   background: url(/static/images/clockface.svg) no-repeat;
   background-size: 165px;
   list-style: none;
-  top: 110px;
+  top: 22%;
   box-shadow: 6px 6px 10px 1px rgba(0,0,0,0.32);
   border-radius: 90px;
 }
@@ -200,8 +194,8 @@ section p {
 
 #viewport {
   position: absolute;
-  top: 310px;
-  right: 23.5%;
+  bottom:16%;
+  right: 21%;
   width: 60px;
   height: 350px;
   overflow: hidden;
@@ -694,10 +688,6 @@ opacity: 1;
 /* =============================================================================================== */
 @media screen and (min-width: 1441px) {
 
-  .start {
-    padding-bottom:610px
-  }
-
   .start h1 {
     font-size: 63px;
     margin-top: 80px;
@@ -708,51 +698,11 @@ opacity: 1;
   .screen h3 {
     font-size: 30px;
   }
-  #table {
-    top:770px;
-  }
   #computer {
-    top: 280px;
-    width: 1400px;
+    max-width: 1400px;
   }
   #tabletop-easel {
-    width: 1050px;
-    top: 255px;
-  }
-
-  #books, #viewport, #mug, #pencils, #brushes, #palette {
-    left:0;
-    right:0;
-    margin:auto;
-  }
-  #books {
-    top:420px;
-    width: 630px;
-    right:60%;
-  }
-  #viewport {
-    top:460px;
-    left:37.5%;
-  }
-  #mug {
-    top:790px;
-    width:130px;
-    left:40%;
-  }
-  #pencils {
-    width:200px;
-    top:630px;
-    left:73%;
-  }
-  #brushes {
-    top:510px;
-    width: 270px;
-    left:73%;
-  }
-  #palette {
-    width:300px;
-    top:793px;
-    right:40%;
+    max-width: 1050px;
   }
 }
 
@@ -761,14 +711,12 @@ opacity: 1;
 /* =============================================================================================== */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
-.start h2 {
-  font-size: 1.5em;
-}
+.start {
+  h2 {
+    font-size: 1.5em;
+  }
+} 
 
-#clock {
-  right: 10px;
-    top: 150px;
-}
 #books {
   left:-11%;
 }
@@ -791,37 +739,28 @@ opacity: 1;
 /* Small */
 /* =============================================================================================== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-.start {
+#start {
   margin-top: -80px;
   padding-bottom: 520px;
-}
-.start h1 {
-  margin-top: 170px;
+  h2 {
+    font-size:1.5em;
+  }
+  .text-container {
+    margin:auto;
+    left:0;
+    right:0;
+    position: absolute;
+    width:65%;
+    top:18%;
+  }
 }
 
-#table {
-  top:770px;
-  height: 200px;
-  background-size: 800px;
-}
-#computer {
-  top: 440px;
-  width: 950px;
-}
-#tabletop-easel {
-  width: 740px;
-  top: 410px;
-}
-#tabletop-easel #painting-text {
-  top:100px;
-  width:300px;
-}
 #clock {
   width:135px;
   height: 135px;
   background-size: 135px;
   right:5px;
-  top:330px;
+  top:18%;
 }
 #sec, #min, #hour {
   width:5px;
@@ -830,70 +769,67 @@ opacity: 1;
   left:65px;
 }
 #books {
-  top: 560px;
-  width: 380px;
-  left: -11%;
-}
-
-#palette{
-  width: 200px;
-  left: 150px;
-  top: 805px;
-}
-#pencils {
-  width: 130px;
-  top: 680px;
-  right: 2%;
-}
-
-#brushes {
-  top:610px;
-  width:170px;
+  left: -14%;
+  max-width:460px;
+  bottom:3%;
 }
 #mug {
-  width: 80px;
-  top: 810px;
+  right:10%;
+  width:95px;
 }
 #viewport {
-  right: 22.5%;
-  top: 310px;
+  right:14.5%;
 }
+#computer {
+  max-width: 800px;
+}
+#pencils {
+  right: -8%;
+  max-width:150px;
+  bottom:12%;
+}
+#brushes {
+  right:-8%;
+  max-width:200px;
+  bottom:8%;
+}
+#palette {
+  bottom:1%;
+  left:8%;
+}
+#tabletop-easel {
+  max-width: 700px;
+}
+  #in-progress h2 {
+    font-size: 2.5em;
+  }
+  #in-progress h1 {
+    font-size: 4em;
+  }
 
-#easel-top {
-  top: 475px;
-  width: 220px;
-}
-
-#in-progress h2 {
-  font-size: 2.5em;
-}
-#in-progress h1 {
-  font-size: 4em;
-}
-
-#tools {
-  ul li {
-    padding:0px;
-    img {
-      height:70%;
+  #tools {
+    ul li {
+      padding:0px;
+      img {
+        height:70%;
+      }
     }
   }
-}
 
-#about {
-  img {
-    height:120px;
+  #about {
+    img {
+      height:120px;
+    }
   }
-}
-.portfolio-item .info .info-content-wrap h3 {
-  font-size: 1em;
-  padding-top: 0px;
-  padding-bottom:10px;
-}
-.portfolio-item .info .info-content-wrap p {
-  font-size: 12px;
-  line-height:16px;
-}
+  .portfolio-item .info .info-content-wrap h3 {
+    font-size: 1em;
+    padding-top: 0px;
+    padding-bottom:10px;
+  }
+  .portfolio-item .info .info-content-wrap p {
+    font-size: 12px;
+    line-height:16px;
+  } 
 }
 
 /* =============================================================================================== */
@@ -907,18 +843,27 @@ opacity: 1;
   #start {
     background-size: 130px;
     padding-bottom: 240px;
+    min-height: 600px;
     h1 {
-      font-size: 28px;
+      font-size: 32px;
     }
     h2 {
       font-size: 18px;
     }
     .screen {
-      top:0;
+      top:9%;
       padding:15px;
       h3 {
-        font-size: 14px;
+        font-size: 16px;
       }
+    }
+    .text-container {
+      bottom:70%;
+      position:absolute;
+      right:0;
+      left:0;
+      margin:auto;
+      width:55%;
     }
   }
 
@@ -926,8 +871,8 @@ opacity: 1;
     width:135px;
     height: 135px;
     background-size: 135px;
-    right:-2.5%;
-    top:170px;
+    right:-2%;
+    top:23%;
   }
   #sec, #min, #hour {
     width:5px;
@@ -937,56 +882,52 @@ opacity: 1;
   }
 
   #table {
-    top:425px;
     height: 160px;
     background-size: 700px;
-  }
-
-  #computer {
-    width: 590px;
-    top: 220px;
+    bottom:0;
   }
 
   #books {
-    left:-50px;
-    top:270px;
-    width: 280px;
-  } 
+    max-width: 350px;
+    left:-16%;
+  }
+  #computer {
+    max-width: 700px;
+    bottom:9%;
+  }
 
   #tabletop-easel {
-    width: 470px;
-    top: 195px;
+    bottom:1%;
+    max-width:600px;
   }
 
   #tabletop-easel #painting-text {
-    width:190px;
-    top:75px;
     padding:0;
   }
   #pencils {
-    width: 85px;
-      top: 370px;
-      right: -40px;
+    width: 120px;
+    right: -40px;
+    bottom:19%;
   }
   #brushes {
-    width: 120px;
-    top:305px;
+    width: 150px;
     right:-40px;
+    bottom:15%;
   }
   #mug {
-    width: 55px;
-    top: 460px;
-    right: 10%;
+    width: 80px;
+    right: 9%;
+    bottom:8%;
   }
   #viewport {
-    right: 11%;
-    top: 170px;
+    right: 12%;
     height: 310px;
+    bottom:18%;
   }
   #palette{
-    width: 140px;
-    top: 460px;
+    width: 180px;
     left: 20px;
+    bottom:7%
   }
 
   .btn-lg {
@@ -1044,14 +985,52 @@ opacity: 1;
 /* Extra Extra Small */
 /* =============================================================================================== */
 @media screen and (max-width: 580px) {
-  #books, #clock{
+  #books {
     display:none;
   }
-  #start.jumbotron {
-    padding-left:10px;
-    padding-right:10px;
+  #start {
+    &.jumbotron {
+      padding-left:10px;
+      padding-right:10px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    .text-container {
+      bottom:58%;
+      width:58%;
+    }
+  }
+   #clock {
+    width:110px;
+    height: 110px;
+    background-size: 110px;
+    right:-10%;
+    top:13%;
+  }
+  #sec, #min, #hour {
+    width:4px;
+    height: 90px;
+    top:10px;
+    left:53px;
   }
 
+  #computer {
+    width:120%;
+    bottom:14%;
+    margin: 0 -9%;
+  }
+  #tabletop-easel {
+    bottom:1.6%;
+    max-width:600px;
+    width:110%;
+    margin: 0 -6%;
+  }
+  #palette{
+    width: 170px;
+    left: 0;
+    bottom:8%
+  }
   .start h1 {
     font-size: 23px;
   }
