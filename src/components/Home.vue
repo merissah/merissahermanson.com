@@ -18,7 +18,7 @@
             <b-img fluid src="/static/images/computer.png" alt="computer" data-rjs="2"/>
             <div class="screen">
               <h3 id="text-first">A digital design is like. . .</h3>
-              <div id="learnMore" class="btn btn-primary inverse">Learn More</div>
+              <div id="learnMore" v-on:click="buttonScroll" class="btn btn-primary inverse">Learn More</div>
             </div>
           </div>
         </div>
@@ -220,6 +220,7 @@
 </template>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+import animateScroll from '../plugins/resource/animatescroll.js'
 import NavBar from './NavBar'
 import ImgFeed from './ImgFeed'
 import MainFooter from './MainFooter'
@@ -250,6 +251,10 @@ import MainFooter from './MainFooter'
       }
     },
     methods: {
+       // Scroll on button click
+       buttonScroll(){
+        $('#table').animatescroll({});
+       },
       animateStudio(){
         // init controller
         const self = this;

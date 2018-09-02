@@ -9,16 +9,25 @@
       </b-navbar-brand>
      <b-collapse is-nav id="navbar-collapse">
        <b-navbar-nav class="ml-auto">
-          <b-nav-item id="startLink" href="/#start">START</b-nav-item>
-          <b-nav-item id="aboutLink" href="/#about">ABOUT</b-nav-item>
-          <b-nav-item id="toolsLink" href="/#tools">TOOLS</b-nav-item>
-          <b-nav-item id="portfolioLink" href="/#portfolio">PORTFOLIO</b-nav-item>
-          <b-nav-item id="contactLink" href="/#contact">CONTACT</b-nav-item>
+          <b-nav-item id="startLink" v-on:click="scroll('#start')" href="/#start">START</b-nav-item>
+          <b-nav-item id="aboutLink" v-on:click="scroll('#about')" href="/#about">ABOUT</b-nav-item>
+          <b-nav-item id="toolsLink" v-on:click="scroll('#start')" href="/#tools">TOOLS</b-nav-item>
+          <b-nav-item id="portfolioLink" v-on:click="scroll('#start')" href="/#portfolio">PORTFOLIO</b-nav-item>
+          <b-nav-item id="contactLink" v-on:click="scroll('#start')" href="/#contact">CONTACT</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </div>
   </b-navbar>
 </template>
+<script type="text/javascript">
+   export default {
+    methods: {
+      scroll: function (message) {
+        (message).animatescroll({});
+      }
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
 
