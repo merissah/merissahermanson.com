@@ -11,7 +11,8 @@ import resource from './plugins/resource'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import './assets/sass/main.scss';
+import './assets/sass/main.scss'
+import './plugins/resource/animatescroll.js'
 
 Vue.use(BootstrapVue)
 Vue.use(KsVueScrollmagic)

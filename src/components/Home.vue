@@ -177,7 +177,7 @@
               </a> 
             </div>
             <div class="col-md-4 col-sm-4">
-              <a href="animations.html">
+              <router-link to="/animations">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.2 269" enable-background="new 0 0 407.2 269" xml:space="preserve">
                   <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="168.9" cy="149" r="27.6"/>
                   <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="204" cy="176.6" r="27.6"/>
@@ -188,7 +188,7 @@
                   <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="200.3" cy="125.8" r="27.6"/>
                 </svg>
                 <h3>ANIMATION</h3>
-              </a> 
+              </router-link> 
             </div>
             <div class="col-md-4 col-sm-4">
               <a href="http://www.merissahermanson.com/photography" target="_blank">
@@ -220,7 +220,6 @@
 </template>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-import animateScroll from '../plugins/resource/animatescroll.js'
 import NavBar from './NavBar'
 import ImgFeed from './ImgFeed'
 import MainFooter from './MainFooter'
@@ -253,7 +252,7 @@ import MainFooter from './MainFooter'
     methods: {
        // Scroll on button click
        buttonScroll(){
-        $('#table').animatescroll({});
+        $('#table').animatescroll();
        },
       animateStudio(){
         // init controller
