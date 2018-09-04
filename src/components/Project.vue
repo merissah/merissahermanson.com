@@ -1,13 +1,17 @@
 <template>
   <div class="project-page">
+    <vue-headful
+      image="/static/images/home.png"
+      :title="'Merissa Hermanson - ' + title"
+    />
     <nav-bar />
       <div class="jumbotron port-bkg" :style="getBgImg(image)">
         <ul class="nav-buttons">
           <li>
-            <a href="#" id="left-arrow" :href="back"></a>
+            <a id="left-arrow" :href="projectNav[0]"></a>
           </li>
           <li>
-            <a href="#" id="right-arrow" :href="forward"></a>
+            <a id="right-arrow" :href="projectNav[1]"></a>
           </li>
         </ul>
       </div>
@@ -110,8 +114,31 @@ import VideoTemp from './VideoTemp'
         role: '',
         posts: [],
         index: 0,
-        back: '',
-        forward: ''
+        forward: '',
+        back: ''
+      }
+    },
+    computed: {
+      getIndex: function (){
+        return this.index
+      },
+      projectNav: function (){
+        const index = this.getIndex
+        this.$getResource('apps')
+        .then(posts => {
+          if (index == 0) {
+            this.back = posts[posts.length - 1].id
+            this.forward = posts[index + 1].id
+          }
+          else if (index == posts.length - 1){
+            this.back = posts[index - 1].id
+            this.forward = posts[0].id
+          } else {
+            this.back = posts[index - 1].id
+            this.forward = posts[index + 1].id
+          }
+        })
+        return [this.back, this.forward];
       }
     },
     beforeRouteUpdate (to, from, next) {
@@ -125,24 +152,6 @@ import VideoTemp from './VideoTemp'
     beforeMount() {
       if (!this.post) return;
       this.$getResource('post', this.post)
-      this.$getResource('apps')
-      .then(posts => {
-        this.posts = posts
-        console.log(this.index)
-        if (this.index == 0) {
-          this.back = posts[posts.length - 1].id
-          this.forward = posts[this.index + 1].id
-        }
-        else if (this.index == posts.length - 1){
-          this.back = posts[this.index - 1].id
-          this.forward = posts[0].id
-        } else {
-          this.back = posts[this.index - 1].id
-          this.forward = posts[this.index + 1].id
-        }
-        console.log(this.index)
-        console.log(this.back, this.forward)
-      })
     }
   }
 </script>
@@ -224,7 +233,7 @@ import VideoTemp from './VideoTemp'
       margin-top:50px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
-    .col-4 {
+    .col-lg-4 {
       max-height:670px;
     }
     h4 {
@@ -276,6 +285,13 @@ import VideoTemp from './VideoTemp'
   .port-button {
     text-align: center;
   }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .port-section {
+      .col-lg-4 {
+        max-height: 540px;
+      }
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .port-section {
       &.apps.before {
@@ -305,6 +321,9 @@ import VideoTemp from './VideoTemp'
         .compare {
           margin-top:20px;
         }
+      }
+      .col-lg-4 {
+        max-height:100%;
       }
       .col-md-6 {
         text-align:center;

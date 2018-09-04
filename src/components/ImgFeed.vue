@@ -51,12 +51,26 @@ export default {
 
   .portfolio-item.art {
     text-align: center;
-    -ms-flex: 0 0 23%;
-    flex: 0 0 23%;
-    max-width: 23%;
+    -ms-flex: 0 0 22.6%;
+    flex: 0 0 22.6%;
+    max-width: 22.6%;
     img {
       padding:0;
       margin:0;
+    }
+  }
+   @media screen and (min-width: 768px) and (max-width: 991px) {
+    .portfolio-item.art {
+      -ms-flex: 0 0 46.8%;
+      flex: 0 0 46.8%;
+      max-width: 46.8%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .portfolio-item.art {
+      -ms-flex: 0 0 45.85%;
+      flex: 0 0 45.85%;
+      max-width: 45.85%;
     }
   }
 

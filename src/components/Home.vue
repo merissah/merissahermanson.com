@@ -1,5 +1,10 @@
 <template>
-  <div data-spy="scroll" data-target="#navbar">
+  <div class="home">
+    <vue-headful
+      image="/static/images/home.png"
+      title="Merissa Hermanson Portfolio"
+      description="I am a Product Designer and Front End Developer with 7+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development."
+    />
     <nav-bar />
     <section class="jumbotron start" id="start">
       <div id="table"></div>
@@ -263,7 +268,7 @@ import MainFooter from './MainFooter'
           }
         });
 
-        TweenMax.set("#tabletop-easel", {bottom: "+=950"});
+        TweenMax.set("#tabletop-easel", {bottom: "+=1000"});
         TweenMax.set("#palette", {left: "-=2200"});
         TweenMax.set("#brushes", {right: "-=950"});
         var $computer = $("#computer");
@@ -279,7 +284,7 @@ import MainFooter from './MainFooter'
               onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
           )
 
-          .to("#tabletop-easel", 1, {bottom: "-=950",
+          .to("#tabletop-easel", 1, {bottom: "-=1000",
               onStart: function () {$easel.addClass("animated bounceInDown").removeClass("bounceOutUp");},
               onReverseComplete: function () {$easel.removeClass("bounceInDown").addClass("bounceOutUp");}
               }
@@ -366,13 +371,13 @@ import MainFooter from './MainFooter'
 
         // Pin both the Desk and About sections 
         var startpin = new this.$scrollmagic.Scene({
-          duration: 600
+          duration: 770
         })
         .setPin(".start", {pushFollowers: false})
         .addTo(controller);
 
         var startpin1 = new this.$scrollmagic.Scene({
-          duration: 600
+          duration: 770
         })
         .setPin("#about")
         .addTo(controller);
@@ -476,5 +481,61 @@ import MainFooter from './MainFooter'
 </script>
 
 <style lang="scss" scoped>
-  
+/* About */
+
+#about {
+  text-align: center;
+  padding-top: 30px;
+  img {
+    max-height: 150px;
+    margin:auto;
+  }
+  p {
+    padding-bottom: 50px;
+  }
+}
+  /*tools*/
+#tools {
+  padding: 30px 0;
+  margin-bottom:20px;
+  background-color: #edf2f7;
+
+  ul {
+    padding:0;
+    margin-top:25px;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding:20px;
+      text-align: center;
+
+      img {
+        max-width: 160px;
+        text-align: center;
+        line-height: 150px;
+        height:130px;
+      }
+    }
+  }
+}
+/* Contact */
+
+#contact {
+  background-color: #5691B6;
+  color: #FFF;
+  padding-bottom: 80px;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  h3 {
+    padding:0;
+  }
+  a {
+    display: block;
+    text-align: center;
+  }
+}
 </style>

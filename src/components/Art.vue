@@ -66,5 +66,10 @@ import ImgFeed from './ImgFeed'
   .art-page {
     text-align:center;
   }
+  @media screen and (max-width: 1199px) {
+    .painting-bkg {
+      background-size: 1180px auto;
+    }
+  }
 </style>
 <style lang="scss" src="../assets/sass/simplelightbox.scss"></style>

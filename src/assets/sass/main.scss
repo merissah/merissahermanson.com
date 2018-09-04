@@ -1,4 +1,6 @@
-
+body {
+  position:relative;
+}
  a, button, input[type=submit] {
  -webkit-transition: all 0.5s ease-in-out;
  -moz-transition: all 0.5s ease-in-out;
@@ -13,11 +15,15 @@ a:hover, a:hover h2, a:hover h3 {
   color: #5E5E5E;
 }
 
+h1 {
+  font-size: 3.2em;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
-  padding: 40px 0 0;
+  padding: 70px 0 0;
 }
 h3 {
   padding-top: 30px;
@@ -35,6 +41,7 @@ h4 {
   margin-bottom: 40px;
   height:100vh;
   min-height:750px;
+  max-height:1000px;
 
   h1 {
     text-align: center;
@@ -60,9 +67,12 @@ h4 {
     }
   }
   .text-container {
-    position:relative;
+    position:absolute;
+    right:0;
+    left:0;
+    margin:auto;
     z-index:50;
-    margin-top:90px;
+    bottom:68%;
   }
 }
 
@@ -113,7 +123,7 @@ h4 {
 
 #books {
   left: 15px;
-  bottom:8%;
+  bottom:6%;
   max-width: 500px;
   width:100%;
 }
@@ -140,7 +150,7 @@ h4 {
   width:110px;
 }
 #palette{
-  bottom:3%;
+  bottom:0;
   left: 14%;
   z-index: 2;
   width: 250px;
@@ -163,7 +173,7 @@ h4 {
   background: url(/static/images/clockface.svg) no-repeat;
   background-size: 165px;
   list-style: none;
-  top: 22%;
+  top: 12%;
   box-shadow: 6px 6px 10px 1px rgba(0,0,0,0.32);
   border-radius: 90px;
 }
@@ -208,48 +218,6 @@ section p {
     background: url(/static/images/large-steam.png) no-repeat center;
     bottom: 0px;
   }  
-}
-
-
-/* About */
-
-#about {
-  text-align: center;
-  padding-top: 30px;
-  img {
-    max-height: 150px;
-    margin:auto;
-  }
-  p {
-    padding-bottom: 50px;
-  }
-}
-
-
-/*tools*/
-#tools {
-  padding: 30px 0;
-  margin-bottom:20px;
-  background-color: #edf2f7;
-
-  ul {
-    padding:0;
-    margin-top:25px;
-
-    li {
-      list-style: none;
-      display: inline-block;
-      padding:20px;
-      text-align: center;
-
-      img {
-        max-width: 160px;
-        text-align: center;
-        line-height: 150px;
-        height:130px;
-      }
-    }
-  }
 }
 
 .portfolio-section {
@@ -361,27 +329,6 @@ hr {
       opacity: 0.5;
     }
   } 
-}
-
-
-/* Contact */
-
-#contact {
-  background-color: #5691B6;
-  color: #FFF;
-  padding-bottom: 80px;
-
-  h2 {
-    color: #fff;
-    margin-bottom: 0px;
-  }
-  h3 {
-    padding:0;
-  }
-  a {
-    display: block;
-    text-align: center;
-  }
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -669,15 +616,17 @@ opacity: 1;
 /* =============================================================================================== */
 @media screen and (min-width: 1441px) {
 
-  .start h1 {
-    font-size: 63px;
-    margin-top: 80px;
-  }
-  .start h2 {
-    font-size: 34px;
-  }
-  .screen h3 {
-    font-size: 30px;
+  #start {
+    h1 {
+      font-size: 63px;
+      margin-top: 80px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    .text-container{
+      bottom:70%;
+    }
   }
   #computer {
     max-width: 1400px;
@@ -687,33 +636,40 @@ opacity: 1;
   }
 }
 
+@media screen and (min-width: 1441px) and (max-height: 850px) {
+  #computer {
+    max-width:850px;
+  }
+  #tabletop-easel {
+    max-width:750px;
+  }
+}
+
 /* =============================================================================================== */
 /* Medium */
 /* =============================================================================================== */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  #start {
+    h2 {
+      font-size: 1.5em;
+    }
+  } 
 
-.start {
-  h2 {
-    font-size: 1.5em;
+  #books {
+    left:-11%;
   }
-} 
 
-#books {
-  left:-11%;
-}
+  #palette {
+    left:8%;
+  }
 
-#palette {
-  left:8%;
-}
-
-#portfolio {
-  .portfolio-section {
-    .portfolio-item img {
-      max-height: 337px;
+  #portfolio {
+    .portfolio-section {
+      .portfolio-item img {
+        max-height: 337px;
+      }
     }
   }
-}
-
 }
 
 /* =============================================================================================== */
@@ -732,7 +688,7 @@ opacity: 1;
     right:0;
     position: absolute;
     width:65%;
-    top:18%;
+    bottom:62%;
   }
 }
 
@@ -775,8 +731,7 @@ opacity: 1;
   bottom:8%;
 }
 #palette {
-  bottom:1%;
-  left:8%;
+  left:7%;
 }
 #tabletop-easel {
   max-width: 700px;
@@ -813,6 +768,35 @@ opacity: 1;
   } 
 }
 
+@media screen and (orientation:portrait) and (min-width:580px) {
+  #start.start {
+    #pencils {
+      bottom:12%;
+    }
+    #clock {
+      top:17%;
+    }
+    #palette {
+      bottom:-2%;
+      left:0;
+    }
+    #brushes {
+      bottom:9%;
+    }
+    .text-container {
+      width:80%;
+      bottom:56%;
+
+      h1 {
+        font-size:3em;
+      }
+      h2 {
+        font-size:1.6em;
+      }
+    }
+  }
+}
+
 /* =============================================================================================== */
 /* Extra Small */
 /* =============================================================================================== */
@@ -826,10 +810,10 @@ opacity: 1;
     padding-bottom: 240px;
     min-height: 600px;
     h1 {
-      font-size: 32px;
+      font-size: 2.1em;
     }
     h2 {
-      font-size: 18px;
+      font-size: 1.3em;
     }
     .screen {
       top:9%;
@@ -853,7 +837,7 @@ opacity: 1;
     height: 135px;
     background-size: 135px;
     right:-2%;
-    top:23%;
+    top:12%;
   }
   #sec, #min, #hour {
     width:5px;
@@ -926,10 +910,10 @@ opacity: 1;
     }
   }
   .portfolio-section .portfolio-item, .portpage-pic .pic {
-    width: 80%;
-  }
-  .painting.portfolio-item {
-    width: 30%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .portfolio-item .info .info-content-wrap h3 {
@@ -940,24 +924,6 @@ opacity: 1;
   .portfolio-item .info .info-content-wrap p {
     font-size: 12px;
     line-height:16px;
-  }
-
-  .port-bkg {
-    height:260px;
-  }
-
-  .jumbotron.port-bkg {
-   background-size: 90% !important;
-   background-position: center top 60px;
-   background-attachment: initial;
-  }
-
-  .jumbotron.port-bkg.phone {
-    background-position: center top 90px; 
-  }
-
-  .jumbotron.port-bkg.print {
-    background-position: center top 75px; 
   }
 
 }
@@ -974,20 +940,19 @@ opacity: 1;
       padding-left:10px;
       padding-right:10px;
     }
-    h1 {
-      font-size: 28px;
-    }
     .text-container {
-      bottom:58%;
-      width:58%;
+      bottom:56%;
+      width:90%;
+    }
+    h1 {
+      font-size:1.8em;
     }
   }
    #clock {
     width:110px;
     height: 110px;
     background-size: 110px;
-    right:-10%;
-    top:13%;
+    right:-11%;
   }
   #sec, #min, #hour {
     width:4px;
