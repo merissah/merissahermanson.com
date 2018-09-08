@@ -234,7 +234,7 @@ import VideoTemp from './VideoTemp'
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     .col-lg-4 {
-      max-height:670px;
+      max-height:730px;
     }
     h4 {
       display:none;

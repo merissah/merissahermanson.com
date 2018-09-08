@@ -11,6 +11,7 @@ export default new Router({
   mode: 'history',
   linkActiveClass: 'active',
   routes: [
+    { path: '*', redirect: '/' },
     { path: '/', name: 'home', component: Home },
     { path: '/index', name: 'index', component: Home },
     { path: '/paintings', name: 'art', component: Art },
