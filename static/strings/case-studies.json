@@ -1,0 +1,15 @@
+{
+  "results": [
+      {
+        "title": "Speedtest Intelligence",
+        "src": "/static/images/sti.png",
+        "subtitle": "Enterprise Application",
+        "id": "si"
+      }, {
+        "title": "Downdetector",
+        "src": "/static/images/dd.png",
+        "subtitle": "Consumer Website",
+        "id": "dd"
+      }
+  ]
+}

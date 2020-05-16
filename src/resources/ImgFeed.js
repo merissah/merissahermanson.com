@@ -1,13 +1,13 @@
 export default {
-  apps () {
+  studies () {
     return {
-      path: '/apps.json',
+      path: '/case-studies.json',
       resolve: (response, mappers) => mappers.pipe(response.results)
     }
   },
-  print () {
+  apps () {
     return {
-      path: '/print.json',
+      path: '/apps.json',
       resolve: (response, mappers) => mappers.pipe(response.results)
     }
   },

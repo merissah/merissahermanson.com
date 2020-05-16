@@ -1,5 +1,13 @@
 {
   "results": [{
+    "title": "Downdetector App",
+    "src": "/static/images/dd-apps.png",
+    "id": "dd-app"
+  }, {
+    "title": "TowerSource",
+    "src": "/static/images/ts.png",
+    "id": "ts"
+  }, {
     "title": "Sensorly Website",
     "src": "/static/images/sensorly.png",
     "id": "sensorly"
@@ -24,25 +32,13 @@
     "src": "/static/images/me.png",
     "id": "me"
   }, {
-    "title": "TowerSource",
-    "src": "/static/images/ts.png",
-    "id": "ts"
-  }, {
     "title": "Signal Insights",
     "src": "/static/images/si.png",
     "id": "signalinsights"
   }, {
-    "title": "NHSPI",
-    "src": "/static/images/nhspi.png",
-    "id": "nhspi"
-  }, {
     "title": "California Alerts",
     "src": "/static/images/cal.png",
     "id": "calalerts"
-  }, {
-    "title": "TravWell",
-    "src": "/static/images/travwell.png",
-    "id": "travwell"
   }, {
     "title": "NRC",
     "src": "/static/images/nrc.png",

@@ -158,6 +158,13 @@
     <section id="portfolio">
       <b-container>
         <h2>My <strong>PORTFOLIO</strong></h2>
+          <b-row class="portfolio-section" id="case-studies">
+            <b-col col sm="12">
+              <h3>Case Studies</h3>
+              <hr />
+            </b-col>
+            <img-feed img-category="studies"></img-feed>
+          </b-row>
           <b-row class="portfolio-section" id="web">
             <b-col col sm="12">
               <h3>Web & Mobile Applications</h3>
