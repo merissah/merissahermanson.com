@@ -1,7 +1,7 @@
 {
   "results": [{
     "id": "sensorly-portal",
-    "type": "web",
+    "type": "design",
     "index": 3,
     "title": "Sensorly Portal",
     "content": "The Sensorly portal is a one stop shop for Network Planners, Engineers, and Mobile Network Operators to manage their testing devices, schedule testing events, and analyze the results. This B2B solution is a re-design of the original Sensorly portal that was really slow, difficult to navigate, inconsistent, and really confusing to use.",

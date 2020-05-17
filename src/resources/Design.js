@@ -15,11 +15,5 @@ export default {
       path: '/apps.json',
       resolve: (response, mappers) => mappers.pipe(response.results)
     }
-  },
-  web () {
-    return {
-      path: '/apps.json',
-      resolve: (response, mappers) => mappers.pipe(response.results)
-    }
   }
 }

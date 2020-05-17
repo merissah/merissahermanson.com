@@ -1,7 +1,7 @@
 <template>
   <b-row class="portfolio-section">
     <b-col cols="3" v-for="image in images" :key="image.id" class="portfolio-item" :class="art">
-      <router-link v-if="!art" :to="`/${image.id}`">
+      <router-link v-if="!art" :to="`${imgCategory}/${image.id}`">
         <b-img fluid :src="image.src" :alt="image.title"/>
         <div class="info">
           <div class="info-content-wrap">

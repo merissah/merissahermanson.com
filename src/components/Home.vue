@@ -163,14 +163,14 @@
               <h3>Case Studies</h3>
               <hr />
             </b-col>
-            <img-feed img-category="studies"></img-feed>
+            <img-feed img-category="study"></img-feed>
           </b-row>
           <b-row class="portfolio-section" id="web">
             <b-col col sm="12">
               <h3>Web & Mobile Applications</h3>
               <hr />
             </b-col>
-            <img-feed img-category="apps"></img-feed>
+            <img-feed img-category="design"></img-feed>
           </b-row>
         <div class="portfolio-section" id="other-works">
           <h3>Other Works</h3>

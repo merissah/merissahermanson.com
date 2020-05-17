@@ -28,6 +28,7 @@ h2 {
 h3 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 1.5rem;
 }
 h4 {
   margin: 2rem 0 0
@@ -384,7 +385,7 @@ hr {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background-color: transparent;
-  border: 3px solid white;
+  border: 1px solid white;
   color: #FFF;
 }
 .btn-primary.inverse:hover {

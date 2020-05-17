@@ -1,5 +1,5 @@
 <template>
-  <div class="project-page">
+  <div class="design-page">
     <vue-headful
       image="/static/images/home.png"
       :title="'Merissa Hermanson - ' + title"
@@ -8,10 +8,10 @@
       <div class="jumbotron port-bkg" :style="getBgImg(image)">
         <ul class="nav-buttons">
           <li>
-            <a id="left-arrow" :href="projectNav[0]"></a>
+            <a id="left-arrow" :href="designNav[0]"></a>
           </li>
           <li>
-            <a id="right-arrow" :href="projectNav[1]"></a>
+            <a id="right-arrow" :href="designNav[1]"></a>
           </li>
         </ul>
       </div>
@@ -60,15 +60,6 @@
         <div class="port-section" v-bind:class="type">
           <b-container>
             <b-row>
-              <div v-if="type === 'apps before'" v-bind:class="size" v-for="(portImg, index) in portImgs">
-                <h4 class="compare" v-if="index % 3 === 1">Before</h4>
-                <h4 class="compare" v-if="index % 3 === 2">After</h4>
-                <div v-if="index % 3 === 0">
-                  <h4>Problems & Solutions</h4>
-                  <p>{{ portImg }}</p>
-                </div>
-                <b-img v-if="index % 3 !== 0" fluid v-bind:src="portImg"/>
-              </div>
               <div v-if="type === 'apps'" v-bind:class="size" v-for="portImg in portImgs">
                 <b-img fluid v-bind:src="portImg"/>
               </div>
@@ -87,8 +78,8 @@ import NavBar from './NavBar'
 import MainFooter from './MainFooter'
 import VideoTemp from './VideoTemp'
   export default {
-    name: 'project',
-    resource: 'Project',
+    name: 'design',
+    resource: 'Design',
     components: { NavBar, MainFooter, VideoTemp},
     props: { 
       post: String,
@@ -122,7 +113,7 @@ import VideoTemp from './VideoTemp'
       getIndex: function (){
         return this.index
       },
-      projectNav: function (){
+      designNav: function (){
         const index = this.getIndex
         this.$getResource('apps')
         .then(posts => {
@@ -231,25 +222,13 @@ import VideoTemp from './VideoTemp'
     padding-bottom:50px;
     img {
       margin-top:50px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.14);
     }
     .col-lg-4 {
       max-height:730px;
     }
     h4 {
       display:none;
-    }
-    &.apps.before {
-      h4 {
-        display:block;
-        margin: 60px 0 0;
-      }
-      img {
-        margin-top:20px;
-      }
-      p {
-        margin-top:15px;
-      }
     }
   }
   .web {
