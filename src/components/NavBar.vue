@@ -20,13 +20,13 @@
   </b-navbar>
 </template>
 <script type="text/javascript">
-  export default {
-    methods: {
-      scroll: function (message) {
-        $(message).animatescroll()
-      }
+export default {
+  methods: {
+    scroll: function (message) {
+      $(message).animatescroll()
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

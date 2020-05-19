@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="291px" viewBox="0 0 254 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DD" transform="translate(-995.000000, -5762.000000)">
+            <g id="Group-17" transform="translate(995.000000, 5762.000000)">
+                <g id="Group-6" transform="translate(6.000000, 0.000000)">
+                    <g id="pie-chart">
+                        <path d="M123.383013,31.6326531 L123.383013,-5.57413526e-13 C117.932049,-5.57413526e-13 111.612455,0.442857143 106.211846,1.20204082 L110.592759,32.5310204 L123.383013,31.6326531 Z" id="Fill-1" fill="#9E93F4"></path>
+                        <path d="M31.4845361,124 C31.4845361,143.131429 37.275399,160.90898 47.1828102,175.649796 L21.0987493,193.338776 C-16.9950578,136.56449 -2.08988018,59.4946939 54.3962112,21.1938776 C70.8875817,10.0212245 86.5103229,3.98571429 106.211846,1.20204082 L110.592759,32.5310204 C65.8898153,38.7689796 31.4845361,77.3481633 31.4845361,124" id="Fill-3" fill="#76CB96"></path>
+                        <path d="M123.685271,248 C81.0343066,248 45.2568447,228.881224 21.4010071,193.338776 L47.485068,175.649796 C63.9890274,200.209388 91.9614132,216.367347 123.685271,216.367347 C174.443444,216.367347 215.583748,175.017143 215.583748,124 C215.583748,72.9828571 174.443444,31.6326531 123.685271,31.6326531 L123.685271,0 C191.816033,0 247.055829,55.5216327 247.055829,124 C247.055829,192.478367 191.816033,248 123.685271,248 Z" id="Fill-5" fill="#5691B6"></path>
+                    </g>
+                    <text id="65.7%" font-family="Quicksand-Bold, Quicksand" font-size="36" font-weight="bold" letter-spacing="0.003" fill="#5691B6">
+                        <tspan x="74.792492" y="126">65.7%</tspan>
+                    </text>
+                    <text id="Mobile" font-family="Quicksand-Bold, Quicksand" font-size="18" font-weight="bold" letter-spacing="0.0015" fill="#5691B6">
+                        <tspan x="89.7054592" y="153">Mobile</tspan>
+                    </text>
+                </g>
+                <g id="Group-7" transform="translate(0.000000, 269.000000)">
+                    <g id="legend-item">
+                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                            <tspan x="27" y="18">Mobile</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#5691B6" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                    </g>
+                    <g id="legend-item" transform="translate(87.000000, 0.000000)">
+                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                            <tspan x="27" y="18">Desktop</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#76CB96" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                    </g>
+                    <g id="legend-item" transform="translate(186.000000, 0.000000)">
+                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                            <tspan x="27" y="18">Tablet</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#9E93F4" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -33,6 +33,15 @@ h3 {
 h4 {
   margin: 2rem 0 0
 }
+h5 {
+  font-weight: bold;
+  font-size: 1.1rem
+}
+
+.port-section img {
+  max-width: 900px;
+}
+
 #start {
   background: url(/static/images/bricks.jpg);
   background-size: 370px;
@@ -197,10 +206,14 @@ h4 {
   background: url(/static/images/hourhand.svg) no-repeat;
   z-index: 1;
 }
-section p {
-  text-align: center;
+.home section p {
   padding: 10px 0 0 0;
 }
+
+section {
+  text-align: center;
+}
+
 /* Steam */
 
 #viewport {
@@ -384,11 +397,26 @@ hr {
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  background-color: white;
+  color: #5691B6;
+}
+.btn-primary.inverse:hover {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #5FB2D8;
+}
+
+.btn-secondary.inverse {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: transparent;
   border: 1px solid white;
   color: #FFF;
 }
-.btn-primary.inverse:hover {
+.btn-secondary.inverse:hover {
   background-color: #FFF;
   border-color: #FFF;
   color: #5FB2D8;

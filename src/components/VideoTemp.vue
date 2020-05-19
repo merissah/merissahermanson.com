@@ -6,17 +6,17 @@
   </video>
 </template>
 <script>
-  export default {
-    name: 'VideoTemp',
-    resource: 'VideoTemp',
-    props: ['videosrc'],
-    methods: {
-      mouseOver: function() {
-        $(event.target).get(0).play();
-      },
-      mouseLeave: function(){
-        $(event.target).get(0).pause();
-      }
+export default {
+  name: 'VideoTemp',
+  resource: 'VideoTemp',
+  props: ['videosrc'],
+  methods: {
+    mouseOver: function() {
+      $(event.target).get(0).play();
+    },
+    mouseLeave: function(){
+      $(event.target).get(0).pause();
     }
   }
+}
 </script>

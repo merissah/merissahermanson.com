@@ -129,6 +129,7 @@ import VideoTemp from './VideoTemp'
             this.forward = posts[index + 1].id
           }
         })
+        console.log(index)
         return [this.back, this.forward];
       }
     },

@@ -3,7 +3,7 @@
     "id": "downdetector",
     "type": "study",
     "size": "col-lg-4 col-md-6",
-    "index": 1,
+    "index": 0,
     "title": "Downdetector Consumer Website",
     "content": "We acquired Sensorly in late 2016. User testing revealed a number of usability problems. Naming conventions changed from screen to screen. Design elements such as buttons, toggles, fonts, and colors were also very inconsistent within the app, as well as from the website.\n\nThe team decided to tackle the iOS app first since it had a smaller user base. Initial testing involved 3 iOS users. After the initial testing I took those results to inform my first design. Then, I did some A/B testing with the current iOS app against the new design. Testing involved nine different users. Testing was done in rotating order. \n\nTesting overall largely favored the new design, however some new usability problems were revealed. More informal testing, and re-design iteratively followed until the design below was reached. The android re-design followed informed greatly by the first re-design.",
     "image": "/static/images/dd.png",

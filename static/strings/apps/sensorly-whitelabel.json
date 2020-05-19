@@ -3,7 +3,7 @@
     "id": "sensorly-whitelabel",
     "type": "apps",
     "size": "col-lg-4 col-md-6",
-    "index": 2,
+    "index": 4,
     "title": "Sensorly White Label Apps",
     "content": "Certain carriers wanted to be able to collect their own data on their respective networks. We solved this problem by creating custom white label apps for them. These apps have most of the same functionality as the Sensorly apps but have been completely re-branded. ",
     "image": "/static/images/sensorly-whitelabel.png",
