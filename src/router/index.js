@@ -17,7 +17,7 @@ export default new Router({
     { path: '/', name: 'home', component: Home },
     { path: '/index', name: 'index', component: Home },
     { path: '/paintings', name: 'art', component: Art },
-    { path: '/animations', name: 'animations', component: Animations},
+    { path: '/animations', name: 'animations', component: Animations },
     { path: '/study/speedtestIntelligence', name: 'intelligence', component: Intelligence, props: true },
     { path: '/study/downDetector', name: 'down-detector', component: DownDetector, props: true },
     { path: '/design/:post', name: 'design', component: Design, props: true }

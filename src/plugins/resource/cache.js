@@ -1,5 +1,5 @@
 export default (() => {
-  let store = {}
+  const store = {}
 
   return {
     has: uri => !!store[uri],
