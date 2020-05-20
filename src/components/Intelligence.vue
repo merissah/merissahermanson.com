@@ -76,9 +76,9 @@
               <li>Metrics related to cell towers - sectors, frequencies, locations, connections, TAC, etc.</li>
               <li>Detailed device information, including software version, category, and chipset.</li>
               <li>More advanced filtering. For example: only include devices launched after a certain date, view the average performance for a custom grouping of locations or devices.</li>
-              <li>Ability to upload shapefiles to analyze metrics using their custom geometric boundaries</li>       
+              <li>Ability to upload shapefiles to analyze metrics using their custom geometric boundaries</li>
             </ul>
-          </b-container>  
+          </b-container>
         </section>
         <section class="port-section white" id="reframing">
           <b-container>
@@ -219,11 +219,11 @@
 <script>
 import NavBar from './NavBar'
 import MainFooter from './MainFooter'
-  export default {
-    name: 'intelligence',
-    resource: 'Intelligence',
-    components: { NavBar, MainFooter}
-  }
+export default {
+  name: 'intelligence',
+  resource: 'Intelligence',
+  components: { NavBar, MainFooter}
+}
 </script>
 <style lang="scss" scoped>
 

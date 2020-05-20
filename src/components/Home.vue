@@ -102,7 +102,7 @@
                 <path id="dot1" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M104.1,18.1c0.4-0.1,0.7-0.3,0.9-0.6"/>
                 <path id="dot2" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M180.3,62.6c0.4-0.1,0.7-0.3,0.9-0.6"/>
                 <path id="dot3" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M140,18c0.4-0.1,0.7-0.3,0.9-0.6"/>
-                </svg>    
+                </svg>
             </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
               <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
             </div>
           </b-col>
-          <b-col md="4"> 
+          <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
             <div class="title">
               <h3>FRONT END DEVELOPER</h3>
@@ -186,7 +186,7 @@
                   </g>
               </svg>
                 <h3>PAINTING</h3>
-              </a> 
+              </a>
             </b-col>
             <b-col md="4">
               <router-link to="/animations">
@@ -217,7 +217,7 @@
                     </g>
                   </svg>
                 <h3>ANIMATION</h3>
-              </router-link> 
+              </router-link>
             </b-col>
             <b-col md="4">
               <a href="http://www.merissahermanson.com/photography" target="_blank">
@@ -227,7 +227,7 @@
                   </g>
                 </svg>
               <h3>PHOTOGRAPHY</h3>
-              </a> 
+              </a>
             </b-col>
           </b-row>
         </div>
@@ -301,7 +301,6 @@ import MainFooter from './MainFooter'
         var $brushes = $("#brushes");
         // build tween
         var swap = new TimelineMax()
-       
           .to("#computer", 1, {
               onStart: function () {$computer.addClass("animated bounceOutUp").removeClass("bounceInDown");},
               onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
@@ -327,8 +326,6 @@ import MainFooter from './MainFooter'
               onReverseComplete: function () {$brushes.removeClass("bounceInRight").addClass("bounceOutRight");}
               }
           );
-
-
         function pathPrepare ($el) {
           var lineLength = $el[0].getTotalLength();
           $el.css("stroke-dasharray", lineLength);

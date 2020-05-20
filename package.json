@@ -23,7 +23,7 @@
     "scrollto-with-animation": "^4.5.4",
     "vue": "^2.6.11",
     "vue-headful": "^1.1.0",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -39,10 +39,10 @@
     "chalk": "^2.4.2",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^0.28.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
+    "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.8.0",
@@ -52,6 +52,7 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^2.30.1",
+    "lint": "^0.7.0",
     "node-notifier": "^5.4.3",
     "optimize-css-assets-webpack-plugin": "^3.2.1",
     "ora": "^1.2.0",
