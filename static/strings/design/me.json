@@ -2,7 +2,7 @@
   "results": [{
     "id": "me",
     "type": "web",
-    "index": 5,
+    "index": 7,
     "title": "MapElements",
     "content": "MapElements is an award-winning, cloud-based service, created for analyzing wireless, cable, broadcast and landline network intelligence. \n\nMapElements was three years old when I completely re-designed the interface. Due to resources, the re-design was limited to some re-organization and cosmetic issues.  Originally it was confusing to use, with most of the features hidden under an enormous settings dropdown. I gave it a completely new look. I simplified the interface and organized the incredibly feature rich application, into a more intuitive and streamline experience.",
     "image": "/static/images/me.png",

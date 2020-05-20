@@ -387,9 +387,6 @@ import header from '../../static/images/dd.png'
     ul {
       text-align: left;
     }
-    .col-lg-4 {
-      max-height:730px;
-    }
   }
 
   .port-button {

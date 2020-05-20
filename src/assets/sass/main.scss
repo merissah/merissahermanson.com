@@ -39,6 +39,7 @@ h5 {
 }
 
 .port-section img {
+  width: 100%;
   max-width: 900px;
 }
 
@@ -333,14 +334,32 @@ hr {
 }
 
 #other-works {
-  img, svg {
-    max-height: 180px;
+  svg {
+    height: 120px;
+    max-width: 120px;
+  }
+  .other-icon {
+    fill: #5E5E5E;
   }
   a {
+    margin-bottom: 20px;
     display: block;
+    border: 2px solid #5E5E5E;
+    border-radius: 20px;
+    height: 220px;
+    padding: 20px;
 
     &:hover {
-      opacity: 0.5;
+      fill: white;
+      background-color: #5691B6;
+      border-color: #5691B6;
+
+      .other-icon {
+        fill: white;
+      }
+      h3 {
+       color: white;
+      }
     }
   } 
 }
@@ -938,6 +957,9 @@ opacity: 1;
     padding:10px;
     }
   }
+  #app .port-bkg {
+    background-size:300px;
+  }
   .portfolio-section .portfolio-item, .portpage-pic .pic {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -953,6 +975,21 @@ opacity: 1;
   .portfolio-item .info .info-content-wrap p {
     font-size: 12px;
     line-height:16px;
+  }
+  #other-works {
+    a {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto 20px;
+
+      svg {
+        width: 40%;
+      }
+      h3 {
+        padding: 0;
+      }
+    }
+
   }
 
 }

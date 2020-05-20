@@ -1,5 +1,5 @@
 <template>
-  <div class="design-page">
+  <div class="design-page" :id="post">
     <vue-headful
       image="/static/images/home.png"
       :title="'Merissa Hermanson - ' + title"
@@ -48,16 +48,20 @@
               <p>{{ role }}</p>
             </b-col>
           </b-row>
-          <b-row v-if="videosrcs" class="video-container">
-            <div v-if="type === 'web'" class="video-web web">
-              <video-temp v-for="videosrc in videosrcs" v-bind:videosrc="videosrc"></video-temp>
-            </div>
-            <b-col v-else v-for="videosrc in videosrcs" class="video-app">
-              <video-temp v-bind:videosrc="videosrc"></video-temp>
-            </b-col>
-          </b-row>
         </b-container>
-        <div class="port-section" v-bind:class="type">
+        <section v-if="videosrcs" class="port-section video">
+          <b-container>
+            <b-row class="video-container">
+              <div v-if="type === 'web'" class="video-web web">
+                <video-temp v-for="videosrc in videosrcs" v-bind:videosrc="videosrc"></video-temp>
+              </div>
+              <b-col v-else v-for="videosrc in videosrcs" class="video-app">
+                <video-temp v-bind:videosrc="videosrc"></video-temp>
+              </b-col>
+            </b-row>
+          </b-container>
+        </section>
+        <section class="port-section" v-bind:class="type">
           <b-container>
             <b-row>
               <div v-if="type === 'apps'" v-bind:class="size" v-for="portImg in portImgs">
@@ -68,7 +72,7 @@
               </div>
             </b-row>
           </b-container>
-        </div>
+        </section>
       </article>
     <main-footer />
   </div>
@@ -115,21 +119,20 @@ import VideoTemp from './VideoTemp'
       },
       designNav: function (){
         const index = this.getIndex
-        this.$getResource('apps')
+        this.$getResource('design')
         .then(posts => {
           if (index == 0) {
-            this.back = posts[posts.length - 1].id
+            this.back = '/study/downdetector'
             this.forward = posts[index + 1].id
           }
           else if (index == posts.length - 1){
             this.back = posts[index - 1].id
-            this.forward = posts[0].id
+            this.forward = '/study/speedtestIntelligence'
           } else {
             this.back = posts[index - 1].id
             this.forward = posts[index + 1].id
           }
         })
-        console.log(index)
         return [this.back, this.forward];
       }
     },
@@ -161,6 +164,9 @@ import VideoTemp from './VideoTemp'
 
   h2, p {
     text-align: left;
+  }
+  h2 {
+    padding-top: 26px;
   }
   h3 {
     padding-bottom: 0px;
@@ -218,15 +224,27 @@ import VideoTemp from './VideoTemp'
     background-size: 900px;
   }
 
+  #sensorly-apps .video {
+    background-color: transparent;
+    padding-top:30px;
+  }
+
+  #signalinsights {
+    .col-lg-4 {
+      max-height:730px;
+    }
+  }
+
+  .port-section.video {
+    padding-bottom: 0;
+  }
+
   .port-section {
     background-color:#edf2f7;
     padding-bottom:50px;
     img {
-      margin-top:50px;
+      margin:50px auto 0;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.14);
-    }
-    .col-lg-4 {
-      max-height:730px;
     }
     h4 {
       display:none;
@@ -234,7 +252,6 @@ import VideoTemp from './VideoTemp'
   }
   .web {
     margin:auto;
-    background-color:transparent;
     img, video {
       background: url(/static/images/browser.svg) no-repeat top center;
       background-size: 101.5%;

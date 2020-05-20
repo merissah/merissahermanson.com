@@ -87,10 +87,10 @@
             <p>What could we deliver that would provide the biggest improvement to the product? What was most important to our users? Instead of focusing on the long list of features we were given we decided to focus on the main reason WHY customers wanted to use the product in the first place. </p>
             <p>We also didn’t want to back ourselves into a corner. Whatever we built needed to be a step towards our ultimate goal of providing the full flexibility our users wanted. Networks and technologies are continually changing and changing quickly. Updating our product with new data sets and features just as quickly, was vital to its success. </p>
             <b-row>
-              <b-col>
+              <b-col md="6">
                 <b-img-lazy fluid src="/static/images/sti-wireframe1.png" alt="Early wireframes"/>
               </b-col>
-              <b-col>
+              <b-col md="6">
                 <b-img-lazy fluid src="/static/images/sti-wireframe2.png" alt="Early wireframes"/>
               </b-col>
             </b-row>
@@ -98,10 +98,10 @@
               <small>Early Wireframes</small>
             </b-row>
             <b-row>
-              <b-col>
+              <b-col md="6">
                 <b-img-lazy fluid src="/static/images/sti-early1.png" alt="Early design concepts"/>
               </b-col>
-              <b-col>
+              <b-col md="6">
                 <b-img-lazy fluid src="/static/images/sti-early2.png" alt="Early design concepts"/>
               </b-col>
             </b-row>
@@ -276,9 +276,6 @@ import MainFooter from './MainFooter'
     }
     ul {
       text-align: left;
-    }
-    .col-lg-4 {
-      max-height:730px;
     }
   }
 
