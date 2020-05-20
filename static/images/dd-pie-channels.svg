@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="314px" height="326px" viewBox="0 0 314 326" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="277px" height="325px" viewBox="0 0 277 325" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Group 10</title>
+    <title>dd-channels</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="DD" transform="translate(-556.000000, -5762.000000)">
-            <g id="Group-10" transform="translate(556.000000, 5762.000000)">
-                <g id="Group-5" transform="translate(34.000000, 0.000000)">
+        <g id="DD" transform="translate(-580.000000, -5762.000000)">
+            <g id="dd-channels" transform="translate(580.000000, 5762.000000)">
+                <g id="Group-5" transform="translate(16.000000, 0.000000)">
                     <g id="pie-chart-2">
                         <g id="Group-12">
                             <path d="M117.547445,31.8600286 L115.345812,0.304559184 C118.078873,0.113497959 121.26618,-0.000379591837 124.000506,-0.000379591837 L124.000506,31.6322735" id="Fill-1" fill="#73CBFD"></path>
@@ -23,36 +23,38 @@
                         <tspan x="58.1325" y="151">Organic Search</tspan>
                     </text>
                 </g>
-                <g id="Group-8" transform="translate(0.000000, 269.000000)">
-                    <g id="legend-item">
-                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
-                            <tspan x="27" y="18">Organic Search</tspan>
-                        </text>
-                        <rect id="Rectangle" fill="#5691B6" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
-                    </g>
-                    <g id="legend-item" transform="translate(149.000000, 0.000000)">
-                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
-                            <tspan x="27" y="18">Direct</tspan>
-                        </text>
-                        <rect id="Rectangle" fill="#76CB96" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
-                    </g>
-                    <g id="legend-item" transform="translate(0.000000, 35.000000)">
-                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
-                            <tspan x="27" y="18">Social</tspan>
-                        </text>
-                        <rect id="Rectangle" fill="#9465DC" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
-                    </g>
-                    <g id="legend-item" transform="translate(151.000000, 35.000000)">
-                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
-                            <tspan x="27" y="18">Email</tspan>
-                        </text>
-                        <rect id="Rectangle" fill="#73CBFD" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
-                    </g>
-                    <g id="legend-item" transform="translate(240.000000, 0.000000)">
-                        <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
-                            <tspan x="27" y="18">Referal</tspan>
-                        </text>
-                        <rect id="Rectangle" fill="#9E93F4" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                <g id="Group-8" transform="translate(0.000000, 268.000000)">
+                    <g id="Group-20">
+                        <g id="legend-item">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Search</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#5691B6" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(107.000000, 0.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Direct</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#76CB96" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(0.000000, 35.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Social</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#9465DC" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(107.000000, 35.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Email</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#73CBFD" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(203.000000, 0.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Referal</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#9E93F4" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
                     </g>
                 </g>
             </g>

@@ -1,6 +1,6 @@
 <template>
-  <b-row class="portfolio-section">
-    <b-col cols="3" v-for="image in images" :key="image.id" class="portfolio-item" :class="art">
+  <b-row align-v="stretch" class="portfolio-section">
+    <b-col sm="6" v-for="image in images" :key="image.id" class="portfolio-item" :class="art">
       <router-link v-if="!art" :to="`${imgCategory}/${image.id}`">
         <b-img fluid :src="image.src" :alt="image.title"/>
         <div class="info">

@@ -90,7 +90,7 @@
             <b-img-lazy fluid src="/static/images/dd-flow1.svg" alt="Original website user flow"/>
           </b-container>
         </section>
-        <section class="port-section">
+        <section class="port-section" id="discovery">
           <b-container>
             <h2>The Discovery</h2>
             <p>Insights were gathered from four different user interviews and user analytic tools, Google Analytics, and Freshmarketer.</p>
@@ -110,16 +110,16 @@
             <h3>Google Analytics</h3>
             <p>Google Analytics revealed that only about 10% of users even saw the home page. Users would organically search directly to the status pages with phrases like ‘Is Comcast down’, ‘Is Facebook down’. Most of the site’s traffic came from mobile devices, yet the previous focus had been on desktop and mobile had been mostly an afterthought.</p>
             <b-row class="no-shadow center">
-              <b-col>
-                <h3>Page Breakdown</h3>
+              <b-col md="4">
+                <h5>Page Breakdown</h5>
                 <b-img-lazy fluid src="/static/images/dd-pie-status.svg" alt="Page breakdown pie chart. Status page most visited at 84.3%"/>
               </b-col>
-              <b-col>
-                <h3>Top Channels</h3>
+              <b-col md="4">
+                <h5>Top Channels</h5>
                 <b-img-lazy fluid src="/static/images/dd-pie-channels.svg" alt="Top channels pie chart. Organic search most used channel at 86.5%"/>
               </b-col>
-              <b-col>
-                <h3>Sessions by Device</h3>
+              <b-col md="4">
+                <h5>Sessions by Device</h5>
                 <b-img-lazy fluid src="/static/images/dd-pie-devices.svg" alt="Sessions by device pie chart. Mobile most used device at 65.7%"/>
               </b-col>
             </b-row>
@@ -152,7 +152,7 @@
         </section>
         <section class="port-section white">
           <b-container>
-            <h2>Reframing the problem</h2>
+            <h2>Reframing the Problem</h2>
             <p>Since SEO was so important for this project the team decided to hire an SEO consultant. The consultant would both analyze the current site to make recommendations, as well as review any design changes we planned to make.</p>
             <p>To further ease concerns, it was decided that the new design would be implemented in a gradual, agile fashion. That way it would be easier to adjust the design if there were any unforeseen negative impacts on the site. </p>
             <b-row>
@@ -445,6 +445,15 @@ import header from '../../static/images/dd.png'
 
   .center h3, .col {
     text-align: center;
+  }
+
+  #kickoff h5, #discovery h5 {
+    padding-top: 30px;
+  }
+
+  #kickoff img, #info img {
+    max-width: 900px;
+    width: 100%;
   }
 
   #focus ol{

@@ -38,11 +38,6 @@ h5 {
   font-size: 1.1rem
 }
 
-.port-section img {
-  width: 100%;
-  max-width: 900px;
-}
-
 #start {
   background: url(/static/images/bricks.jpg);
   background-size: 370px;
@@ -238,6 +233,7 @@ section {
 .portfolio-section {
   padding-bottom: 20px;
   text-align:center;
+  max-width: 1140px;
 
   .portfolio-item {
     display: inline-block;
@@ -658,6 +654,12 @@ opacity: 1;
 }
 }
 
+@media screen and (min-width: 992px) {
+  .portfolio-section {
+    margin: auto;
+  }
+}
+
 
 /* =============================================================================================== */
 /* Large */
@@ -813,6 +815,9 @@ opacity: 1;
   .portfolio-item .info .info-content-wrap p {
     font-size: 12px;
     line-height:16px;
+  }
+  .portfolio-section .portfolio-item {
+    max-height: 258px;
   } 
 }
 

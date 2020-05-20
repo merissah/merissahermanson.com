@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="269px" height="324px" viewBox="0 0 269 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="277px" height="323px" viewBox="0 0 277 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Group 4</title>
+    <title>dd-status</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="DD" transform="translate(-179.000000, -5764.000000)">
-            <g id="Group-4" transform="translate(179.000000, 5764.000000)">
-                <g id="Group-12" transform="translate(11.000000, 0.000000)">
+        <g id="DD" transform="translate(-174.000000, -5764.000000)">
+            <g id="dd-status" transform="translate(174.000000, 5764.000000)">
+                <g id="Group-12" transform="translate(16.000000, 0.000000)">
                     <g id="pie-chart-3">
                         <g id="Group-14">
                             <path d="M120.248205,30.688919 L119.179897,0.0768164103 C120.540718,0.0259446154 122.130462,0.000508717949 123.491282,0.000508717949 C191.685686,0.000254358977 246.982055,55.2851774 246.982055,123.478818 C246.982055,191.685177 191.685686,246.970101 123.490773,246.970101 C55.2971323,246.970101 0.000763076922,191.685177 0.000763076922,123.478818 C0.000763076922,96.6821005 6.96892718,74.6024697 22.3322092,52.6525621 L47.4387118,70.2287672 C36.8561067,85.2982646 30.6497477,103.676972 30.6497477,123.478818 C30.6497477,174.756316 72.2120041,216.319844 123.490773,216.319844 C174.770814,216.319844 216.331799,174.756316 216.331799,123.478818 C216.331799,72.2114954 174.770814,30.6377928 123.490773,30.6377928 C122.410256,30.6380472 121.316513,30.6507651 120.248205,30.688919 Z" id="Combined-Shape" fill="#5691B6"></path>
@@ -23,14 +23,14 @@
                         <tspan x="95.9304592" y="151">Status</tspan>
                     </text>
                 </g>
-                <g id="Group-8" transform="translate(0.000000, 267.000000)">
-                    <g id="legend-item" transform="translate(0.000000, -0.000000)">
+                <g id="Group-8" transform="translate(0.000000, 266.000000)">
+                    <g id="legend-item">
                         <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
                             <tspan x="27" y="18">Status</tspan>
                         </text>
                         <rect id="Rectangle" fill="#5691B6" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
                     </g>
-                    <g id="legend-item" transform="translate(108.000000, 0.000000)">
+                    <g id="legend-item" transform="translate(112.000000, 0.000000)">
                         <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
                             <tspan x="27" y="18">Home</tspan>
                         </text>
@@ -42,13 +42,13 @@
                         </text>
                         <rect id="Rectangle" fill="#9465DC" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
                     </g>
-                    <g id="legend-item" transform="translate(108.000000, 35.000000)">
+                    <g id="legend-item" transform="translate(113.000000, 35.000000)">
                         <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
                             <tspan x="27" y="18">About</tspan>
                         </text>
                         <rect id="Rectangle" fill="#73CBFD" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
                     </g>
-                    <g id="legend-item" transform="translate(201.000000, 0.000000)">
+                    <g id="legend-item" transform="translate(209.000000, 0.000000)">
                         <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
                             <tspan x="27" y="18">Top 10</tspan>
                         </text>

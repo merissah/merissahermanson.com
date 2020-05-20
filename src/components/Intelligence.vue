@@ -59,16 +59,16 @@
           <b-container>
             <h2>Discovery</h2>
             <p>Insights were gathered from four different user interviews and user analytic tools, Google Analytics, and Freshmarketer.</p>
-            <h3>What users really wanted</h3>
+            <h3>What Users Really Wanted</h3>
             <p>Users wanted to know how their network compared to their competition. Network companies have accurate detailed information about their own network, but no insight into their competitors. The Speedtest Intelligence portal provided neutral third party information in which they could gain insights into how their network compared in the marketplace.</p>
             <p>Most of the product was built to view one network, or device at a time. Compare functionality was available after a user made a selection but it lacked a lot of the information that was available on the single view. Users couldn’t view maps or quality metrics. Each item was added one at a time with a modal. Comparing half a dozen items or more was tedious, and users would forget which items they had already added when the modal blocked their previously added items. The color legend was at the top of the screen so users would have to scroll back and forth between the graph and the legend.  </p>
             <b-img-lazy fluid src="/static/images/sti-compare1.png" alt="Screenshot of the original Speedtest Intelligence compare funtionality"/>
             <small>Original compare funtionality</small>
-            <h3>Lacking in flexibility</h3>
+            <h3>Lacking in Flexibility</h3>
             <p>Users weren’t spending much time using the product. Instead, they would create their own visualizations with tools like Tableau or Microsoft Bi using our data extracts. They were interested in tracking performance across many different locations at once, performance distributions, discovering correlations between different measures, and being able to see aggregates of custom groups. Overall, SpeedTest Intelligence lacked the flexibility to view the data in ways that were useful for them. </p>
             <b-img-lazy fluid src="/static/images/sti-graphs.png" alt="Examples of how customers were visualizing the data in other applications"/>
             <small>How customers were analyzing the data in other applications</small>
-            <h3>More features and measures</h3>
+            <h3>More Features and Measures</h3>
             <p>Users also asked for a long list of new measures and features to better understand their network as well as their competitions in more detail.</p>
             <ul>
               <li>Insights into how performance changes throughout the day or day of week.</li>
@@ -82,7 +82,7 @@
         </section>
         <section class="port-section white" id="reframing">
           <b-container>
-            <h2>Reframing the problem</h2>
+            <h2>Reframing the Problem</h2>
             <p>After gathering all of our research we had to hone in on what we would develop first. We had to deliver real progress quickly or risk losing some major customers to our competition. Eventually, we wanted a product where users could customize their graphs and dashboards however they wanted. After a few conversations with our developers we realized this wasn’t something we could deliver in a short amount of time. </p>
             <p>What could we deliver that would provide the biggest improvement to the product? What was most important to our users? Instead of focusing on the long list of features we were given we decided to focus on the main reason WHY customers wanted to use the product in the first place. </p>
             <p>We also didn’t want to back ourselves into a corner. Whatever we built needed to be a step towards our ultimate goal of providing the full flexibility our users wanted. Networks and technologies are continually changing and changing quickly. Updating our product with new data sets and features just as quickly, was vital to its success. </p>
