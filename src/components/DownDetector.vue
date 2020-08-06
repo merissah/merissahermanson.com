@@ -21,10 +21,10 @@
               <h2>Downdetector</h2>
               <p>Downdetector® offers real-time status and outage information for all kinds of services that users consider vital to their everyday lives and work. Downdetecor was acquired by Ookla in August 2018.</p>
               <p>Starting in March 2019 I lead a redesign of the Downdetector website.</p>
-              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/RXRRREKBCNH">
+              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/G7YBYYFSBKM">
                   Desktop Prototype
               </b-button>
-              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/HGRT548VFSC">
+              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/P5YBYX2ZCWA">
                   Mobile Prototype
               </b-button>
               <b-button target="_blank" href="https://downdetector.com" variant="primary inverse">
@@ -296,10 +296,6 @@
             <h5 class="quotes">“I like the colors, the old site didn’t look bad but this looks much cleaner.”</h5>
             <h5 class="quotes">“It looks a lot better, more professional.”</h5>
             <b-row>
-              <b-col>
-                <div class="large-numbers">+21%</div>
-                <h5>Ad Revenue</h5>
-              </b-col>
               <b-col>
                 <div class="large-numbers">+91%</div>
                 <h5>Problem Reporting</h5>

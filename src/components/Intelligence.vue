@@ -17,14 +17,11 @@
       <article >
         <section class="port-section dark" id="background">
           <b-container>
-            <h2>SpeedTest Intelligence</h2>
+            <h2>Speedtest Intelligence</h2>
             <p>Speedtest Intelligence was created to give up-to-date insights into global fixed broadband and mobile performance data based on millions of consumer-initiated tests taken every day with Speedtest.</p>
             <p>Starting in October 2018 I lead an ambitious redesign of the Speedtest Intelligience platform. </p>
-            <b-button class="btn-secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/TYQWOG7ENRD" variant="default">
+            <b-button class="btn-secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/GAYBW18YTFM#/screens" variant="default">
                 View Prototype
-            </b-button>
-            <b-button class="btn-primary inverse" target="_blank" href="https://intelligence.speedtest.net/#login" variant="default">
-                View Site
             </b-button>
           </b-container>
         </section>
@@ -62,11 +59,11 @@
             <h3>What Users Really Wanted</h3>
             <p>Users wanted to know how their network compared to their competition. Network companies have accurate detailed information about their own network, but no insight into their competitors. The Speedtest Intelligence portal provided neutral third party information in which they could gain insights into how their network compared in the marketplace.</p>
             <p>Most of the product was built to view one network, or device at a time. Compare functionality was available after a user made a selection but it lacked a lot of the information that was available on the single view. Users couldn’t view maps or quality metrics. Each item was added one at a time with a modal. Comparing half a dozen items or more was tedious, and users would forget which items they had already added when the modal blocked their previously added items. The color legend was at the top of the screen so users would have to scroll back and forth between the graph and the legend.  </p>
-            <b-img-lazy fluid src="/static/images/sti-compare1.png" alt="Screenshot of the original Speedtest Intelligence compare funtionality"/>
+            <b-img-lazy fluid src="/static/images/sti-compare1.jpg" alt="Screenshot of the original Speedtest Intelligence compare funtionality"/>
             <small>Original compare funtionality</small>
             <h3>Lacking in Flexibility</h3>
-            <p>Users weren’t spending much time using the product. Instead, they would create their own visualizations with tools like Tableau or Microsoft Bi using our data extracts. They were interested in tracking performance across many different locations at once, performance distributions, discovering correlations between different measures, and being able to see aggregates of custom groups. Overall, SpeedTest Intelligence lacked the flexibility to view the data in ways that were useful for them. </p>
-            <b-img-lazy fluid src="/static/images/sti-graphs.png" alt="Examples of how customers were visualizing the data in other applications"/>
+            <p>Users weren’t spending much time using the product. Instead, they would create their own visualizations with tools like Tableau or Microsoft Bi using our data extracts. They were interested in tracking performance across many different locations at once, performance distributions, discovering correlations between different measures, and being able to see aggregates of custom groups. Overall, Speedtest Intelligence lacked the flexibility to view the data in ways that were useful for them. </p>
+            <b-img-lazy fluid src="/static/images/sti-graphs.jpg" alt="Examples of how customers were visualizing the data in other applications"/>
             <small>How customers were analyzing the data in other applications</small>
             <h3>More Features and Measures</h3>
             <p>Users also asked for a long list of new measures and features to better understand their network as well as their competitions in more detail.</p>
@@ -168,7 +165,7 @@
             <p>After much discussion we were able to come up with some logic, restrictions, and messaging to make it all work. Testing revealed that this solution was indeed better than any of the others we had come up with. Users were able to compare things more intuitively and much faster than they were able to do before.</p>
             <b-row>
               <b-col>
-                <b-img-lazy fluid src="/static/images/sti-final1.png" alt="Early design concepts"/>
+                <b-img-lazy fluid src="/static/images/sti-final1.jpg" alt="Early design concepts"/>
                 <small>Performance and Quality dashboard in Speedtest Intelligence</small>
               </b-col>
             </b-row>
@@ -193,10 +190,6 @@
             <h5 class="quotes">“A major upgrade from the original.”</h5>
             <h5 class="quotes">“Much more intuitive than before”</h5>
             <b-row>
-              <b-col>
-                <div class="large-numbers">+23%</div>
-                <h5>Revenue</h5>
-              </b-col>
               <b-col>
                 <div class="large-numbers">+32%</div>
                 <h5>User Sessions</h5>
