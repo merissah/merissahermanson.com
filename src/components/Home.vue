@@ -238,7 +238,7 @@
         <h2><strong>CONTACT</strong></h2>
         <h3 class="text-center">Merissa.Hermanson@gmail.com</h3>
         <p>I'm only a click away</p>
-        <a href="mailto:merissa.hermanson@gmail.com">
+        <a href="mailto:merissa.hermanson@gmail.com" target="_blank">
           <button type="button" class="btn btn-primary inverse btn-lg">Contact Me</button>
         </a>
       </div>
@@ -263,7 +263,7 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_jquery.svg'},
           {img: '/static/images/tools_sublime.svg'},
           {img: '/static/images/tools_invision.svg'},
-          {img: '/static/images/tools_rails.svg'},
+          {img: '/static/images/tools_sketch.svg'},
           {img: '/static/images/tools_bootstrap.svg'},
           {img: '/static/images/tools_html.svg'},
           {img: '/static/images/tools_illustrator.svg'},
@@ -272,8 +272,8 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_sass.svg'},
           {img: '/static/images/tools_vue.svg'},
           {img: '/static/images/tools_xd.svg'},
-          {img: '/static/images/tools_studio.svg'},
-          {img: '/static/images/tools_xcode.svg'}
+          {img: '/static/images/tools_google.svg'},
+          {img: '/static/images/tools_fresh.svg'}
         ]
       }
     },

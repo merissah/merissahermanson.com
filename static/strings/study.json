@@ -10,6 +10,11 @@
         "src": "/static/images/dd.png",
         "subtitle": "Consumer Website",
         "id": "downdetector"
+      }, {
+        "title": "Cellanalytics",
+        "src": "/static/images/ca.png",
+        "subtitle": "Enterprise Application",
+        "id": "cellanalytics"
       }
   ]
 }

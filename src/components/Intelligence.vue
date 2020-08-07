@@ -19,7 +19,7 @@
           <b-container>
             <h2>Speedtest Intelligence</h2>
             <p>Speedtest Intelligence was created to give up-to-date insights into global fixed broadband and mobile performance data based on millions of consumer-initiated tests taken every day with Speedtest.</p>
-            <p>Starting in October 2018 I lead an ambitious redesign of the Speedtest Intelligience platform. </p>
+            <small class="disclaimer">I have omitted and obfuscated business sensative information in this case study. All information in this case study is my own and does not necessarily reflect the views of Ookla.</small>
             <b-button class="btn-secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/GAYBW18YTFM#/screens" variant="default">
                 View Prototype
             </b-button>
@@ -40,7 +40,7 @@
         <section class="port-section dark" id="role">
           <b-container>
             <h2>My Role</h2>
-            <p>I was the sole Product Designer for the project. I ran the various rounds of user interviews, and user testing, then used those insights throughout the process to inform my design. I worked very closely with the Project Manager and Software Engineers. I also assisted the Engineers with some CSS work. Most decisions were made collectively by me and the Project Manager. </p>
+            <p>Starting in October 2018 I lead an ambitious redesign of the Speedtest Intelligience platform. I was the sole Product Designer. I ran the various rounds of user interviews, and user testing, then used those insights throughout the process to inform my design. I worked very closely with the Project Manager and Software Engineers. I also assisted the Engineers with some CSS work. Most decisions were made collectively by me and the Project Manager. </p>
           </b-container>
         </section>
         <section class="port-section white" id="kickoff">
@@ -269,6 +269,10 @@ export default {
     }
     ul {
       text-align: left;
+
+      li {
+        padding: 5px 0;
+      }
     }
   }
 
@@ -298,6 +302,10 @@ export default {
 
   .white {
     background-color: white;
+  }
+
+  .disclaimer {
+    margin-bottom: 30px;
   }
 
   small {

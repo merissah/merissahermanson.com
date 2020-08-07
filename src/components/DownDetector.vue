@@ -10,7 +10,7 @@
             <router-link id="left-arrow" to="/study/speedtestIntelligence"></router-link>
           </li>
           <li>
-            <router-link id="right-arrow" to="/design/dd-apps"></router-link>
+            <router-link id="right-arrow" to="/study/cellAnalytics"></router-link>
           </li>
         </ul>
       </div>
@@ -20,7 +20,7 @@
             <b-container>
               <h2>Downdetector</h2>
               <p>Downdetector® offers real-time status and outage information for all kinds of services that users consider vital to their everyday lives and work. Downdetecor was acquired by Ookla in August 2018.</p>
-              <p>Starting in March 2019 I lead a redesign of the Downdetector website.</p>
+              <small class="disclaimer">I have omitted and obfuscated business sensative information in this case study. All information in this case study is my own and does not necessarily reflect the views of Ookla.</small>
               <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/G7YBYYFSBKM">
                   Desktop Prototype
               </b-button>
@@ -77,7 +77,7 @@
         <section class="port-section dark">
           <b-container>
             <h2>My Role</h2>
-            <p>I was the lead Product Designer for the project. I ran the various rounds of user interviews, and user testing, then used those insights throughout the process to inform my design. I worked very closely with the Project Manager, Software Engineers and the Branding Designer. Most decisions were made collectively by me and the Project Manager. </p>
+            <p>Starting in March 2019 I lead a redesign of the Downdetector website. I ran the various rounds of user interviews, and user testing, then used those insights throughout the process to inform my design. I worked very closely with the Project Manager, Software Engineers and the Branding Designer. Most decisions were made collectively by me and the Project Manager. </p>
           </b-container>
         </section>
         <section class="port-section white no-shadow" id="kickoff">
@@ -382,6 +382,10 @@ import header from '../../static/images/dd.png'
     }
     ul {
       text-align: left;
+
+      li {
+        padding: 5px 0;
+      }
     }
   }
 
@@ -437,6 +441,10 @@ import header from '../../static/images/dd.png'
     img {
       box-shadow: none;
     }
+  }
+
+  .disclaimer {
+    margin-bottom: 30px;
   }
 
   .center h3, .col {
