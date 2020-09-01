@@ -12,6 +12,7 @@
           <b-nav-item id="aboutLink" v-on:click="scroll('#about')" href="/#about">ABOUT</b-nav-item>
           <b-nav-item id="toolsLink" v-on:click="scroll('#tools')" href="/#tools">TOOLS</b-nav-item>
           <b-nav-item id="portfolioLink" v-on:click="scroll('#portfolio')" href="/#portfolio">PORTFOLIO</b-nav-item>
+          <b-nav-item id="readsLink" v-on:click="scroll('#reading')" href="/#reading">READING</b-nav-item>
           <b-nav-item id="contactLink" v-on:click="scroll('#contact')" href="/#contact">CONTACT</b-nav-item>
         </b-navbar-nav>
       </b-collapse>

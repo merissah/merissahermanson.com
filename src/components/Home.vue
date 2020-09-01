@@ -233,6 +233,19 @@
         </div>
       </b-container>
     </section>
+    <section id="reading">
+      <div class="container">
+        <h2>Reading List</h2>
+        <p>Some of my favorite books.</p>
+        <ul class="row">
+          <template v-for="read in reads">
+            <li class="col-md-3 col-sm-6 col-6">
+              <b-img-lazy fluid v-bind:src="read.img"/>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </section>
     <section id="contact">
       <div class="container">
         <h2><strong>CONTACT</strong></h2>
@@ -274,6 +287,18 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_xd.svg'},
           {img: '/static/images/tools_google.svg'},
           {img: '/static/images/tools_fresh.svg'}
+        ],
+        reads: [
+          {img: '/static/images/read-manager.jpg'},
+          {img: '/static/images/read-culture-code.jpg'},
+          {img: '/static/images/read-friends.jpg'},
+          {img: '/static/images/read-100.jpg'},
+          {img: '/static/images/read-design.jpg'},
+          {img: '/static/images/read-think.jpg'},
+          {img: '/static/images/read-team-one.jpg'},
+          {img: '/static/images/read-lean.jpg'},
+          {img: '/static/images/read-blink.jpg'},
+          {img: '/static/images/read-interviewing.jpg'}
         ]
       }
     },
@@ -543,6 +568,28 @@ import MainFooter from './MainFooter'
     }
   }
 }
+#reading {
+  padding: 30px 0;
+  margin-bottom:0;
+  background-color: #edf2f7;
+
+  ul {
+    padding:0;
+    margin-top:25px;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding:20px;
+      text-align: center;
+
+      img {
+        text-align: center;
+      }
+    }
+  }
+}
+
 /* Contact */
 
 #contact {

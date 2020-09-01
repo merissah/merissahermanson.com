@@ -10,7 +10,7 @@
             <router-link id="left-arrow" to="/study/speedtestIntelligence"></router-link>
           </li>
           <li>
-            <router-link id="right-arrow" to="/study/cellAnalytics"></router-link>
+            <router-link id="right-arrow" to="/design/dd-apps"></router-link>
           </li>
         </ul>
       </div>
