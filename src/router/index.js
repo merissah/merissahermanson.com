@@ -6,6 +6,7 @@ import Animations from '@/components/Animations'
 import Design from '@/components/Design'
 import Intelligence from '@/components/Intelligence'
 import DownDetector from '@/components/DownDetector'
+import DDEnterprise from '@/components/DDEnterprise'
 import CellAnalytics from '@/components/CellAnalytics'
 
 Vue.use(Router)
@@ -21,6 +22,7 @@ export default new Router({
     { path: '/animations', name: 'animations', component: Animations },
     { path: '/study/speedtestIntelligence', name: 'intelligence', component: Intelligence, props: true },
     { path: '/study/downDetector', name: 'down-detector', component: DownDetector, props: true },
+    { path: '/study/ddEnterprise', name: 'dd-enterprise', component: DDEnterprise, props: true },
     { path: '/study/cellAnalytics', name: 'cell-analytics', component: CellAnalytics, props: true },
     { path: '/design/:post', name: 'design', component: Design, props: true }
   ]

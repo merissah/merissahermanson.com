@@ -16,10 +16,6 @@
     "src": "/static/images/sensorly-apps.png",
     "id": "sensorly-apps"
   }, {
-    "title": "Sensorly White Labels",
-    "src": "/static/images/sensorly-whitelabel.png",
-    "id": "sensorly-whitelabel"
-  }, {
     "title": "Sensorly Portal",
     "src": "/static/images/sensorly-portal.png",
     "id": "sensorly-portal"
@@ -35,10 +31,6 @@
     "title": "Signal Insights",
     "src": "/static/images/si.png",
     "id": "signalinsights"
-  }, {
-    "title": "California Alerts",
-    "src": "/static/images/cal.png",
-    "id": "calalerts"
   }, {
     "title": "NRC",
     "src": "/static/images/nrc.png",

@@ -3,14 +3,14 @@
     <vue-headful
       image="/static/images/home.png"
       title="Merissa Hermanson Portfolio"
-      description="I am a Product Designer and Front End Developer with 9+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development."
+      description="I’m a Product Designer specializing in complex enterprise solutions and data visualization. I have 10+ years of experience in design and 5+ years balancing product, development, and user centered goals for enterprise products."
     />
     <nav-bar />
     <section class="jumbotron start" id="start">
       <div id="table"></div>
       <div class="container">
         <div class="text-container">
-          <h1>Welcome to my Studio</h1>
+          <h1>Merissa Hermanson's Studio</h1>
           <h2>Where beautiful user interfaces are created.</h2>
         </div>
         <ul id="clock" class="hidden-xs">
@@ -117,27 +117,27 @@
     <section id="about">
       <b-container class="container blue">
         <h2>A little <strong>ABOUT</strong> me</h2>
-        <p>I am a Product Designer & Front End Developer with 9+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. Product design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
+        <p>I’m a Product Designer specializing in complex enterprise solutions and data visualization. I have 10+ years of experience in design and 5+ years balancing product, development, and user centered goals for mostly enterprise products. In collaboration with Project Managers, and Engineers I’m involved in every aspect of the product development process, from brainstorming, user research, product strategy, to tweaking pixels right before launch.</p>
         <b-row>
+          <b-col md="4">
+              <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
+            <div class="title">
+              <h3>USER RESEARCH</h3>
+              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction, animation, and transition is exactly how it should be.</p>
+            </div>
+          </b-col>
           <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
             <div class="title">
-              <h3>PRODUCT DESIGNER</h3>
+              <h3>PRODUCT STRATEGY</h3>
               <p>I love user research and user testing. I’m people driven as well as data influenced. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
             </div>
           </b-col>
           <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
-              <h3>VISUAL DESIGNER</h3>
+              <h3>VISUAL DESIGN</h3>
               <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
-            </div>
-          </b-col>
-          <b-col md="4">
-              <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
-            <div class="title">
-              <h3>FRONT END DEVELOPER</h3>
-              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction, animation, and transition is exactly how it should be.</p>
             </div>
           </b-col>
         </b-row>

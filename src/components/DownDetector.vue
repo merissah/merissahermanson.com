@@ -10,7 +10,7 @@
             <router-link id="left-arrow" to="/study/speedtestIntelligence"></router-link>
           </li>
           <li>
-            <router-link id="right-arrow" to="/design/dd-apps"></router-link>
+            <router-link id="right-arrow" to="/study/ddEnterprise"></router-link>
           </li>
         </ul>
       </div>
@@ -433,7 +433,7 @@ import header from '../../static/images/dd.png'
     text-align: center;
 
     p {
-      padding-bottom: 30px;
+      padding: 30px 0;
     }
   }
 

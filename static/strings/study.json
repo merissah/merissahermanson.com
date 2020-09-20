@@ -10,6 +10,12 @@
         "src": "/static/images/dd.png",
         "subtitle": "Consumer Website",
         "id": "downdetector"
+      },
+      {
+        "title": "Downdetector Enterprise",
+        "src": "/static/images/dd-enterprise.png",
+        "subtitle": "Enterprise Application",
+        "id": "ddEnterprise"
       }
   ]
 }
