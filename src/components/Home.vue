@@ -120,24 +120,24 @@
         <p>I’m a Product Designer specializing in complex enterprise solutions and data visualization. I have 10+ years of experience in design and 5+ years balancing product, development, and user centered goals for mostly enterprise products. In collaboration with Project Managers, and Engineers I’m involved in every aspect of the product development process, from brainstorming, user research, product strategy, to tweaking pixels right before launch.</p>
         <b-row>
           <b-col md="4">
-              <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
+              <b-img-lazy fluid src="/static/images/about-research.svg" alt="Start and end HTML tags"/>
             <div class="title">
               <h3>USER RESEARCH</h3>
-              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction, animation, and transition is exactly how it should be.</p>
+              <p>Data is always better than guessing. Users can be unpredictable and don't always do what they say they do. Filling knowledge gaps with data instead of assumptions forms a solid foundation for solving the right people problems.</p>
             </div>
           </b-col>
           <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
             <div class="title">
-              <h3>PRODUCT STRATEGY</h3>
-              <p>I love user research and user testing. I’m people driven as well as data influenced. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
+              <h3>USER EXPERIENCE</h3>
+              <p>Creating a great user experience is about solving people problems. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
             </div>
           </b-col>
           <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
               <h3>VISUAL DESIGN</h3>
-              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
+              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes.</p>
             </div>
           </b-col>
         </b-row>
