@@ -325,8 +325,7 @@ import header from '../../static/images/dd.png'
     components: { NavBar, MainFooter},
     data() {
       return {
-        header,
-        background
+        header
       }
     }
   }

@@ -122,7 +122,7 @@ import VideoTemp from './VideoTemp'
         this.$getResource('design')
         .then(posts => {
           if (index == 0) {
-            this.back = '/study/downdetector'
+            this.back = '/study/cellAnalytics'
             this.forward = posts[index + 1].id
           }
           else if (index == posts.length - 1){

@@ -1,7 +1,7 @@
 <template>
   <b-row align-v="stretch" class="portfolio-section">
     <b-col sm="6" v-for="image in images" :key="image.id" class="portfolio-item" :class="art">
-      <router-link v-if="!art" :to="`${imgCategory}/${image.id}`">
+      <router-link v-on:click.native="scrollToTop" v-if="!art" :to="`${imgCategory}/${image.id}`">
         <b-img fluid :src="image.src" :alt="image.title"/>
         <div class="info">
           <div class="info-content-wrap">
@@ -42,7 +42,12 @@ export default {
       .then(images => {
         this.images = images
       })
-  }
+  },
+  methods: { 
+           scrollToTop() {
+                window.scrollTo(0,0);
+           }
+        }
 }
 </script>
 <style lang="scss" scoped>
