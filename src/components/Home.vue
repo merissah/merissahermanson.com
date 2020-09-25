@@ -137,7 +137,7 @@
               <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
               <h3>VISUAL DESIGN</h3>
-              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes.</p>
+              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Aesthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes.</p>
             </div>
           </b-col>
         </b-row>

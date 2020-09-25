@@ -10,7 +10,7 @@
             <router-link id="left-arrow" to="/study/downDetector"></router-link>
           </li>
           <li>
-            <router-link id="right-arrow" to="/design/dd-apps"></router-link>
+            <router-link id="right-arrow" to="/study/cellAnalytics"></router-link>
           </li>
         </ul>
       </div>
@@ -253,10 +253,10 @@
 <script>
 import NavBar from './NavBar'
 import MainFooter from './MainFooter'
-import header from '../../static/images/dd.png'
+import header from '../../static/images/dd-enterprise.png'
   export default {
-    name: 'down-detector',
-    resource: 'DownDetector',
+    name: 'dd-enterprise',
+    resource: 'ddEnterprise',
     components: { NavBar, MainFooter},
     data() {
       return {
