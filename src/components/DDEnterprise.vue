@@ -52,10 +52,42 @@
             <p>I was brought into this project in October of 2019 as the lead Product Designer. <br> I performed the <strong>User Research</strong>, helped inform the <strong>Product Strategy</strong>, and <strong>Designed the User Interface</strong>.</p>
           </b-container>
         </section>
-        <section class="port-section white" id="onboarding">
+        <section class="port-section white">
+          <b-container>
+            <h2>Use Cases</h2>
+            <p>I conducted 7 user interviews across 6 different companies to get a good variety of industries and use cases. Most users were using Enterprise services to:</p>
+         	  <ul>
+              <li>Detect problems faster than their own internal monitoring.</li>
+              <li>Detect external problems they can’t detect with their own internal monitoring.</li>
+              <li>Validate internal problems they are already aware of, and get a general idea of the customer impact.</li>
+              <li>Find some insight into what the problem might be.</li>
+            </ul>
+          </b-container>
+        </section>
+        <section class="port-section no-shadow" id="troubleshooting">
+          <b-container>
+            <h2>How Users Troubleshooted Problems</h2>
+            <p>The problem flow represented how most users were currently using the product as well as which types of information they were using to answer these questions. </p>
+            <b-img-lazy fluid src="/static/images/dde-troubleshooting.svg" alt="How users troubleshooted problems"/>
+          </b-container>
+        </section>
+        <section class="port-section white">
+          <b-container>
+            <h2>Original Problems</h2>
+            <ul>
+              <li>All users were looking for patterns across different companies but struggled to to this quickly in the application. Instead users were using the consumer sight to look for these trends.</li>
+              <li>Comments were being used heavily to find insight into the problem, however without any search of filtering capabilities this was often very tedious.</li>
+              <li>Each company wanted to user alerts a bit differently, but lacked the flexibility to customize them to their needs.</li>
+              <li>Since almost all users were comparing the Downdetector data with their internal data the API was more popular than the dashboard since they could integrate it into their own systems, as well as customize how they viewed it.</li>
+            </ul>
+            <b-img-lazy fluid src="/static/images/dde-api.jpg" alt="Screenshot of how a user was using Downdetector data with the API"/>
+            <small>Screenshot of how a user was using Downdetector data with the API</small>
+          </b-container>
+        </section>
+        <section class="port-section" id="onboarding">
           <b-container>
             <h2>Confusing Onboarding</h2>
-            <p>Before meeting with the team I was granted access to the Downdetector Dashboard and decided to check it out. I was greeted with a completely blank screen. I couldn’t figure out how to add any services to even see what the application could do. I looked around for a bit and then had to ask a team member how to get started. </p>
+            <p>The first time I tried out the application I was greeted with a completely blank screen. I couldn’t figure out how to add any services to even see what the application could do. I looked around for a bit and then had to ask a team member how to get started. </p>
             <p>The add services button was actually under the settings tab. That didn’t seem like the most intuitive way to add services, and after a conversation with a few people in sales I learned that this was a common issue users complained about.</p>
             <b-row>
               <b-col md="6">
@@ -69,7 +101,7 @@
             </b-row>
           </b-container>
         </section>
-        <section class="port-section no-shadow" id="original">
+        <section class="port-section no-shadow white" id="original">
           <b-container>
             <h2>Original Architecture</h2>
             <p>A lot of really important functionality like alert settings, adding users, and adding services were all under the settings section. Users often missed this functionality and sales often had to show them where it was.</p>
@@ -77,32 +109,11 @@
             <b-img-lazy fluid src="/static/images/dde-old-architecture.svg" alt="Original Information Architecture"/>
           </b-container>
         </section>
-        <section class="port-section white">
+        <section class="port-section no-shadow">
           <b-container>
-            <h2>Use Cases and Problems</h2>
-            <p>I conducted 7 user interviews across 6 different companies to get a good variety of industries and use cases. Most users were using Enterprise services to:</p>
-         	<ul>
-              <li>Detect problems faster than their own internal monitoring.</li>
-              <li>Detect external problems they can’t detect with their own internal monitoring.</li>
-              <li>Validate internal problems they are already aware of, and get a general idea of the customer impact.</li>
-              <li>Find some insight into what the problem might be.</li>
-            </ul>
-            <p>Problem areas:</p>
-         	<ul>
-              <li>All users were looking for patterns across different companies but struggled to to this quickly in the application. Instead users were using the consumer sight to look for these trends.</li>
-              <li>Comments were being used heavily to find insight into the problem, however without any search of filtering capabilities this was often very tedious.</li>
-              <li>Each company wanted to user alerts a bit differently, but lacked the flexibility to customize them to their needs.</li>
-              <li>Since almost all users were comparing the Downdetector data with their internal data the API was more popular than the dashboard since they could integrate it into their own systems, as well as customize how they viewed it.</li>
-            </ul>
-            <b-img-lazy fluid src="/static/images/dde-api.jpg" alt="Screenshot of how a user was using Downdetector data with the API"/>
-            <small>Screenshot of how a user was using Downdetector data with the API</small>
-          </b-container>
-        </section>
-        <section class="port-section no-shadow" id="troubleshooting">
-          <b-container>
-            <h2>How Users Troubleshooted Problems</h2>
-            <p>I made sure to include onboarding to help address the confusion new users were experiencing. The problem flow represented how most users were currently using the product as well as which types of information they were using to answer these questions. </p>
-            <b-img-lazy fluid src="/static/images/dde-troubleshooting.svg" alt="How users troubleshooted problems"/>
+            <h2>New Architecture</h2>
+            <p>Before tackling the design I tried a different way of organizing the content. We added the API section so users could manage everything in one place. The ‘teams’ section was changed to ‘people’ since not only could admin users manage teams but they could also add users, and manage their different types of roles. ‘Events’ was changed to ‘alerts’ since alerts were more important and to clear up confusion surrounding the difference between alerts and events.</p>
+            <b-img-lazy fluid src="/static/images/dde-new-architecture.svg" alt="New information architecture"/>
           </b-container>
         </section>
         <section class="port-section white" id="focus">
@@ -127,21 +138,6 @@
                 <p>Users needed to be able to set more dynamic thresholds, determine who would get alerts, and have the ability to set multiple alerts for the same company.</p>
               </li>
             </ol>
-          </b-container>
-        </section>
-        <section class="port-section no-shadow">
-          <b-container>
-            <h2>Starting at the End</h2>
-            <p>With larger applications I like to work backwards. What is the desired end result, and what are the steps to get there? What does the product need to be capable of to achieve those goals? In an interface, it’s also usually a lot easier to take things out than to add functionality later down the road.</p>
-            <p>The risk of only focusing on the MVP is that the interface might not be able to easily support new features without another redesign or simply putting everything new in a junk drawer like a settings section, or a hamburger menu.</p>
-            <b-img-lazy fluid src="/static/images/process.svg" alt="My process"/>
-          </b-container>
-        </section>
-        <section class="port-section no-shadow white">
-          <b-container>
-            <h2>New Architecture</h2>
-            <p>Before tackling the design I tried a different way of organizing the content. We added the API section so users could manage everything in one place. The ‘teams’ section was changed to ‘people’ since not only could admin users manage teams but they could also add users, and manage their different types of roles. ‘Events’ was changed to ‘alerts’ since alerts were more important and to clear up confusion surrounding the difference between alerts and events.</p>
-            <b-img-lazy fluid src="/static/images/dde-new-architecture.svg" alt="New information architecture"/>
           </b-container>
         </section>
         <section class="port-section">
@@ -223,23 +219,7 @@
             <small>Customizing alerts</small>
           </b-container>
         </section>
-        <section class="port-section white">
-          <b-container>
-            <h2>Scaling Back to MVP</h2>
-            <p>Although our MVP version of the application doesn’t look that different, many of the more complicated and time consuming features are removed. Our goal for launch is to retain feature parity with the existing application, with the new design and organization. Users will be able to keep the current application while being able to use the new application. They can transition over to the new version at their leisure while providing us valuable feedback. </p>
-            <b-row>
-              <b-col md="6">
-                <b-img-lazy fluid src="/static/images/dde-mvp.jpg" alt="Home screen MVP"/>
-                <small>Home Screen MVP</small>
-              </b-col>
-              <b-col md="6">
-                <b-img-lazy fluid src="/static/images/dde-mvp2.jpg" alt="Company status page MVP"/>
-                <small>Company status page MVP</small>
-              </b-col>
-            </b-row>
-          </b-container>
-        </section>
-        <section class="port-section no-shadow" id="launch">
+        <section class="port-section no-shadow white" id="launch">
           <b-container>
             <h2>Waiting for Launch</h2>
             <p>This project is still in development and hasn’t been launched, so unfortunately I don’t have any success metrics available yet.</p>

@@ -16,10 +16,6 @@
     "src": "/static/images/sensorly-apps.png",
     "id": "sensorly-apps"
   }, {
-    "title": "Sensorly Portal",
-    "src": "/static/images/sensorly-portal.png",
-    "id": "sensorly-portal"
-  }, {
     "title": "B2B Sensorly",
     "src": "/static/images/b2b-sensorly.png",
     "id": "b2b-sensorly"
@@ -28,11 +24,11 @@
     "src": "/static/images/me.png",
     "id": "me"
   }, {
-    "title": "Signal Insights",
-    "src": "/static/images/si.png",
-    "id": "signalinsights"
+    "title": "TravWell",
+    "src": "/static/images/travwell.png",
+    "id": "travwell"
   }, {
-    "title": "NRC",
+    "title": "NRC Training",
     "src": "/static/images/nrc.png",
     "id": "nrc"
   }]
