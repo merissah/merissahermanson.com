@@ -143,18 +143,6 @@
         </b-row>
       </b-container>
     </section>
-    <section id="tools">
-      <div class="container">
-        <h2>Some <strong>TOOLS</strong> I use</h2>
-        <ul class="row">
-          <template v-for="tool in tools">
-            <li class="col-md-3 col-sm-6 col tool-container">
-              <b-img-lazy fluid v-bind:src="tool.img"/>
-            </li>
-          </template>
-        </ul>
-      </div>
-    </section>
     <section id="portfolio">
       <b-container>
         <h2>My <strong>PORTFOLIO</strong></h2>
@@ -232,6 +220,18 @@
           </b-row>
         </div>
       </b-container>
+    </section>
+    <section id="tools">
+      <div class="container">
+        <h2>Some <strong>TOOLS</strong> I use</h2>
+        <ul class="row">
+          <template v-for="tool in tools">
+            <li class="col-md-3 col-sm-6 col tool-container">
+              <b-img-lazy fluid v-bind:src="tool.img"/>
+            </li>
+          </template>
+        </ul>
+      </div>
     </section>
     <section id="reading">
       <div class="container">
@@ -535,6 +535,7 @@ import MainFooter from './MainFooter'
 #about {
   text-align: center;
   padding-top: 30px;
+  background-color: #edf2f7;
   img {
     max-height: 120px;
     margin:auto;
@@ -571,7 +572,6 @@ import MainFooter from './MainFooter'
 #reading {
   padding: 30px 0;
   margin-bottom:0;
-  background-color: #edf2f7;
 
   ul {
     padding:0;
@@ -585,6 +585,7 @@ import MainFooter from './MainFooter'
 
       img {
         text-align: center;
+        border: 1px solid #cfd6e0;
       }
     }
   }

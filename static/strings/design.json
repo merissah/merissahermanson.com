@@ -23,13 +23,5 @@
     "title": "Map Elements",
     "src": "/static/images/me.png",
     "id": "me"
-  }, {
-    "title": "TravWell",
-    "src": "/static/images/travwell.png",
-    "id": "travwell"
-  }, {
-    "title": "NRC Training",
-    "src": "/static/images/nrc.png",
-    "id": "nrc"
   }]
 }
