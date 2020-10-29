@@ -28,10 +28,16 @@ h2 {
 h3 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 1.5rem;
 }
 h4 {
   margin: 2rem 0 0
 }
+h5 {
+  font-weight: bold;
+  font-size: 1.1rem
+}
+
 #start {
   background: url(/static/images/bricks.jpg);
   background-size: 370px;
@@ -196,10 +202,14 @@ h4 {
   background: url(/static/images/hourhand.svg) no-repeat;
   z-index: 1;
 }
-section p {
-  text-align: center;
+.home section p {
   padding: 10px 0 0 0;
 }
+
+section {
+  text-align: center;
+}
+
 /* Steam */
 
 #viewport {
@@ -223,6 +233,7 @@ section p {
 .portfolio-section {
   padding-bottom: 20px;
   text-align:center;
+  max-width: 1140px;
 
   .portfolio-item {
     display: inline-block;
@@ -319,14 +330,32 @@ hr {
 }
 
 #other-works {
-  img, svg {
-    max-height: 180px;
+  svg {
+    height: 120px;
+    max-width: 120px;
+  }
+  .other-icon {
+    fill: #5E5E5E;
   }
   a {
+    margin-bottom: 20px;
     display: block;
+    border: 2px solid #5E5E5E;
+    border-radius: 20px;
+    height: 220px;
+    padding: 20px;
 
     &:hover {
-      opacity: 0.5;
+      fill: white;
+      background-color: #5691B6;
+      border-color: #5691B6;
+
+      .other-icon {
+        fill: white;
+      }
+      h3 {
+       color: white;
+      }
     }
   } 
 }
@@ -383,11 +412,26 @@ hr {
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: transparent;
-  border: 3px solid white;
-  color: #FFF;
+  background-color: white;
+  color: #5691B6;
 }
 .btn-primary.inverse:hover {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #5FB2D8;
+}
+
+.btn-secondary.inverse {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #FFF;
+}
+.btn-secondary.inverse:hover {
   background-color: #FFF;
   border-color: #FFF;
   color: #5FB2D8;
@@ -610,6 +654,12 @@ opacity: 1;
 }
 }
 
+@media screen and (min-width: 992px) {
+  .portfolio-section {
+    margin: auto;
+  }
+}
+
 
 /* =============================================================================================== */
 /* Large */
@@ -765,6 +815,9 @@ opacity: 1;
   .portfolio-item .info .info-content-wrap p {
     font-size: 12px;
     line-height:16px;
+  }
+  .portfolio-section .portfolio-item {
+    max-height: 258px;
   } 
 }
 
@@ -788,7 +841,7 @@ opacity: 1;
       bottom:56%;
 
       h1 {
-        font-size:3em;
+        font-size:2.5em;
       }
       h2 {
         font-size:1.6em;
@@ -909,6 +962,9 @@ opacity: 1;
     padding:10px;
     }
   }
+  #app .port-bkg {
+    background-size:300px;
+  }
   .portfolio-section .portfolio-item, .portpage-pic .pic {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -924,6 +980,21 @@ opacity: 1;
   .portfolio-item .info .info-content-wrap p {
     font-size: 12px;
     line-height:16px;
+  }
+  #other-works {
+    a {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto 20px;
+
+      svg {
+        width: 40%;
+      }
+      h3 {
+        padding: 0;
+      }
+    }
+
   }
 
 }

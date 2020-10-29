@@ -1,2 +1,3 @@
 export { default as ImgFeed } from './ImgFeed'
-export { default as Project } from './Project'
+export { default as Design } from './Design'
+export { default as Study } from './Design'

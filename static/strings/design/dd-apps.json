@@ -1,0 +1,18 @@
+{
+  "results": [{
+    "id": "dd-apps",
+    "type": "apps",
+    "size": "col-md-4 col-6",
+    "index": 0,
+    "title": "Downdetector Apps",
+    "content": "Downdetector® offers real-time status and outage information for all kinds of services that users consider vital to their everyday lives and work. Downdetector was acquired by Ookla in August 2018. The main benefit of the Downdetector app over the consumer site is the ability to receive alerts on favorited services. \n\n In late 2019 a client was interested in an Enterprise version of this app. To accommodate their request, work needed to be done on the app. Since we were already in the middle of the website redesign, it made sense to also do a redesign of the app.",
+    "image": "/static/images/dd-apps.png",
+    "portImgs": ["/static/images/dd-apps-onboarding.png", "/static/images/dd-apps-onboarding2.png", "/static/images/dd-apps-signin.png", "/static/images/dd-apps-home.png", "/static/images/dd-apps-buy-alerts.png", "/static/images/dd-apps-alerts-empty.png", "/static/images/dd-apps-alerts.png", "/static/images/dd-apps-favorites-empty.png", "/static/images/dd-apps-favorites.png", "/static/images/dd-apps-no-problem.png", "/static/images/dd-apps-possible.png", "/static/images/dd-apps-problem.png"],
+    "iosLink": "https://apps.apple.com/us/app/downdetector/id816223770",
+    "androidLink": "https://play.google.com/store/apps/details?id=com.serinus42.downdetector&hl=en_US",
+    "prototype": "https://ookla.invisionapp.com/share/3HRND8NZBTC",
+    "product": "iOS and Android Apps",
+    "date": "January 2020",
+    "role": "Sole Product Designer"
+  }]
+}

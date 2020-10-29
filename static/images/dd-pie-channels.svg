@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="277px" height="325px" viewBox="0 0 277 325" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>dd-channels</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DD" transform="translate(-580.000000, -5762.000000)">
+            <g id="dd-channels" transform="translate(580.000000, 5762.000000)">
+                <g id="Group-5" transform="translate(16.000000, 0.000000)">
+                    <g id="pie-chart-2">
+                        <g id="Group-12">
+                            <path d="M117.547445,31.8600286 L115.345812,0.304559184 C118.078873,0.113497959 121.26618,-0.000379591837 124.000506,-0.000379591837 L124.000506,31.6322735" id="Fill-1" fill="#73CBFD"></path>
+                            <path d="M111.144237,32.5310204 L106.742237,1.20204082 C109.448727,0.82244898 112.611992,0.493469388 115.345053,0.303673469 L117.547951,31.8604082" id="Fill-4" fill="#9465DC"></path>
+                            <path d="M111.144237,32.5310204 C105.754033,33.264898 100.503012,34.4922449 95.4557061,36.1371429 L85.6862776,6.07346939 C93.4932163,3.53020408 98.6050531,2.35346939 106.742237,1.20204082 L111.144237,32.5310204 Z" id="Fill-6" fill="#9E93F4"></path>
+                            <path d="M95.4552,36.1366367 C78.2849959,41.7039837 63.3278122,52.1693306 52.2184245,65.8713306 L27.6335265,45.9693306 C43.1461796,26.7986776 62.2409143,13.6913714 85.6857714,6.07296327 L95.4552,36.1366367 Z" id="Fill-8" fill="#76CB96"></path>
+                            <path d="M248,124 C248,192.478367 192.478367,248 124,248 C55.5216327,248 0,192.478367 0,124 C0,93.8730612 8.66734694,69.3767347 27.6342857,45.9685714 L52.2191837,65.8718367 C39.3383673,81.7387755 31.6326531,101.97102 31.6326531,124 C31.6326531,175.017143 72.9828571,216.367347 124,216.367347 C175.017143,216.367347 216.367347,175.017143 216.367347,124 C216.367347,72.9828571 175.017143,31.6326531 124,31.6326531 L124,0 C192.478367,0 248,55.5216327 248,124" id="Fill-10" fill="#5691B6"></path>
+                        </g>
+                    </g>
+                    <text id="86.5%" font-family="Quicksand-Bold, Quicksand" font-size="36" font-weight="bold" letter-spacing="0.003" fill="#5691B6">
+                        <tspan x="74.8504592" y="124">86.5%</tspan>
+                    </text>
+                    <text id="Organic-Search" font-family="Quicksand-Bold, Quicksand" font-size="18" font-weight="bold" letter-spacing="0.0015" fill="#5691B6">
+                        <tspan x="58.1325" y="151">Organic Search</tspan>
+                    </text>
+                </g>
+                <g id="Group-8" transform="translate(0.000000, 268.000000)">
+                    <g id="Group-20">
+                        <g id="legend-item">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Search</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#5691B6" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(107.000000, 0.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Direct</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#76CB96" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(0.000000, 35.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Social</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#9465DC" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(107.000000, 35.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Email</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#73CBFD" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                        <g id="legend-item" transform="translate(203.000000, 0.000000)">
+                            <text id="Organic-Search" font-family="Quicksand-Medium, Quicksand" font-size="14" font-weight="400" letter-spacing="0.00116666667" fill="#5E5E5E">
+                                <tspan x="27" y="18">Referal</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#9E93F4" fill-rule="evenodd" x="0" y="2" width="20" height="20" rx="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

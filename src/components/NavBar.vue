@@ -1,32 +1,31 @@
 <template>
   <b-navbar toggleable="lg" type="light" id="navbar" fixed="top" class="navbar-default">
-    <div class="container">
-      <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
       <b-navbar-brand>
         <a href="/">
           <b-img fluid src="/static/images/logo.svg" alt="Merissa Hermanson Design"/>
         </a>
       </b-navbar-brand>
-     <b-collapse is-nav id="navbar-collapse">
+      <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
+      <b-collapse is-nav id="navbar-toggle-collapse">
        <b-navbar-nav class="ml-auto">
           <b-nav-item id="startLink" v-on:click="scroll('#start')" href="/#start">START</b-nav-item>
           <b-nav-item id="aboutLink" v-on:click="scroll('#about')" href="/#about">ABOUT</b-nav-item>
-          <b-nav-item id="toolsLink" v-on:click="scroll('#tools')" href="/#tools">TOOLS</b-nav-item>
           <b-nav-item id="portfolioLink" v-on:click="scroll('#portfolio')" href="/#portfolio">PORTFOLIO</b-nav-item>
+           <b-nav-item id="toolsLink" v-on:click="scroll('#tools')" href="/#tools">TOOLS</b-nav-item>
+          <b-nav-item id="readsLink" v-on:click="scroll('#reading')" href="/#reading">READING</b-nav-item>
           <b-nav-item id="contactLink" v-on:click="scroll('#contact')" href="/#contact">CONTACT</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
-    </div>
   </b-navbar>
 </template>
 <script type="text/javascript">
-  export default {
-    methods: {
-      scroll: function (message) {
-        $(message).animatescroll()
-      }
+export default {
+  methods: {
+    scroll: function (message) {
+      $(message).animatescroll()
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

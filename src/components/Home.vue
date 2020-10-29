@@ -3,14 +3,14 @@
     <vue-headful
       image="/static/images/home.png"
       title="Merissa Hermanson Portfolio"
-      description="I am a Product Designer and Front End Developer with 7+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development."
+      description="I’m a Product Designer specializing in complex enterprise solutions and data visualization. I have 10+ years of experience in design and 5+ years balancing product, development, and user centered goals for enterprise products."
     />
     <nav-bar />
     <section class="jumbotron start" id="start">
       <div id="table"></div>
       <div class="container">
         <div class="text-container">
-          <h1>Welcome to my Studio</h1>
+          <h1>Merissa Hermanson's Studio</h1>
           <h2>Where beautiful user interfaces are created.</h2>
         </div>
         <ul id="clock" class="hidden-xs">
@@ -102,7 +102,7 @@
                 <path id="dot1" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M104.1,18.1c0.4-0.1,0.7-0.3,0.9-0.6"/>
                 <path id="dot2" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M180.3,62.6c0.4-0.1,0.7-0.3,0.9-0.6"/>
                 <path id="dot3" fill="none" stroke="#f7f7f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M140,18c0.4-0.1,0.7-0.3,0.9-0.6"/>
-                </svg>    
+                </svg>
             </div>
             </div>
           </div>
@@ -117,30 +117,108 @@
     <section id="about">
       <b-container class="container blue">
         <h2>A little <strong>ABOUT</strong> me</h2>
-        <p>I am a Product Designer & Front End Developer with 7+ years of experience. I craft elegant web and mobile user interfaces using creative and engaging solutions through all phases of design and development. Responsible for creating high fidelity mock-ups, working prototypes and then implementing them. Product design is like telling a story. It needs to be told with clarity and purpose. Without purpose it's just noise.</p>
+        <p>I’m a Product Designer specializing in complex enterprise solutions and data visualization. I have 10+ years of experience in design and 5+ years balancing product, development, and user centered goals for mostly enterprise products. In collaboration with Project Managers, and Engineers I’m involved in every aspect of the product development process, from brainstorming, user research, product strategy, to tweaking pixels right before launch.</p>
         <b-row>
-          <b-col cols="12" md="4">
+          <b-col md="4">
+              <b-img-lazy fluid src="/static/images/about-research.svg" alt="Start and end HTML tags"/>
+            <div class="title">
+              <h3>USER RESEARCH</h3>
+              <p>Data is always better than guessing. Users can be unpredictable and don't always do what they say they do. Filling knowledge gaps with data instead of assumptions forms a solid foundation for solving the right people problems.</p>
+            </div>
+          </b-col>
+          <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-ui.svg" alt="Computer Icon"/>
             <div class="title">
-              <h3>PRODUCT DESIGNER</h3>
-              <p>I love user research and user testing. I’m people driven as well as data influenced. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
+              <h3>USER EXPERIENCE</h3>
+              <p>Creating a great user experience is about solving people problems. I enhance people’s satisfaction with a product by refining the usability, accessibility, and pleasure given in the interaction between a person and a product.</p>
             </div>
           </b-col>
-          <b-col cols="12" md="4">
+          <b-col md="4">
               <b-img-lazy fluid src="/static/images/about-graphic.svg" alt="Image Icon"/>
             <div class="title">
-              <h3>VISUAL DESIGNER</h3>
-              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Asthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes and make people more tolerant of design problems.</p>
-            </div>
-          </b-col>
-          <b-col cols="12" md="4"> 
-              <b-img-lazy fluid src="/static/images/about-dev.svg" alt="Start and end HTML tags"/>
-            <div class="title">
-              <h3>FRONT END DEVELOPER</h3>
-              <p>I truly enjoy crafting a design throughout the entire process. Developing the interface I've designed, I am able to make sure every interaction, animation, and transition is exactly how it should be.</p>
+              <h3>VISUAL DESIGN</h3>
+              <p>I design beautiful things that communicate effectively in order to achieve optimal results. Aesthetic products appear easier to use, have a higher probability of being used, are more effective at forming positive attitudes.</p>
             </div>
           </b-col>
         </b-row>
+      </b-container>
+    </section>
+    <section id="portfolio">
+      <b-container>
+        <h2>My <strong>PORTFOLIO</strong></h2>
+          <b-row class="portfolio-section" id="case-studies">
+            <b-col sm="12">
+              <h3>Case Studies</h3>
+              <hr />
+            </b-col>
+            <img-feed img-category="study"></img-feed>
+          </b-row>
+          <b-row class="portfolio-section" id="web">
+            <b-col col sm="12">
+              <h3>Design</h3>
+              <hr />
+            </b-col>
+            <img-feed img-category="design"></img-feed>
+          </b-row>
+        <div class="portfolio-section" id="other-works">
+          <h3>Other Works</h3>
+          <hr />
+          <b-row class="icons">
+            <b-col md="4">
+              <a href="/paintings">
+                <svg viewBox="0 0 94 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g class="other-icon" transform="translate(-41.000000, -30.000000)" fill-rule="nonzero">
+                          <path d="M133.404697,46 C134.284006,46 135,46.7150374 135,47.5946757 L135,47.5946757 L135,116.404883 C135,117.284779 134.284189,118 133.404697,118 L133.404697,118 L111.771,118 L123.159179,145.52034 L120.840821,146.47966 L109.056,118 L68.981,118 L59.1859704,146.408955 L56.8140296,145.591045 L66.328,118 L42.5953035,118 C41.7646713,118 41.0800397,117.362041 41.0065332,116.549913 L41,116.404883 L41,47.5946757 C41,46.7150374 41.7159936,46 42.5953035,46 L42.5953035,46 Z M133,48 L43,48 L43,116 L133,116 L133,48 Z M88.7545,30 L88.754,37.245 L96,37.2455 L96,39.7545 L80,39.7545 L80,37.2455 L86.245,37.245 L86.2455,30 L88.7545,30 Z" id="Combined-Shape"></path>
+                      </g>
+                  </g>
+              </svg>
+                <h3>PAINTING</h3>
+              </a>
+            </b-col>
+            <b-col md="4">
+              <router-link to="/animations">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 121 121" style="enable-background:new 0 0 121 121;" xml:space="preserve">
+                    <g class="other-icon" transform="translate(27.000000, 27.000000)">
+                      <path id="Fill-1" class="st0" d="M84.1,40.2c-3.9,0-7.1-3.2-7.1-7.1s3.2-7.1,7.1-7.1c3.9,0,7.1,3.2,7.1,7.1S88,40.2,84.1,40.2
+                         M33.4,56.2C12.1,56.2-7,50.4-15,41.7c3.6-1.2,6.2-4.6,6.2-8.6s-2.6-7.4-6.2-8.6C-7,15.8,12.1,10,33.4,10
+                        c21.1,0,40.2,5.7,48.3,14.3c-3.8,1.1-6.6,4.6-6.6,8.7s2.8,7.7,6.6,8.7C73.5,50.4,54.5,56.2,33.4,56.2 M-25,33.1
+                        c0-3.9,3.2-7.1,7.1-7.1c3.9,0,7.1,3.2,7.1,7.1s-3.2,7.1-7.1,7.1C-21.8,40.2-25,37-25,33.1 M84.1,24c0,0-0.1,0-0.1,0
+                        C76,14.4,55.8,8,33.4,8C10.9,8-9.3,14.4-17.3,24c-0.2,0-0.4,0-0.6,0c-5,0-9.1,4.1-9.1,9.1s4.1,9.1,9.1,9.1c0.2,0,0.4,0,0.6,0
+                        c7.9,9.6,28.1,16,50.6,16c22.5,0,42.7-6.4,50.6-16c0,0,0.1,0,0.1,0c5,0,9.1-4.1,9.1-9.1S89.1,24,84.1,24"/>
+                      <path id="Fill-4" class="st0" d="M26,84.1c0-3.9,3.2-7.1,7.1-7.1c3.9,0,7.1,3.2,7.1,7.1c0,3.9-3.2,7.1-7.1,7.1
+                        C29.2,91.2,26,88,26,84.1 M10,33.4C10,12.1,15.8-7,24.5-15c1.2,3.6,4.6,6.2,8.6,6.2c4,0,7.4-2.6,8.6-6.2c8.7,8,14.5,27.1,14.5,48.4
+                        c0,21.1-5.7,40.2-14.3,48.3c-1.1-3.8-4.6-6.6-8.7-6.6c-4.2,0-7.7,2.8-8.7,6.6C15.7,73.5,10,54.5,10,33.4 M33.1-25
+                        c3.9,0,7.1,3.2,7.1,7.1c0,3.9-3.2,7.1-7.1,7.1c-3.9,0-7.1-3.2-7.1-7.1C26-21.8,29.2-25,33.1-25 M42.2,84.1c0,0,0-0.1,0-0.1
+                        c9.6-7.9,16-28.2,16-50.6c0-22.5-6.4-42.7-16-50.6c0-0.2,0-0.4,0-0.6c0-5-4.1-9.1-9.1-9.1S24-22.9,24-17.9c0,0.2,0,0.4,0,0.6
+                        C14.4-9.3,8,10.9,8,33.4C8,55.8,14.4,76,24,84c0,0,0,0.1,0,0.1c0,5,4.1,9.1,9.1,9.1S42.2,89.1,42.2,84.1"/>
+                      <path class="st0" d="M42.3,23.4c-0.1,0-0.3,0-0.4,0c-1-3.9-4.6-6.8-8.8-6.8c-4.2,0-7.8,2.9-8.8,6.8c-0.1,0-0.3,0-0.4,0
+                        c-5,0-9.1,4.1-9.1,9.1c0,5,4.1,9.1,9.1,9.1c0.4,0,0.8,0,1.2-0.1c0.5,4.6,4.3,8.2,9,8.2c4.7,0,8.6-3.6,9-8.1c4.6-0.5,8.1-4.3,8.1-9
+                        C51.4,27.4,47.3,23.4,42.3,23.4z M33.1,18.6c3.9,0,7.1,3.2,7.1,7.1c0,3.9-3.2,7.1-7.1,7.1c-3.9,0-7.1-3.2-7.1-7.1
+                        C26,21.7,29.2,18.6,33.1,18.6z M23.9,39.5c-3.9,0-7.1-3.2-7.1-7.1c0-3.9,3.2-7.1,7.1-7.1c0,0,0.1,0,0.1,0c0,0.1,0,0.2,0,0.3
+                        c0,3.3,1.8,6.2,4.5,7.8c-1.8,1.4-3,3.5-3.3,5.9C24.8,39.5,24.3,39.5,23.9,39.5z M34.2,47.6c-3.8,0-6.9-3-7.1-6.7c0,0,0,0,0,0
+                        c0-0.1,0-0.3,0-0.4c0-0.3,0-0.6,0.1-0.9c0,0,0-0.1,0-0.1c0-0.3,0.1-0.6,0.2-0.9c0.5-1.8,1.7-3.3,3.3-4.2c0.8,0.2,1.6,0.3,2.5,0.3
+                        c0.1,0,0.3,0,0.4,0c0.9,3.6,4,6.3,7.7,6.7C40.7,44.9,37.8,47.6,34.2,47.6z M43.2,39.5c-0.3,0-0.6,0.1-0.9,0.1c0,0,0,0,0,0
+                        c-0.4,0-0.7,0-1.1-0.1c-2.7-0.4-4.9-2.4-5.7-5c3.9-1.1,6.7-4.6,6.7-8.8c0-0.1,0-0.2,0-0.3c0,0,0.1,0,0.1,0c3.9,0,7.1,3.2,7.1,7.1
+                        C49.4,36,46.7,39,43.2,39.5z"/>
+                    </g>
+                  </svg>
+                <h3>ANIMATION</h3>
+              </router-link>
+            </b-col>
+            <b-col md="4">
+              <a href="http://www.merissahermanson.com/photography" target="_blank">
+                <svg viewBox="0 0 117 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g class="other-icon" transform="translate(-29.000000, -43.000000)" fill-rule="nonzero">
+                      <path d="M98.7825476,42.9998469 L103.808,51.576 L137.582577,51.5761847 C142.173239,51.5761847 145.747099,55.6007776 145.87554,60.3891723 L145.87554,60.3891723 L145.879115,60.6559593 L145.879115,122.5778 C145.879115,127.493152 142.251965,131.717683 137.582577,131.717683 L137.582577,131.717683 L38.1775769,131.717683 C33.3917707,131.717683 28.9998846,127.346035 28.9998846,122.5778 L28.9998846,122.5778 L28.9998846,60.6559593 C28.9998846,55.8959582 33.3833342,51.5761847 38.1775769,51.5761847 L38.1775769,51.5761847 L71.999,51.576 L76.5466922,42.9998469 L98.7825476,42.9998469 Z M97.636,44.999 L77.749,44.999 L73.2026924,53.5761847 L38.1775769,53.5761847 C34.4814058,53.5761847 30.9998846,57.0071316 30.9998846,60.6559593 L30.9998846,60.6559593 L30.9998846,122.5778 C30.9998846,126.239393 34.4942775,129.717683 38.1775769,129.717683 L38.1775769,129.717683 L137.582577,129.717683 C141.073956,129.717683 143.879115,126.450523 143.879115,122.5778 L143.879115,122.5778 L143.879115,60.6559593 C143.879115,56.7975083 141.085371,53.5761847 137.582577,53.5761847 L137.582577,53.5761847 L102.662222,53.5761847 L97.636,44.999 Z M85.4210769,66.7559668 C98.1699321,66.7559668 108.507038,77.0457638 108.507038,89.7411574 C108.507038,102.436551 98.1699321,112.726348 85.4210769,112.726348 C72.6722217,112.726348 62.3351154,102.436551 62.3351154,89.7411574 C62.3351154,77.0457638 72.6722217,66.7559668 85.4210769,66.7559668 Z M85.4210769,68.8909668 C73.8491629,68.8909668 64.4701154,78.2270896 64.4701154,89.7411574 C64.4701154,101.255225 73.8491629,110.591348 85.4210769,110.591348 C96.992991,110.591348 106.372038,101.255225 106.372038,89.7411574 C106.372038,78.2270896 96.992991,68.8909668 85.4210769,68.8909668 Z" id="Combined-Shape"></path>
+                  </g>
+                </svg>
+              <h3>PHOTOGRAPHY</h3>
+              </a>
+            </b-col>
+          </b-row>
+        </div>
       </b-container>
     </section>
     <section id="tools">
@@ -155,67 +233,25 @@
         </ul>
       </div>
     </section>
-    <section id="portfolio">
-      <b-container>
-        <h2>My <strong>PORTFOLIO</strong></h2>
-          <b-row class="portfolio-section" id="web">
-            <b-col col sm="12">
-              <h3>Web & Mobile Applications</h3>
-              <hr />
-            </b-col>
-            <img-feed img-category="apps"></img-feed>
-          </b-row>
-        <div class="portfolio-section" id="other-works">
-          <h3>Other Works</h3>
-          <hr />
-          <div class="row icons">
-            <div class="col-md-4 col-sm-4">
-              <a href="/paintings">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 269" enable-background="new 0 0 310 269" xml:space="preserve">
-                    <path fill="#5E5E5E" d="M53.8,47.9l202.3,0l0,152.6l-202.3,0L53.8,47.9 M52.2,44.9c-0.7,0-1.3,0.6-1.3,1.3l0,155.9c0,0.7,0.6,1.3,1.3,1.3l205.6,0c0.7,0,1.3-0.6,1.3-1.3l0-155.9c0-0.7-0.6-1.3-1.3-1.3L52.2,44.9L52.2,44.9z"/>
-                  <line fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" x1="87.7" y1="267.1" x2="110.8" y2="201.1"/>
-                  <line fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" x1="230.8" y1="267.1" x2="203.8" y2="201.1"/>
-                  <line fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" x1="137.1" y1="26.4" x2="172.9" y2="26.4"/>
-                  <line fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" x1="155" y1="6.7" x2="155" y2="25.2"/>
-                </svg>
-                <h3>PAINTING</h3>
-              </a> 
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <router-link to="/animations">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 407.2 269" enable-background="new 0 0 407.2 269" xml:space="preserve">
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="168.9" cy="149" r="27.6"/>
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="204" cy="176.6" r="27.6"/>
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="231.6" cy="149" r="27.6"/>
-                  <ellipse fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="205.5" cy="153.5" rx="181.8" ry="82.2"/>
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="30.3" cy="145.4" r="27.6"/>
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="376.9" cy="147.3" r="27.6"/>
-                  <circle fill="#FFFFFF" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="200.3" cy="125.8" r="27.6"/>
-                </svg>
-                <h3>ANIMATION</h3>
-              </router-link> 
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <a href="http://www.merissahermanson.com/photography" target="_blank">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 304.7 269" enable-background="new 0 0 304.7 269" xml:space="preserve">
-                <circle fill="none" stroke="#5E5E5E" stroke-width="3" stroke-miterlimit="10" cx="147.7" cy="158.6" r="57.2"/>
-                <circle fill="#5E5E5E" cx="237.7" cy="90.2" r="10"/>
-                <rect x="29.9" y="47.5" fill="#5E5E5E" width="32.9" height="12.4"/>
-                <path fill="#5E5E5E" d="M179.2,41.7l12.2,21.2l0.9,1.8h1.7h89.3c8.8,0,15.7,8,15.7,18v161.7c0,8.8-5.8,18.3-15.7,18.3H24.9c-9.4,0-17.9-8.9-17.9-18.3V82.7c0-9.3,8.5-18,17.9-18h89.5h1.8l0.8-1.9l11-21.1h51 M180.9,38.7h-54.8l-11.8,23H24.9c-11,0-20.9,10-20.9,21v161.7c0,11,9.8,21.3,20.9,21.3h258.5c11,0,18.7-10.3,18.7-21.3V82.7c0-11-7.7-21-18.7-21H194L180.9,38.7L180.9,38.7z"/>
-              </svg>
-              <h3>PHOTOGRAPHY</h3>
-              </a> 
-            </div>
-          </div>
-        </div>
-      </b-container>
+    <section id="reading">
+      <div class="container">
+        <h2>Reading List</h2>
+        <p>Some of my favorite books.</p>
+        <ul class="row">
+          <template v-for="read in reads">
+            <li class="col-md-3 col-sm-6 col-6">
+              <b-img-lazy fluid v-bind:src="read.img"/>
+            </li>
+          </template>
+        </ul>
+      </div>
     </section>
     <section id="contact">
       <div class="container">
         <h2><strong>CONTACT</strong></h2>
         <h3 class="text-center">Merissa.Hermanson@gmail.com</h3>
         <p>I'm only a click away</p>
-        <a href="mailto:merissa.hermanson@gmail.com">
+        <a href="mailto:merissa.hermanson@gmail.com" target="_blank">
           <button type="button" class="btn btn-primary inverse btn-lg">Contact Me</button>
         </a>
       </div>
@@ -240,7 +276,7 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_jquery.svg'},
           {img: '/static/images/tools_sublime.svg'},
           {img: '/static/images/tools_invision.svg'},
-          {img: '/static/images/tools_rails.svg'},
+          {img: '/static/images/tools_sketch.svg'},
           {img: '/static/images/tools_bootstrap.svg'},
           {img: '/static/images/tools_html.svg'},
           {img: '/static/images/tools_illustrator.svg'},
@@ -249,8 +285,20 @@ import MainFooter from './MainFooter'
           {img: '/static/images/tools_sass.svg'},
           {img: '/static/images/tools_vue.svg'},
           {img: '/static/images/tools_xd.svg'},
-          {img: '/static/images/tools_studio.svg'},
-          {img: '/static/images/tools_xcode.svg'}
+          {img: '/static/images/tools_google.svg'},
+          {img: '/static/images/tools_fresh.svg'}
+        ],
+        reads: [
+          {img: '/static/images/read-manager.jpg'},
+          {img: '/static/images/read-culture-code.jpg'},
+          {img: '/static/images/read-friends.jpg'},
+          {img: '/static/images/read-100.jpg'},
+          {img: '/static/images/read-design.jpg'},
+          {img: '/static/images/read-think.jpg'},
+          {img: '/static/images/read-team-one.jpg'},
+          {img: '/static/images/read-lean.jpg'},
+          {img: '/static/images/read-blink.jpg'},
+          {img: '/static/images/read-interviewing.jpg'}
         ]
       }
     },
@@ -278,7 +326,6 @@ import MainFooter from './MainFooter'
         var $brushes = $("#brushes");
         // build tween
         var swap = new TimelineMax()
-       
           .to("#computer", 1, {
               onStart: function () {$computer.addClass("animated bounceOutUp").removeClass("bounceInDown");},
               onReverseComplete: function () {$computer.removeClass("bounceOutUp").addClass("bounceInDown");}}
@@ -304,8 +351,6 @@ import MainFooter from './MainFooter'
               onReverseComplete: function () {$brushes.removeClass("bounceInRight").addClass("bounceOutRight");}
               }
           );
-
-
         function pathPrepare ($el) {
           var lineLength = $el[0].getTotalLength();
           $el.css("stroke-dasharray", lineLength);
@@ -470,12 +515,16 @@ import MainFooter from './MainFooter'
           }
         }());
       },
+      windowresize(){
+        window.addEventListener('resize', () => {window.location.reload();})
+        console.log(this.windowHeight);
+      },
     },
-
     mounted: function () {
       this.animateStudio();
       this.clock();
       this.steam();
+      //this.windowresize();
     }
   }
 </script>
@@ -486,8 +535,9 @@ import MainFooter from './MainFooter'
 #about {
   text-align: center;
   padding-top: 30px;
+  background-color: #edf2f7;
   img {
-    max-height: 150px;
+    max-height: 120px;
     margin:auto;
   }
   p {
@@ -519,6 +569,28 @@ import MainFooter from './MainFooter'
     }
   }
 }
+#reading {
+  padding: 30px 0;
+  margin-bottom:0;
+
+  ul {
+    padding:0;
+    margin-top:25px;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding:20px;
+      text-align: center;
+
+      img {
+        text-align: center;
+        border: 1px solid #cfd6e0;
+      }
+    }
+  }
+}
+
 /* Contact */
 
 #contact {

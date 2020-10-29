@@ -1,0 +1,16 @@
+{
+  "results": [{
+    "id": "ts",
+    "type": "web",
+    "index": 1,
+    "title": "Tower Source",
+    "content": "TowerSource is the industry’s largest and most comprehensive independent vertical asset database. By providing granular, accurate information about tower location ownership and management, type, height, and more. TowerSource empowers tower professionals in any business sector to make better decisions regarding site evaluation and acquisition, competitor benchmarking and site portfolio revenues. \n\nAfter TowerSource was aquired by Mosaik I completely re-designed the entire application. The application is very feature rich and was a challenge to design a simple intuitive interface that could contain all of the functionality requested, with the flexibility to add more features down the road. The application is built with Ruby on Rails, and I did most of the front end development for this project on top of the design.",
+    "image": "/static/images/ts.png",
+    "portImgs": ["/static/images/port-ts1.jpg"],
+    "videosrcs": ["/static/video/ts-video"],
+    "link": "https://www.towersource.com/",
+    "product": "Web Application",
+    "date": "August 19th 2015",
+    "role": "Sole UI/UX designer and helped build the front-end."
+  }]
+}

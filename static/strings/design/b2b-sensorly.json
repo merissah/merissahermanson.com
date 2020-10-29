@@ -1,0 +1,16 @@
+{
+  "results": [{
+    "id": "b2b-sensorly",
+    "type": "apps",
+    "size": "col-md-4 col-6",
+    "index": 4,
+    "title": "B2B Sensorly App",
+    "content": "Mobile network operators have a very different use case when it comes to checking their network, taking speed tests and mapping coverage. These users are far more technical and require much more granularity than your average user. They also needed to perform multiple speed tests in succession, while potentially mapping a trip at the same time. \n\n This simple app provided the core functionality our B2B users were looking for. It fits within the Sensorly brand, while also standing apart from the consumer app.",
+    "image": "/static/images/b2b-sensorly.png",
+    "portImgs": ["/static/images/port-b2b1.jpg", "/static/images/port-b2b2.jpg", "/static/images/port-b2b4.jpg", "/static/images/port-b2b3.jpg", "/static/images/port-b2b5.jpg", "/static/images/port-b2b6.jpg", "/static/images/port-b2b7.jpg", "/static/images/port-b2b8.jpg", "/static/images/port-b2b9.jpg"],
+    "prototype": "https://ookla.invisionapp.com/share/XWNSEHE87MT",
+    "product": "Android App",
+    "date": "In Development",
+    "role": "Visual Designer"
+  }]
+}
