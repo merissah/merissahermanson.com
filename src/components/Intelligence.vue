@@ -20,9 +20,6 @@
             <h2>Speedtest Intelligence</h2>
             <p>Speedtest Intelligence was created to give up-to-date insights into global fixed broadband and mobile performance data based on millions of consumer-initiated tests taken every day with Speedtest.</p>
             <small class="disclaimer">I have omitted and obfuscated business sensative information in this case study. All information in this case study is my own and does not necessarily reflect the views of Ookla.</small>
-            <b-button class="btn-secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/GAYBW18YTFM#/screens" variant="default">
-                View Prototype
-            </b-button>
           </b-container>
         </section>
         <section class="port-section no-shadow" id="challenge">

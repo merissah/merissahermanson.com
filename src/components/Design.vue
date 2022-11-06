@@ -19,9 +19,6 @@
         <b-container>
           <b-row class="port-button">
             <b-col>
-              <b-button v-if="prototype" target="_blank" v-bind:href="prototype" variant="default">
-                View Prototype
-              </b-button>
               <b-button v-if="link" target="_blank" v-bind:href="link" variant="primary">
                 View Site
               </b-button>
@@ -122,7 +119,7 @@ import VideoTemp from './VideoTemp'
         this.$getResource('design')
         .then(posts => {
           if (index == 0) {
-            this.back = '/study/cellAnalytics'
+            this.back = '/study/downDetector'
             this.forward = posts[index + 1].id
           }
           else if (index == posts.length - 1){

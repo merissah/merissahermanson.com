@@ -10,7 +10,7 @@
             <router-link id="left-arrow" to="/study/speedtestIntelligence"></router-link>
           </li>
           <li>
-            <router-link id="right-arrow" to="/study/ddEnterprise"></router-link>
+            <router-link id="right-arrow" to="/design/dd-apps"></router-link>
           </li>
         </ul>
       </div>
@@ -21,12 +21,6 @@
               <h2>Downdetector</h2>
               <p>Downdetector® offers real-time status and outage information for all kinds of services that users consider vital to their everyday lives and work. Downdetecor was acquired by Ookla in August 2018.</p>
               <small class="disclaimer">I have omitted and obfuscated business sensative information in this case study. All information in this case study is my own and does not necessarily reflect the views of Ookla.</small>
-              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/G7YBYYFSBKM">
-                  Desktop Prototype
-              </b-button>
-              <b-button variant="secondary inverse" target="_blank" href="https://ookla.invisionapp.com/share/P5YBYX2ZCWA">
-                  Mobile Prototype
-              </b-button>
               <b-button target="_blank" href="https://downdetector.com" variant="primary inverse">
                   Website
               </b-button>
