@@ -20,7 +20,7 @@
     "lodash.merge": "^4.6.2",
     "node-gyp": "^9.3.0",
     "node-sass": "^7.0.1",
-    "npm": "^6.14.5",
+    "npm": "^8.19.3",
     "scrollto-with-animation": "^4.5.4",
     "vue": "^2.6.11",
     "vue-headful": "^1.1.0",
