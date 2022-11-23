@@ -7,7 +7,7 @@
       <div class="jumbotron port-bkg"">
         <ul class="nav-buttons">
           <li>
-            <router-link id="left-arrow" to="/study/speedtestIntelligence"></router-link>
+            <router-link id="left-arrow" to="/study/caseStudies"></router-link>
           </li>
           <li>
             <router-link id="right-arrow" to="/design/dd-apps"></router-link>
@@ -101,47 +101,9 @@
               </b-col>
             </b-row>
             <small>Left: Status page during a current problem. Right: report a problem modal.</small>
-            <h3>Google Analytics</h3>
+            <h3>Telemetry</h3>
             <p>Google Analytics revealed that only about 10% of users even saw the home page. Users would organically search directly to the status pages with phrases like ‘Is Comcast down’, ‘Is Facebook down’. Most of the site’s traffic came from mobile devices, yet the previous focus had been on desktop and mobile had been mostly an afterthought.</p>
-            <b-row class="no-shadow center">
-              <b-col md="4">
-                <h5>Page Breakdown</h5>
-                <b-img-lazy fluid src="/static/images/dd-pie-status.svg" alt="Page breakdown pie chart. Status page most visited at 84.3%"/>
-              </b-col>
-              <b-col md="4">
-                <h5>Top Channels</h5>
-                <b-img-lazy fluid src="/static/images/dd-pie-channels.svg" alt="Top channels pie chart. Organic search most used channel at 86.5%"/>
-              </b-col>
-              <b-col md="4">
-                <h5>Sessions by Device</h5>
-                <b-img-lazy fluid src="/static/images/dd-pie-devices.svg" alt="Sessions by device pie chart. Mobile most used device at 65.7%"/>
-              </b-col>
-            </b-row>
-            <h3>Freshmarketer</h3>
-            <p>Heat Maps helped verify at scale some of the same trends I learned through user testing. On the status pages the report a problem button had the most amount of clicks, followed by the map and then the graph. On the homepage Downdetector actually did a really great job of putting the top problem companies at the top. Out of the small percentage of users that did visit the home page most clicked on the tiles to navigate to the status page. Search clicks were forth, compared to the top 3 tiles on the page. </p>
-            <b-row>
-              <b-col cols="6" md="3">
-                <b-img-lazy fluid src="/static/images/dd-heatmap1.png" alt="Heatmap"/>
-              </b-col>
-              <b-col cols="6" md="3">
-                <b-img-lazy fluid src="/static/images/dd-heatmap2.png" alt="Heatmap"/>
-              </b-col>
-              <b-col cols="6" md="3">
-                <b-img-lazy fluid src="/static/images/dd-heatmap3.png" alt="Heatmap"/>
-              </b-col>
-              <b-col cols="6" md="3">
-                <b-img-lazy fluid src="/static/images/dd-heatmap4.png" alt="Heatmap"/>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col md="6">
-                <b-img-lazy fluid src="/static/images/dd-heatmap5.png" alt="Heatmap"/>
-              </b-col>
-              <b-col md="6">
-                <b-img-lazy fluid src="/static/images/dd-heatmap6.png" alt="Heatmap"/>
-              </b-col>
-            </b-row>
-            <small>Freshmarketer Heatmaps</small>
+            <p>Heat Maps helped verify at scale some of the same trends I learned through user testing. On the status pages the report a problem button had the most amount of clicks, followed by the map and then the graph. On the homepage Downdetector actually did a really great job of putting the top problem companies at the top.</p>
           </b-container>
         </section>
         <section class="port-section white">

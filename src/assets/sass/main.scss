@@ -668,7 +668,6 @@ opacity: 1;
 
   #start {
     h1 {
-      font-size: 63px;
       margin-top: 80px;
     }
     h2 {
@@ -700,6 +699,10 @@ opacity: 1;
 /* =============================================================================================== */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   #start {
+  h1 {
+      font-size: 2.2em;
+      margin-top: 80px;
+    }
     h2 {
       font-size: 1.5em;
     }
@@ -727,8 +730,11 @@ opacity: 1;
 /* =============================================================================================== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 #start {
-  margin-top: -80px;
+  margin-top: -60px;
   padding-bottom: 520px;
+  h1 {
+      font-size: 2em;
+    }
   h2 {
     font-size:1.5em;
   }
@@ -841,10 +847,10 @@ opacity: 1;
       bottom:56%;
 
       h1 {
-        font-size:2.5em;
+        font-size:2.2em;
       }
       h2 {
-        font-size:1.6em;
+        font-size:1.5em;
       }
     }
   }
@@ -862,11 +868,12 @@ opacity: 1;
     background-size: 130px;
     padding-bottom: 240px;
     min-height: 600px;
+    margin-top: -60px;
     h1 {
-      font-size: 2.1em;
+      font-size: 2em;
     }
     h2 {
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
     .screen {
       top:9%;
@@ -890,7 +897,7 @@ opacity: 1;
     height: 135px;
     background-size: 135px;
     right:-2%;
-    top:12%;
+    top:18%;
   }
   #sec, #min, #hour {
     width:5px;

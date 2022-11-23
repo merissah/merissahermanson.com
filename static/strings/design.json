@@ -16,10 +16,6 @@
     "src": "/static/images/sensorly-apps.png",
     "id": "sensorly-apps"
   }, {
-    "title": "B2B Sensorly",
-    "src": "/static/images/b2b-sensorly.png",
-    "id": "b2b-sensorly"
-  }, {
     "title": "Map Elements",
     "src": "/static/images/me.png",
     "id": "me"
